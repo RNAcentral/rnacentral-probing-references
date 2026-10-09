@@ -1,25 +1,5 @@
 #!/usr/bin/env python3
-"""Check that an rf-eval windows manifest still points at transcripts in a new GTF.
-
-rf-eval files are reused across releases, but their windows name transcripts
-(URS…_<taxid>.<n>) that a new release may renumber or drop. For each transcript
-in the windows file this finds it in the new GTF and reports:
-
-  ok         same ID, same exons
-  moved      same ID, different exons (still the same sequence, but another copy)
-  repoint    ID gone; the same URS sits at the old locus under a new ID
-  candidates ID gone; the same URS exists only at other loci (listed, not chosen)
-  missing    no transcript with that URS; the structure must be rebuilt
-
-The URS fixes the sequence, so window coordinates stay valid under any ID that
-shares it. With --outdir, re-pointed copies of the windows file and its .db are
-written (ref_seq_id and structure names both updated). Exit status is 1 if any
-transcript is left unresolved.
-
-    python3 scripts/check_rfeval_ids.py release27/human/rfeval/rrna_common.windows.tsv \\
-        release27/human/reference/homo_sapiens.GRCh38.filtered.gtf.gz \\
-        release28/human/reference/homo_sapiens.GRCh38.filtered.gtf.gz --outdir release28/human/rfeval
-"""
+"""Check an rf-eval windows file against a new release's GTF and re-point renumbered IDs (see README, step 3)."""
 import argparse, gzip, os, re, sys
 
 TID = re.compile(r'transcript_id "([^"]+)"')
