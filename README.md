@@ -13,7 +13,7 @@ scripts/                     reused for every release
   rfam_seed_allowlist.py     regenerates the filter's Rfam allowlist
   check_rfeval_ids.py        checks rf-eval windows against a new release's GTF
   <organism>/                that organism's builder(s), plus the archived rf-eval builders
-params/                      nf-core/rnastructurome params files: template.yml, then one per dataset
+params/                      nf-core/rnastructurome params, one <dataset_id>-params.yaml per dataset
 release27/
   README.md                  what this release holds
   <organism>/
@@ -114,7 +114,7 @@ sequence, so window coordinates stay valid under any ID that shares it.
 ### 4. Point the params files at the new release
 
 ```
-sed -i 's#/release27/#/release28/#' params/*.yml   # template.yml included
+sed -i 's#/release27/#/release28/#' params/*.yaml
 ```
 
 This moves both the reference and rf-eval paths, so steps 2 and 3 must have
@@ -130,9 +130,9 @@ the params files use absolute paths into that checkout.
 
 Each dataset in
 [rnacentral-probing-metadata](https://github.com/RNAcentral/rnacentral-probing-metadata)
-gets its own `params/<dataset_id>.yml`. To make one, copy
-[params/template.yml](params/template.yml) and keep the reference options that fit
-the organism:
+gets its own `params/<dataset_id>-params.yaml`, with `rnacentral: true`,
+`structextract: true` and the reference options that fit the organism (see
+[rnastruct00140-params.yaml](params/rnastruct00140-params.yaml)):
 
 | organism | options |
 |---|---|
@@ -143,15 +143,16 @@ the organism:
 Add `rfeval_reference` and `rfeval_windows` if the organism has an `rfeval/`
 folder, and put any dataset-specific options (adapters, trimming,
 normalisation) in the same file. Datasets whose metadata `comment` starts with
-`failed QC` or `skip` are not run and need no params file. Then run the dataset
-on codon:
+`failed QC` or `skip` are not run and need no params file.
+
+Run the dataset on codon:
 
 ```
 nextflow run main.nf \
   -profile codon,singularity \
   --input  "${BASE}/FASTQ/samplesheet/${DATASET_ID}_samplesheet.csv" \
   --outdir "${BASE}/RESULTS/${DATASET_ID}" \
-  -params-file "${BASE}/rnacentral-probing-references/params/${DATASET_ID}.yml" \
+  -params-file "${BASE}/rnacentral-probing-references/params/${DATASET_ID}-params.yaml" \
   -resume
 ```
 

@@ -1,0 +1,9 @@
+# rnastruct00087: Homo sapiens, genome route
+rnacentral: true
+structextract: true
+rfcount_map_max_coverage: 20000
+
+gtf: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release27/human/reference/homo_sapiens.GRCh38.filtered.gtf.gz
+
+rfeval_reference: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release27/human/rfeval/rrna_common.db
+rfeval_windows:   /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release27/human/rfeval/rrna_common.windows.tsv

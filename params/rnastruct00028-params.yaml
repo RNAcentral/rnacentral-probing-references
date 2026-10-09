@@ -1,0 +1,10 @@
+# rnastruct00028: SARS-CoV-2 Leiden-0002, transcriptome route
+transcriptome: true
+rnacentral: true
+structextract: true
+rfcount_map_max_coverage: 50000
+
+fasta: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release27/sarscov2/reference/SARS2_Leiden0002.transcriptome.fa
+
+rfeval_reference: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release27/sarscov2/rfeval/sars2_elements.db
+rfeval_windows:   /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release27/sarscov2/rfeval/sars2_elements.windows.tsv

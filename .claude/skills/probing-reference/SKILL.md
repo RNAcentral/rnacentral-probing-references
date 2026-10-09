@@ -37,7 +37,7 @@ Read the repository `README.md` first (layout and method), then the
    (bacteria/viruses: the builders' `work/<stem>.gtf`). It re-points renumbered
    `URS…_<taxid>.<n>` IDs and exits 1 on anything needing a decision
    (`candidates`, `missing`).
-4. **Params:** `sed -i 's#/release<prev>/#/release<N>/#' params/*.yml` once every
+4. **Params:** `sed -i 's#/release<prev>/#/release<N>/#' params/*.yaml` once every
    organism's `release<N>/` has `reference/` and `rfeval/`.
 5. **Run the checks** in section D, update each organism README's numbers, and
    write `release<N>/README.md`.

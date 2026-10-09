@@ -1,0 +1,9 @@
+# rnastruct00099: Escherichia coli, transcriptome route
+transcriptome: true
+rnacentral: true
+structextract: true
+
+fasta: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release27/ecoli/reference/ECOLI_MG1655.transcriptome.fa
+
+rfeval_reference: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release27/ecoli/rfeval/rrna_common.db
+rfeval_windows:   /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release27/ecoli/rfeval/rrna_common.windows.tsv

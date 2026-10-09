@@ -1,0 +1,8 @@
+# rnastruct00040: Homo sapiens, genome route
+rnacentral: true
+structextract: true
+
+gtf: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release27/human/reference/homo_sapiens.GRCh38.filtered.gtf.gz
+
+rfeval_reference: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release27/human/rfeval/rrna_common.db
+rfeval_windows:   /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release27/human/rfeval/rrna_common.windows.tsv

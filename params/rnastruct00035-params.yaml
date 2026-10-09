@@ -1,0 +1,8 @@
+# rnastruct00035: Saccharomyces cerevisiae, genome route
+rnacentral: true
+structextract: true
+
+gtf: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release27/yeast/reference/saccharomyces_cerevisiae.R64-1-1.filtered.gtf.gz
+
+rfeval_reference: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release27/yeast/rfeval/rrna_common.db
+rfeval_windows:   /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release27/yeast/rfeval/rrna_common.windows.tsv
