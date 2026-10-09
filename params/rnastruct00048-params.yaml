@@ -1,0 +1,9 @@
+# rnastruct00048: Dengue virus 3 EDEN863, transcriptome route
+transcriptome: true
+rnacentral: true
+structextract: true
+
+fasta: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release27/dengue/reference/DENV3_EDEN863.transcriptome.fa
+
+rfeval_reference: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release27/dengue/rfeval/dengue_elements.db
+rfeval_windows:   /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release27/dengue/rfeval/dengue_elements.windows.tsv

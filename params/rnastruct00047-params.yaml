@@ -1,0 +1,9 @@
+# rnastruct00047: Dengue virus 2 EDEN3295, transcriptome route
+transcriptome: true
+rnacentral: true
+structextract: true
+
+fasta: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release27/dengue/reference/DENV2_EDEN3295.transcriptome.fa
+
+rfeval_reference: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release27/dengue/rfeval/dengue_elements.db
+rfeval_windows:   /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release27/dengue/rfeval/dengue_elements.windows.tsv
