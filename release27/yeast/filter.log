@@ -1,0 +1,13 @@
+Pass 1: reading transcripts and predicted genes …
+  672 transcripts found (0 circRNA dropped)
+  89 predicted genes found
+  0 piRNA entries dropped (sequences at >5 loci)
+Pre-filter: removed 0 lacking authoritative DB (672 remaining, 0 kept via Rfam seed allowlist)
+Stage 1: collapsing same-URS duplicates …
+  640 kept, 32 removed (4.8%)
+Stage 2: length-aware + predicted-gene-aware locus filtering …
+  454 kept, 186 removed (29.1%)
+Pass 2: writing filtered GFF3 …
+  1,001 feature lines written
+Done.
+Wrote 912 exon record(s); skipped 0 malformed/parentless line(s).

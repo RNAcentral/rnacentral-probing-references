@@ -1,0 +1,2 @@
+structure	rfam	ref_seq_id	start	end	length	base_pairs	pk_pairs	Evalue
+RVA_RF_NSP2_CRE	RF00501	KF729694.1	992	1059	68	17	0	8e-25

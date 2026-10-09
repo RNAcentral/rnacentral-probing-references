@@ -1,0 +1,20 @@
+datasets	strain	accession	record	record_len	identity	genome_start	genome_end	description
+rnastruct00025,rnastruct00028,rnastruct00030	Leiden0002	MT510999.1	MT510999.1	29890	1.0000	1	29890	genome
+rnastruct00025,rnastruct00028,rnastruct00030	Leiden0002	MT510999.1	URS0002915722_2697049	145	0.9931	137	281	SARS-CoV-2-SL5 from Severe acute respiratory syndrome coronavirus 2 (PDB 8QO5, chain A)
+rnastruct00025,rnastruct00028,rnastruct00030	Leiden0002	MT510999.1	URS00021ED9B3_2697049	88	1.0000	13446	13533	Frameshift Stimulation Element from the SARS-CoV-2 RNA Genome from Severe acute respiratory syndrome coronavirus 2 (PDB 6XRZ, chain A)
+rnastruct00031	USAWA1	MT576563.1	MT576563.1	29850	1.0000	1	29850	genome
+rnastruct00031	USAWA1	MT576563.1	URS0002915722_2697049	145	1.0000	137	281	SARS-CoV-2-SL5 from Severe acute respiratory syndrome coronavirus 2 (PDB 8QO5, chain A)
+rnastruct00031	USAWA1	MT576563.1	URS00021ED9B3_2697049	88	1.0000	13446	13533	Frameshift Stimulation Element from the SARS-CoV-2 RNA Genome from Severe acute respiratory syndrome coronavirus 2 (PDB 6XRZ, chain A)
+rnastruct00072	WT	NC_045512.2	NC_045512.2	29903	1.0000	1	29903	genome
+rnastruct00072	WT	NC_045512.2	URS0002915722_2697049	145	1.0000	150	294	SARS-CoV-2-SL5 from Severe acute respiratory syndrome coronavirus 2 (PDB 8QO5, chain A)
+rnastruct00072	WT	NC_045512.2	URS00021ED9B3_2697049	88	1.0000	13459	13546	Frameshift Stimulation Element from the SARS-CoV-2 RNA Genome from Severe acute respiratory syndrome coronavirus 2 (PDB 6XRZ, chain A)
+rnastruct00101	Alpha	EPI_ISL_754083	EPI_ISL_754083	29869	1.0000	1	29869	genome
+rnastruct00101	Alpha	EPI_ISL_754083	URS0002915722_2697049	145	0.9931	147	291	SARS-CoV-2-SL5 from Severe acute respiratory syndrome coronavirus 2 (PDB 8QO5, chain A)
+rnastruct00101	Alpha	EPI_ISL_754083	URS00021ED9B3_2697049	88	1.0000	13447	13534	Frameshift Stimulation Element from the SARS-CoV-2 RNA Genome from Severe acute respiratory syndrome coronavirus 2 (PDB 6XRZ, chain A)
+rnastruct00102	Beta	EPI_ISL_1173248	EPI_ISL_1173248	29789	1.0000	1	29789	genome
+rnastruct00102	Beta	EPI_ISL_1173248	URS00021ED9B3_2697049	88	1.0000	13446	13533	Frameshift Stimulation Element from the SARS-CoV-2 RNA Genome from Severe acute respiratory syndrome coronavirus 2 (PDB 6XRZ, chain A)
+rnastruct00103	Delta	EPI_ISL_2621925	EPI_ISL_2621925	29840	1.0000	1	29840	genome
+rnastruct00103	Delta	EPI_ISL_2621925	URS00021ED9B3_2697049	88	1.0000	13448	13535	Frameshift Stimulation Element from the SARS-CoV-2 RNA Genome from Severe acute respiratory syndrome coronavirus 2 (PDB 6XRZ, chain A)
+rnastruct00104	OmicronXBB	EPI_ISL_14917728	EPI_ISL_14917728	29847	1.0000	1	29847	genome
+rnastruct00104	OmicronXBB	EPI_ISL_14917728	URS0002915722_2697049	145	0.9931	150	294	SARS-CoV-2-SL5 from Severe acute respiratory syndrome coronavirus 2 (PDB 8QO5, chain A)
+rnastruct00104	OmicronXBB	EPI_ISL_14917728	URS00021ED9B3_2697049	88	1.0000	13450	13537	Frameshift Stimulation Element from the SARS-CoV-2 RNA Genome from Severe acute respiratory syndrome coronavirus 2 (PDB 6XRZ, chain A)

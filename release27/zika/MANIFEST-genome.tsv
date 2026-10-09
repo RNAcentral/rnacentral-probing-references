@@ -1,0 +1,4 @@
+datasets	strain	accession	record	record_len	identity	genome_start	genome_end	description
+rnastruct00009,rnastruct00051	MR766	AY632535.2	AY632535.2	10794	1.0000	1	10794	genome
+rnastruct00052	BeH815744	KU365780.1	KU365780.1	10662	1.0000	1	10662	genome
+rnastruct00053	HPF2013	KJ776791.2	KJ776791.2	10807	1.0000	1	10807	genome

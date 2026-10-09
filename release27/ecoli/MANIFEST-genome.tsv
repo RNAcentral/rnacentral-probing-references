@@ -1,0 +1,330 @@
+record	record_len	identity	strand	genome_start	genome_end	description
+NC_000913.3	4641652	1.0000	+	1	4641652	genome
+URS00006D7E9B_511145	78	1.0000	+	14090	14167	Escherichia coli str. K-12 substr. MG1655 tpke11
+URS00006BE6A2_83333	153	1.0000	-	16901	17053	Escherichia coli K-12 sok antitoxin (CssrC)
+URS0000AB6DFE_83333	66	1.0000	-	66610	66675	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS00009FC17C_83333	100	1.0000	-	75511	75610	Escherichia coli K-12 TPP riboswitch aptamer (THI element)
+URS0000199749_511145	227	1.0000	+	77367	77593	Escherichia coli str. K-12 substr. MG1655 small regulatory RNA SgrS
+URS000267F54D_511145	174	1.0000	+	92485	92658	Escherichia coli str. K-12 substr. MG1655 small regulatory RNA FtsO
+URS0000AF7600_511145	552	1.0000	-	104948	105499	Escherichia coli str. K-12 substr. MG1655 small antisense RNA StfZ
+URS0000DB3249_83333	90	1.0000	+	105224	105313	Escherichia coli K-12 Plasmid-encoded Shigella sRNA A
+URS00006D66D1_83333	70	1.0000	+	110960	111029	Escherichia coli K-12 Salmonella enterica sRNA STnc40
+URS0000AB7ADF_83333	77	1.0000	+	111433	111509	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS0000AB410E_83333	78	1.0000	+	111549	111626	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS00001BC76C_83333	114	1.0000	-	122901	123014	Escherichia coli K-12 tp2
+URS000027B9F6_511145	136	1.0000	+	189712	189847	Escherichia coli str. K-12 substr. MG1655 putative small RNA T44
+URS0000D964FA_83333	110	1.0000	+	190685	190794	Escherichia coli K-12 Chromosome-encoded Shigella sRNA A
+URS000263B7F7_511145	61	1.0000	+	194784	194844	Escherichia coli str. K-12 substr. MG1655 small regulatory RNA IspZ
+URS0000ABBD9D_83333	77	1.0000	+	216058	216134	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS000080A6C1_511145	1556	1.0000	+	223769	225324	Escherichia coli str. K-12 substr. MG1655 bacterial SSU rRNA
+URS00000FF435_511145	77	1.0000	+	225381	225457	Escherichia coli str. K-12 substr. MG1655 tRNA-Ile (GAT) (tRNA-Ile-GAT-1 1 to 3)
+URS00005F0912_511145	76	1.0000	+	225500	225575	Escherichia coli str. K-12 substr. MG1655 tRNA-Ala (TGC) (tRNA-Ala-TGC-1 1 to 3)
+URS0000765F49_511145	2930	1.0000	+	225750	228679	Escherichia coli str. K-12 substr. MG1655 bacterial LSU rRNA
+URS0000049E57_511145	120	1.0000	+	228756	228875	5S ribosomal RNA from Escherichia coli str. K-12 substr. MG1655 (PDB 7BL5, chain B)
+URS000009EE82_511145	77	1.0000	+	228928	229004	Escherichia coli str. K-12 substr. MG1655 tRNA-Asp (GTC) (tRNA-Asp-GTC-1 1 to 3)
+URS0000AB7D18_83333	78	1.0000	+	244132	244209	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS0000ABD407_83333	78	1.0000	+	247461	247538	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS0000ABCB74_83333	78	1.0000	+	248203	248280	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS000022C879_511145	76	1.0000	+	262871	262946	Escherichia coli str. K-12 substr. MG1655 tRNA-Thr (CGT) (tRNA-Thr-CGT-1-1)
+URS00002C0E5F_511145	75	1.0000	+	272580	272654	Escherichia coli str. K-12 substr. MG1655 small RNA EyeA
+URS00004761D3_511145	77	1.0000	+	297178	297254	Escherichia coli str. K-12 substr. MG1655 tRNA-Thr
+URS000065505D_83333	200	1.0000	+	303611	303810	Escherichia coli K-12 IS009
+URS0000AB8461_83333	70	1.0000	-	339811	339880	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS0000AB4F6F_83333	70	1.0000	-	339904	339973	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS0000AB47A3_83333	72	1.0000	+	349752	349823	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS0000AB9CE8_83333	77	1.0000	+	354690	354766	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS0000AB7608_83333	78	1.0000	-	374984	375061	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS0000AB4BD4_83333	78	1.0000	-	375085	375162	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS0000AB77D3_83333	78	1.0000	+	375085	375162	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS0000AB6204_83333	78	1.0000	+	375186	375263	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS0000AB2B0A_83333	78	1.0000	-	375186	375263	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS0000AB21EC_83333	76	1.0000	-	375287	375362	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS0000AB6B0E_83333	78	1.0000	+	377391	377468	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS0000AB6266_83333	80	1.0000	+	411134	411213	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS00001E4BD3_511145	96	1.0000	-	458721	458816	Escherichia coli str. K-12 substr. MG1655 sraA
+URS000000FCE2_511145	118	1.0000	+	476448	476565	Escherichia coli str. K-12 substr. MG1655 signal recognition particle RNA
+URS0000AB27B2_83333	78	1.0000	+	501447	501524	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS00004CBB1A_511145	84	1.0000	+	507204	507287	Escherichia coli str. K-12 substr. MG1655 sroB RNA
+URS0000AB8476_83333	78	1.0000	+	508585	508662	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS0000ABB848_83333	78	1.0000	-	508585	508662	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS0000ABA5C5_83333	78	1.0000	+	508686	508763	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS0000AB4E0F_83333	78	1.0000	-	508686	508763	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS000264CAF9_511145	235	1.0000	+	533629	533863	Escherichia coli str. K-12 substr. MG1655 small RNA AllZ
+URS000068CACC_83333	67	1.0000	+	543188	543254	Escherichia coli K-12 Enterobacterial sRNA STnc480
+URS00003199EC_511145	77	1.0000	+	564723	564799	Escherichia coli str. K-12 substr. MG1655 tRNA-Arg (TCT) (tRNA-Arg-TCT-1-1)
+URS0000700CD4_83333	199	1.0000	+	581856	582054	Escherichia coli K-12 IS009
+URS0000A624A5_83333	156	1.0000	+	607689	607844	Escherichia coli K-12 sok antitoxin (CssrC)
+URS000265C624_511145	60	1.0000	-	607733	607792	Escherichia coli str. K-12 substr. MG1655 small RNA SokE
+URS00006A1E14_83333	94	1.0000	+	638707	638800	Escherichia coli K-12 Enterobacterial sRNA STnc70
+URS00027E36FA_83333	443	1.0000	+	657107	657549	Escherichia coli K-12 cspA thermoregulator
+URS0000543C9D_511145	163	1.0000	-	686681	686843	Escherichia coli str. K-12 substr. MG1655 small regulatory RNA SroC
+URS00004FF598_511145	75	1.0000	-	696430	696504	Escherichia coli str. K-12 substr. MG1655 tRNA-Gln (CTG) (tRNA-Gln-CTG-1-1, tRNA-Gln-CTG-1-2)
+URS0000093D11_511145	77	1.0000	-	696664	696740	Escherichia coli str. K-12 substr. MG1655 tRNA-Met (CAT) (tRNA-Met-CAT-1-1, tRNA-Met-CAT-1-2)
+URS000059276A_511145	75	1.0000	-	696756	696830	Escherichia coli str. K-12 substr. MG1655 tRNA-Gln (TTG) (tRNA-Gln-TTG-1-1, tRNA-Gln-TTG-1-2)
+URS0000036214_511145	85	1.0000	-	696963	697047	Escherichia coli str. K-12 substr. MG1655 tRNA-Leu (TAG) (tRNA-Leu-TAG-1-1)
+URS000265CBB6_511145	98	1.0000	+	708236	708333	Escherichia coli str. K-12 substr. MG1655 small regulatory RNA ChiZ
+URS0000AB7F4B_83333	71	1.0000	-	758412	758482	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS0000AB274A_83333	72	1.0000	+	762854	762925	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS00004FED7A_511145	101	1.0000	+	765050	765150	Escherichia coli str. K-12 substr. MG1655 small regulatory RNA SdhX
+URS0000DABEEB_83333	139	1.0000	+	779489	779627	Escherichia coli K-12 CpoB/ybgF ICR thermometer
+URS00009F2FCD_511145	169	1.0000	+	780561	780729	Escherichia coli str. K-12 substr. MG1655 RtT sRNA
+URS000009F4BF_511145	76	1.0000	+	780765	780840	Escherichia coli str. K-12 substr. MG1655 tRNA-Val (TAC) (tRNA-Val-TAC-1 1 to 5)
+URS0000A4DB93_511145	167	1.0000	+	780850	781016	Escherichia coli str. K-12 substr. MG1655 RtT sRNA
+URS0000A6E2EE_511145	167	1.0000	+	781154	781320	Escherichia coli str. K-12 substr. MG1655 RtT sRNA
+URS0000A4CDB5_511145	168	1.0000	+	781376	781543	Escherichia coli str. K-12 substr. MG1655 RtT sRNA
+URS0000747A72_511145	126	1.0000	+	781683	781808	Escherichia coli str. K-12 substr. MG1655 RtT sRNA
+URS0000ABA9CB_83333	71	1.0000	+	805859	805929	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS0000A5F9D7_511145	145	1.0000	+	816912	817056	Escherichia coli str. K-12 substr. MG1655 Molybdenum/Tungsten riboswitch aptamer (Moco RNA motif)
+URS000263913F_511145	97	1.0000	-	837435	837531	Escherichia coli str. K-12 substr. MG1655 small regulatory RNA ZbiJ
+URS0000AB7A38_83333	71	1.0000	-	837588	837658	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS0000E1F7EC_511145	340	1.0000	-	852725	853064	Escherichia coli str. K-12 substr. MG1655 small RNA RybA
+URS00007D8C9D_511145	81	1.0000	-	887977	888057	Escherichia coli str. K-12 substr. MG1655 small regulatory RNA RybB
+URS0000AB44D4_83333	81	1.0000	+	900752	900832	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS000028467F_511145	88	1.0000	-	925884	925971	Escherichia coli str. K-12 substr. MG1655 tRNA-Ser (GGA) (tRNA-Ser-GGA-1-1, tRNA-Ser-GGA-1-2)
+URS00006B944E_83333	135	1.0000	-	940734	940868	Escherichia coli K-12 Enterobacteria sRNA STnc130
+URS00004813B8_511145	88	1.0000	-	1031625	1031712	Escherichia coli str. K-12 substr. MG1655 tRNA-Ser (TGA) (tRNA-Ser-TGA-1-1)
+URS0000CF7FB8_83333	423	1.0000	+	1051305	1051727	Escherichia coli K-12 cspA thermoregulator
+URS0000AB5CF1_83333	79	1.0000	-	1062410	1062488	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS0000D8A86A_83333	194	1.0000	-	1085858	1086051	Escherichia coli K-12 Yersinia sRNA 251
+URS000041E154_511145	137	1.0000	-	1097203	1097339	Escherichia coli str. K-12 substr. MG1655 RtT sRNA
+URS0000C2386E_511145	92	1.0000	-	1103252	1103343	Escherichia coli str. K-12 substr. MG1655 ES056 sRNA
+URS0002663040_511145	78	1.0000	+	1140986	1141063	Escherichia coli str. K-12 substr. MG1655 small RNA FlgO
+URS000043222F_511145	169	1.0000	+	1146589	1146757	Escherichia coli str. K-12 substr. MG1655 small RNA SraB
+URS0002675742_511145	100	1.0000	+	1169303	1169402	Escherichia coli str. K-12 substr. MG1655 small RNA BhsB
+URS0003048C17_511145	344	1.0000	+	1190165	1190508	Escherichia coli str. K-12 substr. MG1655 small antisense RNA AsphoP
+URS000266C613_511145	72	1.0000	+	1196711	1196782	Escherichia coli str. K-12 substr. MG1655 small regulatory RNA C0293
+URS000061AD0F_83333	79	1.0000	+	1230629	1230707	Escherichia coli K-12 C0299 RNA
+URS00000C43A8_511145	67	1.0000	+	1269323	1269389	Escherichia coli str. K-12 substr. MG1655 putative antisense regulatory RNA RdlA
+URS00005CE4AE_511145	66	1.0000	+	1269858	1269923	Escherichia coli str. K-12 substr. MG1655 rdlD antitoxin
+URS0000110525_511145	68	1.0000	+	1270393	1270460	Escherichia coli str. K-12 substr. MG1655 putative antisense regulatory RNA RdlC
+URS00026342BE_511145	184	1.0000	+	1279337	1279520	Escherichia coli str. K-12 substr. MG1655 putative small regulatory RNA NarS
+URS000022D7D8_511145	132	1.0000	-	1286710	1286841	Escherichia coli str. K-12 substr. MG1655 RtT sRNA
+URS000073889B_511145	132	1.0000	-	1286888	1287019	Escherichia coli str. K-12 substr. MG1655 RtT sRNA
+URS00000A1F7C_511145	171	1.0000	-	1287066	1287236	Escherichia coli str. K-12 substr. MG1655 small RNA RttR
+URS00002D9DE2_511145	85	1.0000	-	1287244	1287328	Escherichia coli str. K-12 substr. MG1655 tRNA-Tyr (GTA) (tRNA-Tyr-GTA-2-1, tRNA-Tyr-GTA-2-2)
+URS00007423BD_511145	132	1.0000	-	1287363	1287494	Escherichia coli str. K-12 substr. MG1655 RtT sRNA
+URS000067BEF6_83333	203	1.0000	+	1335499	1335701	Escherichia coli K-12 Enterobacterial sRNA STnc180
+URS00005DEC86_83333	96	1.0000	-	1405656	1405751	Escherichia coli K-12 McaS/IsrA RNA
+URS0000342D25_511145	122	1.0000	+	1409129	1409250	Escherichia coli str. K-12 substr. MG1655 small regulatory RNA FnrS
+URS0000C1DE43_511145	179	1.0000	+	1413556	1413734	Escherichia coli str. K-12 substr. MG1655 small regulatory RNA antitoxin RalA
+URS00026706F5_511145	98	1.0000	-	1418405	1418502	Escherichia coli str. K-12 substr. MG1655 small RNA KilS
+URS00006B9CC6_83333	199	1.0000	+	1432754	1432952	Escherichia coli K-12 IS009
+URS00006328D8_83333	121	1.0000	+	1437118	1437238	Escherichia coli K-12 MicC RNA
+URS000227608B_511145	65	1.0000	-	1491442	1491506	Escherichia coli str. K-12 substr. MG1655 small regulatory RNA RydC
+URS0000625B83_83333	152	1.0000	-	1492066	1492217	Escherichia coli K-12 sok antitoxin (CssrC)
+URS00006B0E17_83333	214	1.0000	-	1622735	1622948	Escherichia coli K-12 STnc560 Hfq binding RNA
+URS0000D861E2_83333	386	1.0000	-	1638428	1638813	Escherichia coli K-12 cspA thermoregulator
+URS0000DAF320_83333	393	1.0000	-	1641323	1641715	Escherichia coli K-12 cspA thermoregulator
+URS0000696027_83333	391	1.0000	-	1737453	1737843	Escherichia coli K-12 Enterobacterial sRNA STnc550
+URS00002D98B8_511145	77	1.0000	+	1746435	1746511	Escherichia coli str. K-12 substr. MG1655 tRNA-Val (GAC) (tRNA-Val-GAC-2-1)
+URS000052A6C3_511145	77	1.0000	+	1746516	1746592	Escherichia coli str. K-12 substr. MG1655 tRNA-Val (GAC) (tRNA-Val-GAC-1-1)
+URS000034CDF1_83333	163	1.0000	-	1746554	1746716	Escherichia coli K-12 Bacterial antisense RNA HPnc0260
+URS00004E6E67_511145	68	1.0000	-	1764713	1764780	Escherichia coli str. K-12 substr. MG1655 small regulatory RNA RydB
+URS000039A860_511145	108	1.0000	+	1770372	1770479	Escherichia coli str. K-12 substr. MG1655 RprA RNA
+URS00000ED6EE_83333	159	1.0000	-	1795153	1795311	Escherichia coli K-12 Enterobacterial sRNA STnc540
+URS000053ACE7_83333	86	1.0000	-	1888017	1888102	Escherichia coli K-12 sroD RNA
+URS0000CD8CB8_83333	461	1.0000	-	1907151	1907611	Escherichia coli K-12 cspA thermoregulator
+URS000224242A_511145	272	1.0000	+	1923066	1923337	Escherichia coli str. K-12 substr. MG1655 small antisense RNA RyeA
+URS00000E680F_83333	121	1.0000	-	1923164	1923284	Escherichia coli K-12 novel sRNA, function unknown
+URS0000AB68F4_511145	308	1.0000	-	1958441	1958748	Escherichia coli str. K-12 substr. MG1655 MicL sRNA
+URS00001AA27A_83333	78	1.0000	+	1972739	1972816	Escherichia coli K-12 C0465 RNA
+URS0002656467_511145	95	1.0000	-	1977208	1977302	Escherichia coli str. K-12 substr. MG1655 small RNA MotR
+URS0002FCA473_511145	220	1.0000	+	1978176	1978395	Escherichia coli str. K-12 substr. MG1655 small antisense RNA AsflhD
+URS0002FBD9DF_511145	159	1.0000	-	1987843	1988001	Escherichia coli str. K-12 substr. MG1655 small regulatory RNA AzuR
+URS0002256B09_511145	67	1.0000	-	1991748	1991814	Escherichia coli str. K-12 substr. MG1655 small regulatory RNA 3'ETSleuZ
+URS00005ABD4E_511145	87	1.0000	-	1991815	1991901	Escherichia coli str. K-12 substr. MG1655 tRNA-Leu (TAA) (tRNA-Leu-TAA-1-1)
+URS000003E908_511145	74	1.0000	-	1991914	1991987	Escherichia coli str. K-12 substr. MG1655 tRNA-Cys (GCA) (tRNA-Cys-GCA-1-1)
+URS0000E41A9E_511145	137	1.0000	+	1996921	1997057	Escherichia coli str. K-12 substr. MG1655 small regulatory RNA SdsN
+URS000266353B_511145	195	1.0000	-	2001912	2002106	Escherichia coli str. K-12 substr. MG1655 small RNA FliX
+URS0002250E5A_511145	91	1.0000	-	2025223	2025313	Escherichia coli str. K-12 substr. MG1655 small regulatory RNA DsrA
+URS000023473E_511145	91	1.0000	+	2033649	2033739	Escherichia coli str. K-12 substr. MG1655 small regulatory RNA RseX
+URS000000BB03_511145	90	1.0000	-	2043468	2043557	Escherichia coli str. K-12 substr. MG1655 tRNA-Ser (CGA) (tRNA-Ser-CGA-1-1)
+URS000008CEF9_511145	76	1.0000	+	2044549	2044624	Escherichia coli str. K-12 substr. MG1655 tRNA-Asn (GTT) (tRNA-Asn-GTT-1 1 to 4)
+URS0000460FC7_83333	204	1.0000	+	2071315	2071518	Escherichia coli K-12 IS102 RNA
+URS00006DA5E8_83333	75	1.0000	-	2087209	2087283	Escherichia coli K-12 Enterobacterial sRNA STnc240
+URS0000AB32EF_83333	71	1.0000	+	2118524	2118594	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS00004E5F89_511145	149	1.0000	+	2153275	2153423	Escherichia coli str. K-12 substr. MG1655 QUAD RNA
+URS000040613E_511145	143	1.0000	+	2153610	2153752	Escherichia coli str. K-12 substr. MG1655 Short Intergenic Abundant RNA
+URS000049BE4B_511145	87	1.0000	+	2167114	2167200	Escherichia coli str. K-12 substr. MG1655 small regulatory RNA CyaR
+URS0000ABB7E7_83333	71	1.0000	-	2177411	2177481	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS000039E69D_83333	97	1.0000	-	2185336	2185432	Escherichia coli K-12 TPP riboswitch aptamer (THI element)
+URS00006DA791_83333	76	1.0000	+	2204409	2204484	Escherichia coli K-12 OrzO-P RNA antitoxin family
+URS0000AB43B1_83333	78	1.0000	-	2236603	2236680	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS000034D020_511145	77	1.0000	+	2286211	2286287	Escherichia coli str. K-12 substr. MG1655 tRNA-Pro (GGG) (tRNA-Pro-GGG-1-1)
+URS0000ABD328_83333	84	1.0000	+	2304420	2304503	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS0000ABA4F3_83333	84	1.0000	+	2304646	2304729	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS0000AB74B3_83333	84	1.0000	+	2304759	2304842	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS0000AB9FFD_83333	83	1.0000	+	2304985	2305067	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS00001160B1_83333	94	1.0000	+	2313083	2313176	Escherichia coli K-12 MicF RNA
+URS0000AB8C16_83333	77	1.0000	-	2316837	2316913	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS0000AB6377_83333	77	1.0000	-	2316951	2317027	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS0000ABBDC6_83333	71	1.0000	-	2347207	2347277	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS00002362FE_511145	75	1.0000	+	2466309	2466383	Escherichia coli str. K-12 substr. MG1655 tRNA-Arg (CCT) (tRNA-Arg-CCT-1-1)
+URS00001C39A4_511145	76	1.0000	-	2518041	2518116	Escherichia coli str. K-12 substr. MG1655 tRNA-Ala (GGC) (tRNA-Ala-GGC-1-1, tRNA-Ala-GGC-1-2)
+URS0000749E52_511145	126	1.0000	+	2521359	2521484	Escherichia coli str. K-12 substr. MG1655 RtT sRNA
+URS0000AB56D3_83333	82	1.0000	-	2568188	2568269	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS0000AB3A04_83333	77	1.0000	+	2592981	2593057	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS0000ABA73A_83333	77	1.0000	-	2592981	2593057	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS00005E2A61_511145	92	1.0000	-	2640595	2640686	Escherichia coli str. K-12 substr. MG1655 small RNA SroE
+URS0002672B23_511145	100	1.0000	-	2653356	2653455	Escherichia coli str. K-12 substr. MG1655 putative small regulatory RNA TimR
+URS00006296AF_83333	209	1.0000	+	2653515	2653723	Escherichia coli K-12 IS128 RNA
+URS000006C687_511145	304	1.0000	+	2653855	2654158	Escherichia coli str. K-12 substr. MG1655 small regulatory RNA RyfA
+URS0000AB61FF_83333	72	1.0000	-	2662359	2662430	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS00000CEE0E_511145	184	1.0000	-	2691157	2691340	Escherichia coli str. K-12 substr. MG1655 small regulatory RNA GlmY
+URS0002226FC1_511145	79	1.0000	+	2700520	2700598	Escherichia coli str. K-12 substr. MG1655 small regulatory RNA OhsC
+URS0000C197C3_83333	832	1.0000	+	2707006	2707837	Escherichia coli K-12 antisense RNA of rseC mRNA
+URS00006A201E_83333	100	1.0000	-	2729192	2729291	Escherichia coli K-12 Salmonella enterica Typhi npcRNA 44
+URS00007EA5C9_511145	1556	1.0000	-	2729604	2731159	Escherichia coli str. K-12 substr. MG1655 bacterial SSU rRNA
+URS000004AE9D_511145	143	1.0000	-	2734153	2734295	Escherichia coli str. K-12 substr. MG1655 small regulatory RNA RyfD
+URS000263765F_511145	162	1.0000	+	2737381	2737542	Escherichia coli str. K-12 substr. MG1655 small RNA RaiZ
+URS000037602E_511145	363	1.0000	+	2755593	2755955	Escherichia coli str. K-12 substr. MG1655 transfer-messenger RNA
+URS000053D33E_511145	76	1.0000	-	2785762	2785837	Escherichia coli str. K-12 substr. MG1655 tRNA-Ile2 (CAT) (tRNA-Ile2-CAT-2-1)
+URS0000AB702B_83333	78	1.0000	+	2808134	2808211	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS00003792EA_83333	78	1.0000	+	2814802	2814879	Escherichia coli K-12 sRNA antisense regulator of ompA, lamB, ompX, and phoP; Hfq-dependent
+URS000279FDFA_83333	78	1.0000	+	2817783	2817860	Escherichia coli K-12 tRNA-Arg
+URS0000349C05_511145	77	1.0000	-	2817784	2817860	Escherichia coli str. K-12 substr. MG1655 tRNA-Arg (ACG) (tRNA-Arg-ACG-1 1 to 4)
+URS000085CAAA_511145	72	1.0000	+	2818458	2818529	Escherichia coli str. K-12 substr. MG1655 tRNA-Arg
+URS000016F1C4_511145	93	1.0000	-	2818553	2818645	Escherichia coli str. K-12 substr. MG1655 tRNA-Ser (GCT) (tRNA-Ser-GCT-1-1)
+URS000080E26F_511145	61	1.0000	-	2878260	2878320	crRNA from Escherichia coli str. K-12 substr. MG1655 (PDB 4U7U, chain X)
+URS00027DE1FF_83333	157	1.0000	-	2887299	2887455	Escherichia coli K-12 sok antitoxin (CssrC)
+URS0002FE0357_511145	400	1.0000	+	2911051	2911450	Escherichia coli str. K-12 substr. MG1655 small antisense RNA aMEF
+URS00005D28D8_511145	369	1.0000	-	2924156	2924524	Escherichia coli str. K-12 substr. MG1655 small regulatory RNA CsrB
+URS0000257340_511145	206	1.0000	+	2942696	2942901	Escherichia coli str. K-12 substr. MG1655 GcvB RNA
+URS000041AF00_511145	77	1.0000	+	2947387	2947463	Escherichia coli str. K-12 substr. MG1655 tRNA-fMet (CAT) (tRNA-fMet-CAT-1 1 to 3)
+URS00003A4668_511145	88	1.0000	-	2976102	2976189	Escherichia coli str. K-12 substr. MG1655 OmrA-B family
+URS0000528960_511145	82	1.0000	-	2976304	2976385	Escherichia coli str. K-12 substr. MG1655 small regulatory RNA OmrB
+URS00003845FE_511145	74	1.0000	-	2998984	2999057	Escherichia coli str. K-12 substr. MG1655 tRNA-Gly (CCC) (tRNA-Gly-CCC-1-1)
+URS0000ABA542_83333	78	1.0000	+	3042395	3042472	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS00003146CE_511145	184	1.0000	+	3055983	3056166	Escherichia coli str. K-12 substr. MG1655 6S RNA
+URS00004F2222_511145	151	1.0000	+	3056815	3056965	Escherichia coli str. K-12 substr. MG1655 Short Intergenic Abundant RNA
+URS0000AB91E6_83333	71	1.0000	-	3098464	3098534	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS00005AA258_511145	76	1.0000	+	3110366	3110441	Escherichia coli str. K-12 substr. MG1655 tRNA-Phe (GAA) (tRNA-Phe-GAA-1-1, tRNA-Phe-GAA-1-2)
+URS000039B80D_83333	222	1.0000	+	3121358	3121579	Escherichia coli K-12 C0719 RNA
+URS0000AB91A0_83333	77	1.0000	-	3139624	3139700	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS0000AB5276_83333	77	1.0000	+	3139624	3139700	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS0000AB948F_83333	71	1.0000	-	3150670	3150740	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS0000BFE3CA_511145	64	1.0000	+	3156521	3156584	Escherichia coli str. K-12 substr. MG1655 ES173 sRNA
+URS00003876AA_83333	149	1.0000	-	3184570	3184718	Escherichia coli K-12 FMN riboswitch aptamer (RFN element)
+URS000009B1F3_511145	150	1.0000	-	3194751	3194900	Escherichia coli str. K-12 substr. MG1655 QUAD RNA
+URS00002B6EFE_511145	150	1.0000	-	3195126	3195275	Escherichia coli str. K-12 substr. MG1655 Short Intergenic Abundant RNA
+URS0000AB91F4_83333	71	1.0000	-	3203195	3203265	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS00004CF2CF_511145	76	1.0000	+	3215598	3215673	Escherichia coli str. K-12 substr. MG1655 tRNA-Ile2 (CAT) (tRNA-Ile2-CAT-1-1)
+URS0000AB7C4C_83333	82	1.0000	-	3231301	3231382	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS0000ABB645_83333	82	1.0000	-	3231401	3231482	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS00004BB8BB_511145	377	1.0000	-	3270216	3270592	Escherichia coli str. K-12 substr. MG1655 M1 RNA component of ribonuclease P
+URS0000E260A0_511145	216	1.0000	+	3311183	3311398	Escherichia coli str. K-12 substr. MG1655 small regulatory RNA SraG
+URS0000AB889E_83333	71	1.0000	-	3313255	3313325	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS00001BBAFC_511145	77	1.0000	-	3318213	3318289	Escherichia coli str. K-12 substr. MG1655 tRNA-fMet (CAT) (tRNA-fMet-CAT-2-1)
+URS00004630EA_511145	87	1.0000	-	3322072	3322158	Escherichia coli str. K-12 substr. MG1655 tRNA-Leu (GAG) (tRNA-Leu-GAG-1-1)
+URS0000095EB9_511145	121	1.0000	+	3350577	3350697	Escherichia coli str. K-12 substr. MG1655 small regulatory RNA ArcZ
+URS0000AB5767_83333	70	1.0000	-	3392129	3392198	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS0000ABAC3B_83333	70	1.0000	-	3392220	3392289	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS0000AB56B0_83333	70	1.0000	-	3392311	3392380	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS00002EF523_511145	120	1.0000	-	3423423	3423542	Escherichia coli str. K-12 substr. MG1655 5S ribosomal RNA
+URS000059024D_511145	76	1.0000	-	3423580	3423655	Escherichia coli str. K-12 substr. MG1655 tRNA-Thr (GGT) (tRNA-Thr-GGT-2-1)
+URS0000785A58_511145	2930	1.0000	-	3423863	3426792	Escherichia coli str. K-12 substr. MG1655 bacterial LSU rRNA
+URS00007F3375_511145	1556	1.0000	-	3427209	3428764	Escherichia coli str. K-12 substr. MG1655 bacterial SSU rRNA
+URS00030425B8_511145	279	1.0000	-	3485953	3486231	Escherichia coli str. K-12 substr. MG1655 small antisense RNA AsCRP
+URS000304FF89_511145	338	1.0000	+	3536438	3536775	Escherichia coli str. K-12 substr. MG1655 small antisense RNA AsompR
+URS00021F9E36_511145	95	1.0000	-	3580922	3581016	Escherichia coli str. K-12 substr. MG1655 small regulatory RNA RyhB
+URS00004EEEA9_511145	84	1.0000	+	3648063	3648146	Escherichia coli str. K-12 substr. MG1655 small RNA AgrA
+URS0000030651_511145	84	1.0000	+	3648294	3648377	Escherichia coli str. K-12 substr. MG1655 small RNA AgrB
+URS000224D8F6_511145	70	1.0000	-	3657985	3658054	Escherichia coli str. K-12 substr. MG1655 small regulatory RNA ArrS
+URS0000E214F7_511145	91	1.0000	+	3658992	3659082	Escherichia coli str. K-12 substr. MG1655 small regulatory RNA GadF
+URS00003AB795_83333	114	1.0000	+	3664861	3664974	Escherichia coli K-12 GadY
+URS0000812B3F_83333	66	1.0000	+	3700137	3700202	Escherichia coli K-12 sRNA antisense regulator affects LdrD translation; proposed addiction module in LDR-D repeat, with toxic peptide LdrD
+URS0000ABBDFE_83333	80	1.0000	+	3708275	3708354	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS0000751DAA_511145	134	1.0000	-	3708448	3708581	Escherichia coli str. K-12 substr. MG1655 RtT sRNA
+URS00001DEEBE_511145	77	1.0000	-	3708616	3708692	Escherichia coli str. K-12 substr. MG1655 tRNA-Pro (CGG) (tRNA-Pro-CGG-1-1)
+URS0000A328BB_83333	428	1.0000	+	3719889	3720316	Escherichia coli K-12 cspA thermoregulator
+URS00027DCBED_83333	140	1.0000	-	3722015	3722154	Escherichia coli K-12 sok antitoxin (CssrC)
+URS00026786ED_511145	160	1.0000	-	3729386	3729545	Escherichia coli str. K-12 substr. MG1655 small RNA XylZ
+URS000224849F_511145	73	1.0000	-	3808166	3808238	Escherichia coli str. K-12 substr. MG1655 small regulatory RNA RirA
+URS00002F9CDD_511145	95	1.0000	+	3836222	3836316	Escherichia coli str. K-12 substr. MG1655 tRNA-SeC (TCA) (tRNA-SeC-TCA-1-1)
+URS000267C0F7_511145	266	1.0000	-	3845730	3845995	Escherichia coli str. K-12 substr. MG1655 small RNA UhpU
+URS000035CA9A_511145	140	1.0000	-	3853118	3853257	Escherichia coli str. K-12 substr. MG1655 small RNA IstR-2
+URS0000A595A8_83333	73	1.0000	-	3867416	3867488	Escherichia coli K-12 Repression of heat shock gene expression (ROSE) element
+URS0000ABA331_83333	81	1.0000	+	3883139	3883219	Escherichia coli K-12 antisense RNA of dnaA mRNA
+URS000071BBB7_83333	158	1.0000	+	3915284	3915441	Escherichia coli K-12 Enterobacterial sRNA STnc410
+URS00026504E8_511145	234	1.0000	+	3937045	3937278	Escherichia coli str. K-12 substr. MG1655 small regulatory RNA RbsZ
+URS0000801AEA_511145	1556	1.0000	+	3941806	3943361	Escherichia coli str. K-12 substr. MG1655 bacterial SSU rRNA
+URS0000A3D3A0_83333	332	1.0000	+	3943363	3943694	Escherichia coli K-12 tRNA-Ala
+URS0000763AE7_511145	2925	1.0000	+	3943695	3946619	Escherichia coli str. K-12 substr. MG1655 bacterial LSU rRNA
+URS00003A6DC6_511145	76	1.0000	+	3946957	3947032	Escherichia coli str. K-12 substr. MG1655 tRNA-Trp (CCA) (tRNA-Trp-CCA-1-1)
+URS0000D94129_83333	100	1.0000	+	3965691	3965790	Escherichia coli K-12 TrxA 5' UTR thermometer
+URS00004A5A0D_511145	77	1.0000	+	3982375	3982451	Escherichia coli str. K-12 substr. MG1655 tRNA-Arg (CCG) (tRNA-Arg-CCG-1-1)
+URS0000464C94_511145	77	1.0000	+	3982509	3982585	Escherichia coli str. K-12 substr. MG1655 tRNA-His
+URS00005E3C63_511145	87	1.0000	+	3982606	3982692	Escherichia coli str. K-12 substr. MG1655 tRNA-Leu (CAG) (tRNA-Leu-CAG-1 1 to 3)
+URS00002E063F_511145	77	1.0000	+	3982735	3982811	Escherichia coli str. K-12 substr. MG1655 tRNA-Pro (TGG) (tRNA-Pro-TGG-1-1)
+URS00004E002C_511145	207	1.0000	+	3986432	3986638	Escherichia coli str. K-12 substr. MG1655 GlmZ RNA activator of glmS mRNA
+URS00002FCE60_511145	252	1.0000	+	4019978	4020229	Escherichia coli str. K-12 substr. MG1655 Erse small RNA
+URS0000AB240B_83333	78	1.0000	+	4027375	4027452	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS0000AB594D_83333	78	1.0000	+	4027473	4027550	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS0000806753_511145	1556	1.0000	+	4035529	4037084	Escherichia coli str. K-12 substr. MG1655 bacterial SSU rRNA
+URS0000821D7F_83333	76	1.0000	+	4037301	4037376	Escherichia coli K-12 tRNA-Ala
+URS000077EFF8_511145	2932	1.0000	+	4037510	4040441	Escherichia coli str. K-12 substr. MG1655 bacterial LSU rRNA
+URS00002150CD_511145	120	1.0000	+	4040517	4040636	Escherichia coli str. K-12 substr. MG1655 5S ribosomal RNA
+URS0000165C8D_83333	119	1.0000	+	4049889	4050007	Escherichia coli K-12 Spot 42 RNA
+URS00005E5D9E_83333	254	1.0000	+	4051036	4051289	Escherichia coli K-12 CsrC RNA family
+URS0000ABAD4F_83333	78	1.0000	+	4053533	4053610	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS0003046ECD_511145	194	1.0000	-	4056428	4056621	Escherichia coli str. K-12 substr. MG1655 small regulatory RNA GlnZ
+URS0000C4524A_511145	108	1.0000	+	4058218	4058325	Escherichia coli str. K-12 substr. MG1655 ES222 sRNA
+URS00006EC0FB_83333	69	1.0000	+	4060215	4060283	Escherichia coli K-12 Enterobacterial sRNA STnc370
+URS0000ABCA31_83333	71	1.0000	+	4094319	4094389	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS0000AB5988_83333	71	1.0000	+	4094411	4094481	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS0000ABBF7E_83333	71	1.0000	+	4094503	4094573	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS0000AB9C6F_83333	78	1.0000	-	4103510	4103587	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS0002228A3B_511145	117	1.0000	-	4158278	4158394	Escherichia coli str. K-12 substr. MG1655 small regulatory RNA OxyS
+URS000231606D_83333	190	1.0000	+	4163384	4163573	Escherichia coli K-12 Cobalamin riboswitch aptamer
+URS00007C4D9F_511145	1556	1.0000	+	4166657	4168212	Escherichia coli str. K-12 substr. MG1655 bacterial SSU rRNA
+URS0000786A27_511145	2930	1.0000	+	4168632	4171561	Escherichia coli str. K-12 substr. MG1655 bacterial LSU rRNA
+URS00005C6868_511145	120	1.0000	+	4171637	4171756	Escherichia coli str. K-12 substr. MG1655 5S ribosomal RNA
+URS00003A295A_511145	76	1.0000	+	4175388	4175463	Escherichia coli str. K-12 substr. MG1655 tRNA-Thr (TGT) (tRNA-Thr-TGT-1-1)
+URS00004C383B_511145	85	1.0000	+	4175472	4175556	Escherichia coli str. K-12 substr. MG1655 tRNA-Tyr (GTA) (tRNA-Tyr-GTA-1-1)
+URS00004CF48A_511145	75	1.0000	+	4175673	4175747	Escherichia coli str. K-12 substr. MG1655 tRNA-Gly (TCC) (tRNA-Gly-TCC-1-1)
+URS00005B2D1B_511145	76	1.0000	+	4175754	4175829	Escherichia coli str. K-12 substr. MG1655 tRNA-Thr (GGT) (tRNA-Thr-GGT-1-1)
+URS00003A8C6B_511145	62	1.0000	+	4180930	4180991	Escherichia coli str. K-12 substr. MG1655 Pseudomonas sRNA P26
+URS00005C8E9E_511145	161	1.0000	-	4190327	4190487	Escherichia coli str. K-12 substr. MG1655 sroH RNA
+URS00003982CB_83333	101	1.0000	-	4196180	4196280	Escherichia coli K-12 TPP riboswitch aptamer (THI element)
+URS00007708FB_511145	2931	1.0000	+	4210034	4212964	Escherichia coli str. K-12 substr. MG1655 bacterial LSU rRNA
+URS0000ABB901_83333	78	1.0000	+	4218439	4218516	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS0002670974_511145	85	1.0000	+	4218879	4218963	Escherichia coli str. K-12 substr. MG1655 small RNA AceK-int
+URS00001855A3_511145	197	1.0000	-	4233325	4233521	Escherichia coli str. K-12 substr. MG1655 Lysine riboswitch aptamer
+URS0000ABB289_83333	71	1.0000	+	4235424	4235494	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS00006E02FD_83333	150	1.0000	-	4235560	4235709	Escherichia coli K-12 Enterobacterial sRNA STnc430
+URS0002645F4F_511145	103	1.0000	-	4242531	4242633	Escherichia coli str. K-12 substr. MG1655 small regulatory RNA MalH
+URS0000AB9891_83333	71	1.0000	+	4245095	4245165	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS0000AB98DB_83333	71	1.0000	+	4249324	4249394	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS0002274096_511145	111	1.0000	+	4263139	4263249	Escherichia coli str. K-12 substr. MG1655 small regulatory RNA PspH
+URS0000265A50_511145	141	1.0000	-	4277926	4278066	Escherichia coli str. K-12 substr. MG1655 small RNA RyjA
+URS0000ABAFEC_83333	71	1.0000	+	4285305	4285375	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS0000AB632B_83333	71	1.0000	+	4295911	4295981	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS0000ABACB4_83333	71	1.0000	+	4296024	4296094	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS0000AB2EA9_83333	69	1.0000	+	4296363	4296431	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS0000AB86A5_83333	81	1.0000	+	4323249	4323329	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS0000AB3ACF_83333	77	1.0000	-	4325805	4325881	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS0000AB6F5E_83333	77	1.0000	-	4325905	4325981	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS0000AB5F40_83333	77	1.0000	-	4326005	4326081	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS0000ABB971_83333	77	1.0000	-	4326105	4326181	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS0000AB5A22_83333	77	1.0000	-	4326305	4326381	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS00006DB398_83333	166	1.0000	+	4332047	4332212	Escherichia coli K-12 Enterobacterial sRNA STnc630
+URS000081A41B_83333	76	1.0000	-	4362591	4362666	Escherichia coli K-12 tRNA-Phe
+URS000266DD02_511145	113	1.0000	-	4366839	4366951	Escherichia coli str. K-12 substr. MG1655 small regulatory RNA AspX
+URS00001ACE3E_511145	76	1.0000	+	4392360	4392435	Escherichia coli str. K-12 substr. MG1655 tRNA-Gly (GCC) (tRNA-Gly-GCC-1 1 to 4)
+URS00008293FB_83333	76	1.0000	+	4392512	4392587	Escherichia coli K-12 tRNA-Gly
+URS0000819BF2_83333	76	1.0000	+	4392623	4392698	Escherichia coli K-12 tRNA-Gly
+URS0000C7F615_511145	123	1.0000	+	4436566	4436688	Escherichia coli str. K-12 substr. MG1655 ES239 sRNA
+URS0000AB3E28_83333	79	1.0000	+	4450947	4451025	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS0000AB8A02_83333	78	1.0000	+	4457188	4457265	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS00003B72FE_83333	116	1.0000	+	4467416	4467531	Escherichia coli K-12 Magnesium riboswitch aptamer (Magnesium responsive RNA element)
+URS0000DA4AE7_83333	195	1.0000	+	4485199	4485393	Escherichia coli K-12 Yersinia sRNA 276
+URS0000181AEC_511145	85	1.0000	+	4496405	4496489	Escherichia coli str. K-12 substr. MG1655 tRNA-Leu (CAA) (tRNA-Leu-CAA-1-1)
+URS000004E377_511145	90	1.0000	+	4527977	4528066	Escherichia coli str. K-12 substr. MG1655 small RNA RyjB
+URS000020E66C_511145	77	1.0000	+	4579835	4579911	Escherichia coli str. K-12 substr. MG1655 small regulatory RNA antitoxin SymR
+URS000044A612_511145	87	1.0000	-	4606200	4606286	Escherichia coli str. K-12 substr. MG1655 tRNA-Leu (CAG) (tRNA-Leu-CAG-2-1)
+URS0000830706_83333	87	1.0000	-	4606355	4606441	Escherichia coli K-12 tRNA-Leu
+URS0000AB801B_83333	79	1.0000	+	4614260	4614338	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS0000ABB3EF_83333	79	1.0000	+	4614361	4614439	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS0000ABC57C_83333	79	1.0000	+	4614462	4614540	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS0000ABC701_83333	79	1.0000	+	4614563	4614641	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
+URS0000AB582B_83333	79	1.0000	+	4628698	4628776	Escherichia coli K-12 Nucleoid-associated noncoding RNA 4 (CssrE)
