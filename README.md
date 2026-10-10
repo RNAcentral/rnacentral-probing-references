@@ -156,6 +156,9 @@ nextflow run main.nf \
   -resume
 ```
 
+If `params/<dataset_id>-config.config` exists (process resources, which a params file
+cannot set), add `-c "${BASE}/rnacentral-probing-references/params/${DATASET_ID}-config.config"`.
+
 ## How the eukaryote GTF is filtered
 
 `scripts/filter_rnacentral_gff3.py`, in order:
