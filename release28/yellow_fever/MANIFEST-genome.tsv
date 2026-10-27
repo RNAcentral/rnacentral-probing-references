@@ -1,0 +1,4 @@
+datasets	strain	accession	record	record_len	identity	genome_start	genome_end	description
+rnastruct00075	17D	PX660172.1	PX660172.1	10862	1.0000	1	10862	genome
+rnastruct00105	Asibi	AY640589.1	AY640589.1	10862	1.0000	1	10862	genome
+rnastruct00106	Dakar	MN106242.1	MN106242.1	10784	1.0000	1	10784	genome

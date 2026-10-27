@@ -1,0 +1,184 @@
+record	record_len	identity	strand	genome_start	genome_end	description
+NC_000964.3	4215606	1.0000	+	1	4215606	genome
+URS000080A199_224308	1556	1.0000	+	9810	11365	Bacillus subtilis subsp. subtilis str. 168 bacterial SSU rRNA
+URS000046141D_224308	77	1.0000	+	11464	11540	Bacillus subtilis subsp. subtilis str. 168 tRNA-Ile (GAT) (tRNA-Ile-GAT-2-1, tRNA-Ile-GAT-2-2)
+URS00002F180C_224308	76	1.0000	+	11552	11627	Bacillus subtilis subsp. subtilis str. 168 tRNA-Ala (TGC) (tRNA-Ala-TGC-1 1 to 4)
+URS00007F11C6_224308	2933	1.0000	+	11708	14640	Bacillus subtilis subsp. subtilis str. 168 bacterial LSU rRNA
+URS0001CADAF5_224308	123	1.0000	+	14688	14810	pre-5S rRNA from Bacillus subtilis subsp. subtilis str. 168 (PDB 6TPQ, chain V)
+URS0000108E05_224308	213	1.0000	+	20611	20823	Bacillus subtilis subsp. subtilis str. 168 T-box riboswitch specific of serine tRNA ligase
+URS00002A5CE9_224308	93	1.0000	+	22292	22384	Bacillus subtilis subsp. subtilis str. 168 tRNA-Ser (TGA) (tRNA-Ser-TGA-2-1)
+URS00000B451D_224308	354	1.0000	+	26379	26732	Bacillus subtilis subsp. subtilis str. 168 small cytoplasmic RNA (scRNA, 4.5S RNA), signal recognition particle-like (SRP) component
+URS0000803107_224308	1555	1.0000	+	30279	31833	Bacillus subtilis subsp. subtilis str. 168 bacterial SSU rRNA
+URS00007FBD31_224308	2933	1.0000	+	32176	35108	Bacillus subtilis subsp. subtilis str. 168 bacterial LSU rRNA
+URS00006F7AF4_224308	67	1.0000	+	35164	35230	Bacillus subtilis subsp. subtilis str. 168 Bacillaceae-1 RNA
+URS00003357E2_224308	77	1.0000	+	70181	70257	Bacillus subtilis subsp. subtilis str. 168 tRNA-Met (CAT) (tRNA-Met-CAT-1-1, tRNA-Met-CAT-1-2)
+URS00007E1213_224308	76	1.0000	+	70266	70341	Bacillus subtilis subsp. subtilis str. 168 tRNA-Glu
+URS00007FC29C_224308	1555	1.0000	+	90536	92090	Bacillus subtilis subsp. subtilis str. 168 bacterial SSU rRNA
+URS0000775421_224308	2933	1.0000	+	92253	95185	Bacillus subtilis subsp. subtilis str. 168 bacterial LSU rRNA
+URS000006A7D4_224308	76	1.0000	+	95375	95450	Bacillus subtilis subsp. subtilis str. 168 tRNA-Val (TAC) (tRNA-Val-TAC-1 1 to 4)
+URS00003ABAA8_224308	76	1.0000	+	95455	95530	Bacillus subtilis subsp. subtilis str. 168 tRNA-Thr (TGT) (tRNA-Thr-TGT-1-1, tRNA-Thr-TGT-1-2)
+URS00000897EB_224308	76	1.0000	+	95567	95642	Bacillus subtilis subsp. subtilis str. 168 tRNA-Lys (TTT) (tRNA-Lys-TTT-1 1 to 4)
+URS000038D7EF_224308	83	1.0000	+	95649	95731	Bacillus subtilis subsp. subtilis str. 168 tRNA-Leu (TAG) (tRNA-Leu-TAG-2-1)
+URS00005115FB_224308	75	1.0000	+	95772	95846	Bacillus subtilis subsp. subtilis str. 168 tRNA-Gly (GCC) (tRNA-Gly-GCC-1 1 to 4)
+URS00006160B1_224308	86	1.0000	+	95861	95946	Bacillus subtilis subsp. subtilis str. 168 tRNA-Leu (TAA) (tRNA-Leu-TAA-2-1, tRNA-Leu-TAA-2-2)
+URS00004B6685_224308	77	1.0000	+	95956	96032	Bacillus subtilis subsp. subtilis str. 168 tRNA-Arg (ACG) (tRNA-Arg-ACG-1 1 to 4)
+URS000000AA05_224308	77	1.0000	+	96060	96136	Bacillus subtilis subsp. subtilis str. 168 tRNA-Pro (TGG) (tRNA-Pro-TGG-1 1 to 3)
+URS00007A2F8B_224308	1555	1.0000	+	96392	97946	Bacillus subtilis subsp. subtilis str. 168 bacterial SSU rRNA
+URS000080953D_224308	2933	1.0000	+	98109	101041	Bacillus subtilis subsp. subtilis str. 168 bacterial LSU rRNA
+URS00001FB031_224308	141	1.0000	+	119855	119995	Bacillus subtilis subsp. subtilis str. 168 L10_leader
+URS00004AB8DC_224308	1553	1.0000	+	160893	162445	Bacillus subtilis subsp. subtilis str. 168 bacterial SSU rRNA
+URS000004703D_224308	2926	1.0000	+	162610	165535	Bacillus subtilis subsp. subtilis str. 168 Bacterial large subunit ribosomal RNA
+URS000025EA12_224308	72	1.0000	+	165754	165825	Bacillus subtilis subsp. subtilis str. 168 tRNA-Asn (GTT) (tRNA-Asn-GTT-3-1)
+URS00004B13C4_224308	73	1.0000	+	165830	165902	Bacillus subtilis subsp. subtilis str. 168 tRNA-Thr (GGT) (tRNA-Thr-GGT-1-1)
+URS00005A8166_224308	1554	1.0000	+	166500	168053	Bacillus subtilis subsp. subtilis str. 168 bacterial SSU rRNA
+URS0000130384_224308	2924	1.0000	+	168218	171141	Bacillus subtilis subsp. subtilis str. 168 Bacterial large subunit ribosomal RNA
+URS00005A8F4B_224308	1552	1.0000	+	171498	173049	Bacillus subtilis subsp. subtilis str. 168 bacterial SSU rRNA
+URS0000503F84_224308	2928	1.0000	+	173214	176141	Bacillus subtilis subsp. subtilis str. 168 Bacterial large subunit ribosomal RNA
+URS00005A64AC_224308	75	1.0000	+	194205	194279	Bacillus subtilis subsp. subtilis str. 168 tRNA-Glu (TTC) (tRNA-Glu-TTC-1-1)
+URS0000485F38_224308	85	1.0000	+	194458	194542	Bacillus subtilis subsp. subtilis str. 168 tRNA-Tyr (GTA) (tRNA-Tyr-GTA-1-1, tRNA-Tyr-GTA-1-2)
+URS00003418A2_224308	75	1.0000	+	194547	194621	Bacillus subtilis subsp. subtilis str. 168 tRNA-Gln
+URS00001AE039_224308	171	1.0000	+	200017	200187	Bacillus subtilis subsp. subtilis str. 168 glmS glucosamine-6-phosphate activated ribozyme aptamer
+URS0000078A82_224308	248	1.0000	+	276815	277062	Bacillus subtilis subsp. subtilis str. 168 T-box riboswitch specific of tryptophan tRNA ligase
+URS0000674D8A_224308	67	1.0000	+	319012	319078	Bacillus subtilis subsp. subtilis str. 168 Bacillaceae-1 RNA
+URS0000405944_224308	269	1.0000	-	474329	474597	Bacillus subtilis subsp. subtilis str. 168 small regulatory RNA
+URS000052A0B6_224308	269	1.0000	+	474329	474597	Bacillus subtilis subsp. subtilis str. 168 BsrC
+URS00005A64B6_224308	144	1.0000	+	486092	486235	Bacillus subtilis subsp. subtilis str. 168 c-di-AMP riboswitch aptamer (ydaO/yuaA leader)
+URS00001D4371_224308	75	1.0000	+	528704	528778	Bacillus subtilis subsp. subtilis str. 168 tRNA-Asn (GTT) (tRNA-Asn-GTT-2-1, tRNA-Asn-GTT-2-2)
+URS00005713B9_224308	91	1.0000	+	528783	528873	Bacillus subtilis subsp. subtilis str. 168 tRNA-Ser (GCT) (tRNA-Ser-GCT-1-1)
+URS00001724F6_224308	75	1.0000	+	528986	529060	Bacillus subtilis subsp. subtilis str. 168 tRNA-Gln (TTG) (tRNA-Gln-TTG-1-1)
+URS00007C4293_224308	83	1.0000	+	529174	529256	Bacillus subtilis subsp. subtilis str. 168 tRNA-Leu
+URS0000010596_224308	87	1.0000	+	529336	529422	Bacillus subtilis subsp. subtilis str. 168 tRNA-Leu
+URS00004D46DB_224308	60	1.0000	-	532583	532642	Bacillus subtilis subsp. subtilis str. 168 ICEBs1 mobile element: conserved small untranslated RNA
+URS0000DA0883_224308	330	1.0000	+	559183	559512	Bacillus subtilis subsp. subtilis str. 168 cspA thermoregulator
+URS00002C5F80_224308	79	1.0000	-	559532	559610	Bacillus subtilis subsp. subtilis str. 168 putative small conserved untranslated RNA
+URS00006E3B1C_224308	87	1.0000	+	559894	559980	Bacillus subtilis subsp. subtilis str. 168 BsrC
+URS00006ADF7C_224308	200	1.0000	-	606407	606606	Bacillus subtilis subsp. subtilis str. 168 Bacillus sRNA ncr1575
+URS00003E2572_224308	101	1.0000	-	626346	626446	Bacillus subtilis subsp. subtilis str. 168 adenine riboswitch
+URS000013D5F2_224308	74	1.0000	+	635200	635273	Bacillus subtilis subsp. subtilis str. 168 tRNA-Gly (TCC) (tRNA-Gly-TCC-2-1, tRNA-Gly-TCC-2-2)
+URS000067CF14_224308	67	1.0000	-	635372	635438	Bacillus subtilis subsp. subtilis str. 168 Bacillaceae-1 RNA
+URS00007EAC2A_224308	1556	1.0000	+	635433	636988	Bacillus subtilis subsp. subtilis str. 168 bacterial SSU rRNA
+URS00004A5E97_224308	77	1.0000	+	640268	640344	Bacillus subtilis subsp. subtilis str. 168 tRNA-fMet (CAT) (tRNA-fMet-CAT-1 1 to 3)
+URS00002C7A07_224308	77	1.0000	+	640405	640481	Bacillus subtilis subsp. subtilis str. 168 tRNA-Asp (GTC) (tRNA-Asp-GTC-1 1 to 4)
+URS00003F7F6C_224308	103	1.0000	+	694425	694527	Bacillus subtilis subsp. subtilis str. 168 guanine riboswitch
+URS00002B96A6_224308	103	1.0000	+	698369	698471	Bacillus subtilis subsp. subtilis str. 168 guanine riboswitch
+URS0000803274_224308	1556	1.0000	+	946696	948251	Bacillus subtilis subsp. subtilis str. 168 bacterial SSU rRNA
+URS00007FE5A7_224308	2933	1.0000	+	948417	951349	Bacillus subtilis subsp. subtilis str. 168 bacterial LSU rRNA
+URS00004E2288_224308	116	1.0000	+	951457	951572	Bacillus subtilis subsp. subtilis str. 168 5S ribosomal RNA
+URS00003B5A12_224308	75	1.0000	+	951582	951656	Bacillus subtilis subsp. subtilis str. 168 tRNA-Asn (GTT) (tRNA-Asn-GTT-1-1, tRNA-Asn-GTT-1-2)
+URS00005562BD_224308	92	1.0000	+	951662	951753	Bacillus subtilis subsp. subtilis str. 168 tRNA-Ser (GGA) (tRNA-Ser-GGA-1-1)
+URS00002A992D_224308	76	1.0000	+	952131	952206	Bacillus subtilis subsp. subtilis str. 168 tRNA-Phe (GAA) (tRNA-Phe-GAA-1-1, tRNA-Phe-GAA-1-2)
+URS0000188E5A_224308	74	1.0000	+	952397	952470	Bacillus subtilis subsp. subtilis str. 168 tRNA-Trp (CCA) (tRNA-Trp-CCA-1-1)
+URS00002BD4FD_224308	76	1.0000	+	952495	952570	Bacillus subtilis subsp. subtilis str. 168 tRNA-His (GTG) (tRNA-His-GTG-2-1)
+URS000059EAF0_224308	71	1.0000	+	952781	952851	Bacillus subtilis subsp. subtilis str. 168 tRNA-Cys (GCA) (tRNA-Cys-GCA-1-1)
+URS00002DB00C_224308	89	1.0000	+	952859	952947	Bacillus subtilis subsp. subtilis str. 168 tRNA-Leu (TAA) (tRNA-Leu-TAA-1-1)
+URS00007D81CE_224308	84	1.0000	+	953212	953295	Bacillus subtilis subsp. subtilis str. 168 tRNA-Leu
+URS000057560B_224308	108	1.0000	+	955655	955762	Bacillus subtilis subsp. subtilis str. 168 TPP riboswitch aptamer (THI element)
+URS0002CE6060_224308	234	1.0000	+	1056390	1056623	Bacillus subtilis subsp. subtilis str. 168 small sponge RNA
+URS00002D29F6_224308	118	1.0000	-	1180685	1180802	Bacillus subtilis subsp. subtilis str. 168 SAM riboswitch aptamer (S box leader)
+URS00000F6F5F_224308	215	1.0000	-	1219164	1219378	Bacillus subtilis subsp. subtilis str. 168 T-box riboswitch specific of tryptophan tRNA
+URS0000D44D96_224308	139	1.0000	+	1233405	1233543	Bacillus subtilis subsp. subtilis str. 168 small regulatory RNA (NO regulated)
+URS00005242E3_224308	109	1.0000	+	1242262	1242370	Bacillus subtilis subsp. subtilis str. 168 TPP riboswitch aptamer (THI element)
+URS000008638F_224308	121	1.0000	+	1258304	1258424	Bacillus subtilis subsp. subtilis str. 168 SAM riboswitch aptamer (S box leader)
+URS00007DA98B_224308	75	1.0000	+	1262788	1262862	Bacillus subtilis subsp. subtilis str. 168 tRNA-Val
+URS0002D2D036_224308	124	1.0000	+	1275750	1275873	Bacillus subtilis subsp. subtilis str. 168 riboswitch controlling yjdF (azoaromatic binding)
+URS0000491591_224308	112	1.0000	+	1376328	1376439	Bacillus subtilis subsp. subtilis str. 168 Guanidine-I riboswitch aptamer
+URS000055EBE2_224308	211	1.0000	+	1378233	1378443	Bacillus subtilis subsp. subtilis str. 168 T-box riboswitch specific of proline tRNA
+URS000052ABD5_224308	156	1.0000	-	1385736	1385891	Bacillus subtilis subsp. subtilis str. 168 SAM riboswitch aptamer (S box leader)
+URS000005CA97_224308	113	1.0000	-	1391739	1391851	Bacillus subtilis subsp. subtilis str. 168 TPP riboswitch aptamer (THI element)
+URS00007C61B5_224308	166	1.0000	+	1395616	1395781	Bacillus subtilis subsp. subtilis str. 168 M-box riboswitch aptamer (ykoK leader)
+URS0000CE13CF_224308	134	1.0000	+	1410633	1410766	Bacillus subtilis subsp. subtilis str. 168 manganese ion riboswitch
+URS000053CEAC_224308	157	1.0000	-	1424527	1424683	Bacillus subtilis subsp. subtilis str. 168 SAM riboswitch aptamer (S box leader)
+URS000001BC09_224308	101	1.0000	+	1426876	1426976	Bacillus subtilis subsp. subtilis str. 168 SAM riboswitch aptamer (S box leader)
+URS0000CD644B_224308	152	1.0000	+	1457005	1457156	Bacillus subtilis subsp. subtilis str. 168 riboswitch regulating ptsGHI expression via GlcT dimer binding
+URS00003E11B8_224308	84	1.0000	+	1483557	1483640	Bacillus subtilis subsp. subtilis str. 168 FsrA
+URS00005E6540_224308	211	1.0000	+	1534070	1534280	Bacillus subtilis subsp. subtilis str. 168 small regulatory RNA and messenger RNA (arginine metabolism)
+URS00001D3902_224308	121	1.0000	+	1569199	1569319	Bacillus subtilis subsp. subtilis str. 168 sporulation-specific regulatory RNA
+URS0000431F51_224308	102	1.0000	+	1607367	1607468	Bacillus subtilis subsp. subtilis str. 168 TPP riboswitch aptamer (THI element)
+URS000030BAD6_224308	227	1.0000	+	1613078	1613304	Bacillus subtilis subsp. subtilis str. 168 T-box riboswitch specific of isoleucine tRNA
+URS00003F278F_224308	117	1.0000	+	1618161	1618277	Bacillus subtilis subsp. subtilis str. 168 pyrimidine biosynthesis operon attenuator
+URS0000368DE0_224308	118	1.0000	+	1618853	1618970	Bacillus subtilis subsp. subtilis str. 168 pyrimidine biosynthesis operon attenuator
+URS0000296BB3_224308	115	1.0000	+	1620331	1620445	Bacillus subtilis subsp. subtilis str. 168 pyrimidine biosynthesis operon attenuator
+URS00003085CF_224308	106	1.0000	+	1630115	1630220	Bacillus subtilis subsp. subtilis str. 168 SAM riboswitch aptamer (S box leader)
+URS00001C618E_224308	218	1.0000	+	1731457	1731674	Bacillus subtilis subsp. subtilis str. 168 small RNAs controlled by sporulation
+URS0000D3C01A_224308	151	1.0000	-	1780404	1780554	Bacillus subtilis subsp. subtilis str. 168 small untranslated RNA of unknown function
+URS0000721127_224308	145	1.0000	+	1780406	1780550	Bacillus subtilis subsp. subtilis str. 168 Bacillus sRNA ncr952
+URS0000138333_224308	281	1.0000	-	1914992	1915272	Bacillus subtilis subsp. subtilis str. 168 small untranslated RNA controlled by sporulation
+URS00005E3996_224308	80	1.0000	+	1917501	1917580	Bacillus subtilis subsp. subtilis str. 168 putative conserved small untranslated RNA
+URS0000171A4F_224308	73	1.0000	-	2003276	2003348	Bacillus subtilis subsp. subtilis str. 168 tRNA-Arg (CCT) (tRNA-Arg-CCT-1-1)
+URS00002F3927_224308	92	1.0000	-	2025160	2025251	Bacillus subtilis subsp. subtilis str. 168 SAM riboswitch aptamer (S box leader)
+URS0000709D8F_224308	120	1.0000	+	2053990	2054109	Bacillus subtilis subsp. subtilis str. 168 Bacillus sRNA ncr1015
+URS0000246480_224308	384	1.0000	-	2069732	2070115	Bacillus subtilis subsp. subtilis str. 168 small regulatory antitoxin RNA, toxin-antitoxin type I system (BsrE/AsrE)
+URS00006A3501_224308	254	1.0000	+	2069822	2070075	Bacillus subtilis subsp. subtilis str. 168 BsrG
+URS000069044A_224308	109	1.0000	+	2079095	2079203	Bacillus subtilis subsp. subtilis str. 168 BsrF
+URS00001D8550_224308	203	1.0000	-	2095909	2096111	Bacillus subtilis subsp. subtilis str. 168 6Sa RNA
+URS00007E0F97_224308	97	1.0000	-	2144088	2144184	Bacillus subtilis subsp. subtilis str. 168 tRNA-Asn
+URS00001695C0_224308	805	1.0000	-	2160390	2161194	Bacillus subtilis subsp. subtilis str. 168 intron of subunit F of phage SPbeta ribonucleotide reductase containing CDS for homing endonuclease
+URS00002AFA8F_224308	252	1.0000	-	2164643	2164894	Bacillus subtilis subsp. subtilis str. 168 intron of phage SPbeta subunit E of ribonucleotide reductase
+URS0000D2FD32_224308	291	1.0000	-	2208590	2208880	Bacillus subtilis subsp. subtilis str. 168 small RNA controlling lysogeny of phage SPbeta
+URS0000D44EC8_224308	107	1.0000	+	2219743	2219849	Bacillus subtilis subsp. subtilis str. 168 antisense RNA of toxin SpbT
+URS0000E5FEAF_224308	66	1.0000	+	2226975	2227040	Bacillus subtilis subsp. subtilis str. 168 DUF3800-VIII RNA
+URS0000392375_224308	291	1.0000	+	2273534	2273824	Bacillus subtilis subsp. subtilis str. 168 BsrG
+URS00002E2FB1_224308	180	1.0000	-	2273705	2273884	Bacillus subtilis subsp. subtilis str. 168 antitoxin small RNA
+URS000005DB10_224308	101	1.0000	-	2320113	2320213	Bacillus subtilis subsp. subtilis str. 168 guanine riboswitch
+URS00004FBCB7_224308	401	1.0000	-	2331320	2331720	Bacillus subtilis subsp. subtilis str. 168 RNA component of ribonuclease P (RNase P) (catalytic subunit, ribozyme)
+URS00003E7434_224308	308	1.0000	-	2410581	2410888	Bacillus subtilis subsp. subtilis str. 168 flavin mononucleotide riboswitch
+URS000037084E_224308	145	1.0000	-	2431473	2431617	Bacillus subtilis subsp. subtilis str. 168 FMN riboswitch aptamer (RFN element)
+URS0000D1E246_224308	246	1.0000	+	2472880	2473125	Bacillus subtilis subsp. subtilis str. 168 proline T-box riboswitch
+URS000050A2DA_224308	200	1.0000	-	2549407	2549606	Bacillus subtilis subsp. subtilis str. 168 dual aptamer glycine riboswitch
+URS000053C0DA_224308	71	1.0000	+	2563889	2563959	Bacillus subtilis subsp. subtilis str. 168 tRNA-Gln (TTG) (tRNA-Gln-TTG-3-1)
+URS00002674F2_224308	175	1.0000	-	2608732	2608906	Bacillus subtilis subsp. subtilis str. 168 T-box riboswitch controlling synthesis of glycine-tRNA ligase
+URS000063783C_224308	161	1.0000	+	2625952	2626112	Bacillus subtilis subsp. subtilis str. 168 SurC sRNA
+URS000029CC75_224308	259	1.0000	-	2647405	2647663	Bacillus subtilis subsp. subtilis str. 168 antisense RNA
+URS00002DE9B1_224308	223	1.0000	-	2678343	2678565	Bacillus subtilis subsp. subtilis str. 168 antisense RNA controlling synthesis of TxpA, membrane associated toxin of a toxin antitoxin type I system; skin element
+URS00004B38D2_224308	280	1.0000	+	2678729	2679008	Bacillus subtilis subsp. subtilis str. 168 BsrH
+URS0000D4D7EE_224308	139	1.0000	-	2678876	2679014	Bacillus subtilis subsp. subtilis str. 168 antitoxin RNA (type I toxin/antitoxin system)
+URS00006C1AD5_224308	106	1.0000	+	2773781	2773886	Bacillus subtilis subsp. subtilis str. 168 Bacillus sRNA ncr1175
+URS0000492A91_224308	208	1.0000	-	2800890	2801097	Bacillus subtilis subsp. subtilis str. 168 T-box riboswitch specific of alanine tRNA
+URS0000174555_224308	201	1.0000	-	2814491	2814691	Bacillus subtilis subsp. subtilis str. 168 6Sb RNA
+URS00005D7D7E_224308	233	1.0000	-	2817899	2818131	Bacillus subtilis subsp. subtilis str. 168 T-box riboswitch controlling synthesis of histidine and aspartate tRNA ligases
+URS000043A70B_224308	76	1.0000	-	2855840	2855915	Bacillus subtilis subsp. subtilis str. 168 ribosomal protein L21 leader mRNA sequence
+URS000013C453_224308	223	1.0000	-	2869366	2869588	Bacillus subtilis subsp. subtilis str. 168 T-box riboswitch specific of valine tRNA
+URS0000369330_224308	247	1.0000	-	2897094	2897340	Bacillus subtilis subsp. subtilis str. 168 T-box controlling synthesis of branched chain amino acids
+URS000080B9C9_224308	78	1.0000	-	2899811	2899888	Bacillus subtilis subsp. subtilis str. 168 tRNA-Arg
+URS00002D22AE_224308	180	1.0000	-	2910872	2911051	Bacillus subtilis subsp. subtilis str. 168 Lysine riboswitch aptamer
+URS0000D1A916_224308	140	1.0000	-	2953411	2953550	Bacillus subtilis subsp. subtilis str. 168 mRNA L20_leader attenuator sequence
+URS00000C883B_224308	248	1.0000	-	2961232	2961479	Bacillus subtilis subsp. subtilis str. 168 T-box riboswitch specific of threonine tRNA ligase
+URS0000D20CB1_224308	133	1.0000	+	3035589	3035721	Bacillus subtilis subsp. subtilis str. 168 ribosomal protein S4 leader mRNA sequence
+URS0000494C6C_224308	274	1.0000	-	3037895	3038168	Bacillus subtilis subsp. subtilis str. 168 T-Box riboswitch specific of tyrosine tRNA ligase
+URS00000624CD_224308	215	1.0000	-	3105153	3105367	Bacillus subtilis subsp. subtilis str. 168 T-box riboswitch specific of leucine tRNA ligase
+URS0000450568_224308	139	1.0000	-	3129195	3129333	Bacillus subtilis subsp. subtilis str. 168 SAM riboswitch aptamer (S box leader)
+URS00005FBC47_224308	91	1.0000	-	3171976	3172066	Bacillus subtilis subsp. subtilis str. 168 tRNA-Ser (GCT) (tRNA-Ser-GCT-2-1)
+URS00003C1447_224308	77	1.0000	-	3172155	3172231	Bacillus subtilis subsp. subtilis str. 168 tRNA-Ile (GAT) (tRNA-Ile-GAT-1-1)
+URS00003C7824_224308	74	1.0000	-	3172247	3172320	Bacillus subtilis subsp. subtilis str. 168 tRNA-Gly (TCC) (tRNA-Gly-TCC-1-1)
+URS0000353816_224308	76	1.0000	-	3172331	3172406	Bacillus subtilis subsp. subtilis str. 168 tRNA-His (GTG) (tRNA-His-GTG-1-1)
+URS000043457D_224308	93	1.0000	-	3172694	3172786	Bacillus subtilis subsp. subtilis str. 168 tRNA-Ser (TGA) (tRNA-Ser-TGA-1-1)
+URS00002E5F24_224308	77	1.0000	-	3172793	3172869	Bacillus subtilis subsp. subtilis str. 168 tRNA-Ile2 (CAT) (tRNA-Ile2-CAT-1-1)
+URS00000181B8_224308	87	1.0000	-	3173404	3173490	Bacillus subtilis subsp. subtilis str. 168 tRNA-Leu (CAG) (tRNA-Leu-CAG-1-1)
+URS000080B25B_224308	2933	1.0000	-	3173987	3176919	Bacillus subtilis subsp. subtilis str. 168 bacterial LSU rRNA
+URS00003E7D2D_224308	1555	1.0000	-	3177086	3178640	Bacillus subtilis subsp. subtilis str. 168 bacterial SSU rRNA
+URS000065A032_224308	67	1.0000	+	3178635	3178701	Bacillus subtilis subsp. subtilis str. 168 Bacillaceae-1 RNA
+URS00003061C5_224308	102	1.0000	+	3179105	3179206	Bacillus subtilis subsp. subtilis str. 168 TPP riboswitch aptamer (THI element)
+URS0000CF1749_224308	169	1.0000	+	3188173	3188341	Bacillus subtilis subsp. subtilis str. 168 cyclic-di-AMP-sensing riboswitch
+URS000040D4F7_224308	73	1.0000	-	3194455	3194527	Bacillus subtilis subsp. subtilis str. 168 tRNA-Ala (GGC) (tRNA-Ala-GGC-1-1)
+URS000065F47B_224308	63	1.0000	+	3225711	3225773	Bacillus subtilis subsp. subtilis str. 168 Bacillus sRNA ncr1241
+URS0000CD0CA7_224308	132	1.0000	-	3335414	3335545	Bacillus subtilis subsp. subtilis str. 168 putative antisense RNA for type I YuzJ toxin
+URS000008DA50_224308	248	1.0000	-	3360937	3361184	Bacillus subtilis subsp. subtilis str. 168 small regulatory RNA or messenger RNA
+URS00002A4B6B_224308	248	1.0000	+	3360937	3361184	Bacillus subtilis subsp. subtilis str. 168 BsrI
+URS00005D48AF_224308	107	1.0000	-	3364397	3364503	Bacillus subtilis subsp. subtilis str. 168 SAM riboswitch aptamer (S box leader)
+URS0002316C4A_224308	139	1.0000	-	3404543	3404681	Bacillus subtilis subsp. subtilis str. 168 Cobalamin riboswitch aptamer
+URS00003A473B_224308	180	1.0000	-	3421169	3421348	Bacillus subtilis subsp. subtilis str. 168 Lysine riboswitch aptamer
+URS0000332896_224308	363	1.0000	-	3450709	3451071	Bacillus subtilis subsp. subtilis str. 168 transfer-messenger RNA
+URS000060F9E7_224308	236	1.0000	-	3491322	3491557	Bacillus subtilis subsp. subtilis str. 168 T-box riboswitch controlling synthesis of an amino acid transporter
+URS00007C0B05_224308	81	1.0000	-	3545885	3545965	Bacillus subtilis subsp. subtilis str. 168 tRNA-Arg
+URS00006AC1AE_224308	295	1.0000	+	3767979	3768273	Bacillus subtilis subsp. subtilis str. 168 5' ureB small RNA
+URS00006BFB37_224308	67	1.0000	-	3774256	3774322	Bacillus subtilis subsp. subtilis str. 168 Bacillaceae-1 RNA
+URS000067370E_224308	69	1.0000	-	3830050	3830118	Bacillus subtilis subsp. subtilis str. 168 Bacillaceae-1 RNA
+URS0000095B77_224308	222	1.0000	-	3856226	3856447	Bacillus subtilis subsp. subtilis str. 168 T-box
+URS0000158A5B_224308	222	1.0000	-	3856479	3856700	Bacillus subtilis subsp. subtilis str. 168 T-box riboswitch specific of threonine tRNA ligase
+URS000011DCF5_224308	207	1.0000	+	3946910	3947116	Bacillus subtilis subsp. subtilis str. 168 T-box riboswitch specific of tyrosine tRNA ligase
+URS00002F717E_224308	103	1.0000	-	3988840	3988942	Bacillus subtilis subsp. subtilis str. 168 Guanidine-I riboswitch aptamer
+URS0000114DA0_224308	107	1.0000	+	3997775	3997881	Bacillus subtilis subsp. subtilis str. 168 SAM riboswitch aptamer (S box leader)
+URS00001D0AD3_224308	107	1.0000	+	3999166	3999272	Bacillus subtilis subsp. subtilis str. 168 SAM riboswitch aptamer (S box leader)
+URS00004DDA4E_224308	103	1.0000	+	4005523	4005625	Bacillus subtilis subsp. subtilis str. 168 guanine riboswitch
+URS00005256E0_224308	413	1.0000	+	4096997	4097409	Bacillus subtilis subsp. subtilis str. 168 putative small RNA or mRNA leader sequence
+URS0000D1675B_224308	118	1.0000	-	4169802	4169919	Bacillus subtilis subsp. subtilis str. 168 manganese ion binding riboswitch

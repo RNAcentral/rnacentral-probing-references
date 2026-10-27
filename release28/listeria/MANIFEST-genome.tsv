@@ -1,0 +1,127 @@
+record	record_len	identity	strand	genome_start	genome_end	description
+NC_003210.1	2944528	1.0000	+	1	2944528	genome
+URS000066C8E4_169963	111	1.0000	+	31997	32107	Listeria monocytogenes EGD-e Listeria sRNA rli22
+URS00000A3087_169963	73	1.0000	+	82705	82777	Listeria monocytogenes EGD-e tRNA
+URS00009CBE35_169963	103	1.0000	+	137133	137235	Listeria monocytogenes EGD-e SAM riboswitch aptamer (S box leader)
+URS0000E6056C_169963	271	1.0000	+	145571	145841	Listeria monocytogenes EGD-e Listeria sRNA rli117
+URS0000686F67_169963	98	1.0000	+	172171	172268	Listeria monocytogenes EGD-e Listeria snRNA rli23
+URS0000CF36A8_169963	130	1.0000	-	204339	204468	Listeria monocytogenes EGD-e PrfA thermoregulator UTR
+URS0000525112_169963	111	1.0000	+	231884	231994	Listeria monocytogenes EGD-e Listeria LhrC
+URS0000292D7F_169963	112	1.0000	+	232086	232197	Listeria monocytogenes EGD-e Listeria LhrC
+URS0000116DD2_169963	112	1.0000	+	232289	232400	Listeria monocytogenes EGD-e Listeria LhrC
+URS0000649F26_169963	114	1.0000	+	232492	232605	Listeria monocytogenes EGD-e Listeria LhrC
+URS0000A759B0_169963	1561	1.0000	+	237466	239026	Listeria monocytogenes EGD-e bacterial SSU rRNA
+URS000051465E_169963	2936	1.0000	+	239263	242198	Listeria monocytogenes EGD-e 23S ribosomal RNA
+URS00000EF410_169963	116	1.0000	+	242274	242389	Listeria monocytogenes EGD-e 5S ribosomal RNA
+URS00003F929D_169963	73	1.0000	+	242399	242471	Listeria monocytogenes EGD-e tRNA
+URS0000102FC1_169963	76	1.0000	+	242480	242555	Listeria monocytogenes EGD-e transfert RNA-Thr
+URS000008493A_169963	73	1.0000	+	242597	242669	Listeria monocytogenes EGD-e tRNA
+URS00003338D3_169963	82	1.0000	+	242675	242756	Listeria monocytogenes EGD-e tRNA
+URS00005C8631_169963	72	1.0000	+	242771	242842	Listeria monocytogenes EGD-e tRNA
+URS000016D6FE_169963	86	1.0000	+	242864	242949	Listeria monocytogenes EGD-e tRNA
+URS00003FA761_169963	74	1.0000	+	242962	243035	Listeria monocytogenes EGD-e tRNA
+URS00005E276B_169963	74	1.0000	+	243046	243119	Listeria monocytogenes EGD-e tRNA
+URS00002F180C_169963	76	1.0000	+	243139	243214	Listeria monocytogenes EGD-e transfert RNA-Ala
+URS00009C7867_169963	1561	1.0000	+	243487	245047	Listeria monocytogenes EGD-e 16S ribosomal RNA
+URS00019CA5B9_169963	2936	1.0000	+	245284	248219	Listeria monocytogenes EGD-e 23S ribosomal RNA
+URS00006C2674_169963	158	1.0000	+	271029	271186	Listeria monocytogenes EGD-e Listeria sRNA rli22
+URS0000A300E3_169963	120	1.0000	-	309266	309385	Listeria monocytogenes EGD-e SAM riboswitch aptamer (S box leader)
+URS00000E8CB0_169963	106	1.0000	+	340086	340191	Listeria monocytogenes EGD-e TPP riboswitch aptamer (THI element)
+URS000067E010_169963	188	1.0000	-	388520	388707	Listeria monocytogenes EGD-e Listeria sRNA rli26
+URS000067E3B6_169963	99	1.0000	+	434831	434929	Listeria monocytogenes EGD-e Listeria sRNA rli27
+URS000066AE1A_169963	256	1.0000	+	495655	495910	Listeria monocytogenes EGD-e Listeria sRNA rliA
+URS000067ED0F_169963	189	1.0000	-	507206	507394	Listeria monocytogenes EGD-e Listeria sRNA rli28
+URS00006FCC90_169963	224	1.0000	+	513584	513807	Listeria monocytogenes EGD-e Listeria sRNA rliA
+URS0000E6092A_169963	116	1.0000	-	540670	540785	Listeria monocytogenes EGD-e Listeria sRNA rli30
+URS00006386BC_169963	360	1.0000	+	544357	544716	Listeria monocytogenes EGD-e Listeria sRNA rliB
+URS000061969B_169963	115	1.0000	+	597812	597926	Listeria monocytogenes EGD-e Listeria sRNA rli31
+URS00006B9D82_169963	147	1.0000	-	600604	600750	Listeria monocytogenes EGD-e Listeria sRNA rli32
+URS0000AB6537_169963	102	1.0000	-	611018	611119	Listeria monocytogenes EGD-e Purine riboswitch aptamer
+URS00000CDDFF_169963	101	1.0000	-	637826	637926	Listeria monocytogenes EGD-e SAM riboswitch aptamer (S box leader)
+URS0000061189_169963	90	1.0000	-	677464	677553	Listeria monocytogenes EGD-e tRNA
+URS0000632350_169963	535	1.0000	+	708326	708860	Listeria monocytogenes EGD-e Listeria sRNA rli33
+URS0000ABA516_169963	195	1.0000	+	756458	756652	Listeria monocytogenes EGD-e glmS glucosamine-6-phosphate activated ribozyme aptamer
+URS000063C2D9_169963	84	1.0000	-	802948	803031	Listeria monocytogenes EGD-e Listeria sRNA rli34
+URS00000C29B7_169963	198	1.0000	-	826486	826683	Listeria monocytogenes EGD-e Lysine riboswitch aptamer
+URS00000F2E59_169963	84	1.0000	-	859444	859527	Listeria monocytogenes EGD-e Listeria sRNA rli36
+URS0000069B68_169963	98	1.0000	+	882770	882867	Listeria monocytogenes EGD-e SAM riboswitch aptamer (S box leader)
+URS0000716CD4_169963	257	1.0000	+	907576	907832	Listeria monocytogenes EGD-e Listeria sRNA rli37
+URS000019910E_169963	73	1.0000	+	936656	936728	Listeria monocytogenes EGD-e tRNA
+URS00002697D0_169963	88	1.0000	+	936732	936819	Listeria monocytogenes EGD-e tRNA
+URS00005BD77B_169963	72	1.0000	+	940017	940088	Listeria monocytogenes EGD-e tRNA
+URS00004D0CFF_169963	73	1.0000	+	940116	940188	Listeria monocytogenes EGD-e tRNA
+URS000002B37A_169963	71	1.0000	+	970867	970937	Listeria monocytogenes EGD-e tRNA
+URS0000708F92_169963	111	1.0000	+	981621	981731	Listeria monocytogenes EGD-e Listeria LhrC
+URS00030C47DC_169963	105	1.0000	+	1021463	1021567	Listeria monocytogenes EGD-e Manganese Mn2+ riboswitch aptamer (yybP-ykoY)
+URS00006578A8_169963	150	1.0000	+	1152768	1152917	Listeria monocytogenes EGD-e Listeria sRNA rli38
+URS0003127C54_169963	191	1.0000	+	1179808	1179998	Listeria monocytogenes EGD-e Cobalamin riboswitch aptamer
+URS00006E5439_169963	429	1.0000	+	1180826	1181254	Listeria monocytogenes EGD-e Listeria sRNA rliH
+URS0000AB517A_169963	150	1.0000	+	1198103	1198252	Listeria monocytogenes EGD-e AdoCbl (Cobalamin/B12) riboswitch aptamer
+URS000308AC6D_169963	190	1.0000	+	1216469	1216658	Listeria monocytogenes EGD-e Cobalamin riboswitch aptamer
+URS0000188457_169963	74	1.0000	+	1266675	1266748	Listeria monocytogenes EGD-e tRNA
+URS000065DA30_169963	264	1.0000	-	1275547	1275810	Listeria monocytogenes EGD-e Listeria sRNA rli40
+URS000065C8E8_169963	495	1.0000	-	1276713	1277207	Listeria monocytogenes EGD-e Listeria sRNA rli41
+URS000066CF90_169963	328	1.0000	-	1359202	1359529	Listeria monocytogenes EGD-e Listeria sRNA rliD
+URS0000741B58_169963	92	1.0000	+	1372840	1372931	Listeria monocytogenes EGD-e Glycine riboswitch aptamer
+URS0000687F6D_169963	71	1.0000	+	1399363	1399433	Listeria monocytogenes EGD-e Listeria sRNA sbrA
+URS0000669E3D_169963	171	1.0000	-	1399447	1399617	Listeria monocytogenes EGD-e Listeia sRNA rli42
+URS00000CDD81_169963	111	1.0000	-	1461163	1461273	Listeria monocytogenes EGD-e TPP riboswitch aptamer (THI element)
+URS000008BB0E_169963	196	1.0000	-	1546336	1546531	Listeria monocytogenes EGD-e 6S / SsrS RNA
+URS00006D892C_169963	223	1.0000	+	1584586	1584808	Listeria monocytogenes EGD-e Listeria sRNA rliE
+URS000068A55F_169963	85	1.0000	+	1705755	1705839	Listeria monocytogenes EGD-e Listeria sRNA rli34
+URS000038E9B3_169963	109	1.0000	-	1716543	1716651	Listeria monocytogenes EGD-e SAM riboswitch aptamer (S box leader)
+URS0000159B2A_169963	107	1.0000	-	1739491	1739597	Listeria monocytogenes EGD-e SAM riboswitch aptamer (S box leader)
+URS0000034740_169963	91	1.0000	-	1740993	1741083	Listeria monocytogenes EGD-e transfert RNA-Ser
+URS0000086E29_169963	74	1.0000	-	1741197	1741270	Listeria monocytogenes EGD-e tRNA
+URS000009CFA3_169963	73	1.0000	-	1741390	1741462	Listeria monocytogenes EGD-e tRNA
+URS00004B61CA_169963	73	1.0000	-	1741491	1741563	Listeria monocytogenes EGD-e tRNA
+URS0000080057_169963	76	1.0000	-	1741568	1741643	Listeria monocytogenes EGD-e transfert RNA-Asp
+URS00001833D0_169963	74	1.0000	-	1741648	1741721	Listeria monocytogenes EGD-e tRNA
+URS00002917F4_169963	90	1.0000	-	1741764	1741853	Listeria monocytogenes EGD-e tRNA
+URS00002B21F0_169963	74	1.0000	-	1741876	1741949	Listeria monocytogenes EGD-e tRNA
+URS0000007C6E_169963	74	1.0000	-	1741961	1742034	Listeria monocytogenes EGD-e tRNA
+URS00003D830D_169963	75	1.0000	-	1742439	1742513	Listeria monocytogenes EGD-e transfert RNA-Gly
+URS00001BD444_169963	2936	1.0000	-	1743088	1746023	Listeria monocytogenes EGD-e 23S ribosomal RNA
+URS000082286D_169963	1561	1.0000	-	1746260	1747820	Listeria monocytogenes EGD-e bacterial SSU rRNA
+URS00003FC721_169963	72	1.0000	+	1776112	1776183	Listeria monocytogenes EGD-e tRNA
+URS00006DDF03_169963	254	1.0000	-	1861377	1861630	Listeria monocytogenes EGD-e Listeria sRNA rli43
+URS0000AB711C_169963	101	1.0000	-	1958822	1958922	Listeria monocytogenes EGD-e Purine riboswitch aptamer
+URS00006FA464_169963	382	1.0000	-	1961807	1962188	Listeria monocytogenes EGD-e Bacterial RNase P class B
+URS0000D689CF_169963	87	1.0000	-	1977152	1977238	Listeria monocytogenes EGD-e pan motif
+URS00001C047E_169963	123	1.0000	-	2020487	2020609	Listeria monocytogenes EGD-e FMN riboswitch aptamer (RFN element)
+URS00006D3823_169963	185	1.0000	+	2039064	2039248	Listeria monocytogenes EGD-e Listeria sRNA rli28
+URS00006B131F_169963	90	1.0000	-	2039296	2039385	Listeria monocytogenes EGD-e RNA anti-toxin A
+URS0000719A4E_169963	185	1.0000	+	2054124	2054308	Listeria monocytogenes EGD-e Listeria sRNA rli60
+URS000064176E_169963	220	1.0000	-	2106073	2106292	Listeria monocytogenes EGD-e Listeria sRNA rliF
+URS00006CCFB9_169963	78	1.0000	+	2153775	2153852	Listeria monocytogenes EGD-e Listeria snRNA rli45
+URS000065A127_169963	88	1.0000	+	2154755	2154842	Listeria monocytogenes EGD-e RNA anti-toxin A
+URS00006607CB_169963	188	1.0000	-	2154893	2155080	Listeria monocytogenes EGD-e Listeria sRNA rli28
+URS00004D850E_169963	87	1.0000	+	2162187	2162273	Listeria monocytogenes EGD-e transfert RNA-Leu
+URS000019B09E_169963	74	1.0000	+	2215604	2215677	Listeria monocytogenes EGD-e tRNA
+URS0000540A5A_169963	84	1.0000	+	2215687	2215770	Listeria monocytogenes EGD-e transfert RNA-Tyr
+URS00005E648E_169963	75	1.0000	+	2215782	2215856	Listeria monocytogenes EGD-e transfert RNA-Gln
+URS00006B315B_169963	509	1.0000	+	2226024	2226532	Listeria monocytogenes EGD-e Listeria sRNA rli47
+URS00001D6860_169963	269	1.0000	-	2346166	2346434	Listeria monocytogenes EGD-e Listeria Hfq binding LhrA
+URS0000709015_169963	150	1.0000	-	2361274	2361423	Listeria monocytogenes EGD-e Listeria sRNA rli48
+URS000066832F_169963	373	1.0000	-	2386715	2387087	Listeria monocytogenes EGD-e Listeria sRNA rliG
+URS00002E475C_169963	84	1.0000	-	2436493	2436576	Listeria monocytogenes EGD-e tRNA
+URS00004E762D_169963	74	1.0000	-	2436622	2436695	Listeria monocytogenes EGD-e transfert RNA-Cys
+URS0000420273_169963	72	1.0000	-	2436715	2436786	Listeria monocytogenes EGD-e tRNA
+URS00001C1F7F_169963	72	1.0000	-	2436792	2436863	Listeria monocytogenes EGD-e tRNA
+URS0000465C5E_169963	73	1.0000	-	2436893	2436965	Listeria monocytogenes EGD-e tRNA
+URS0000604B65_169963	74	1.0000	-	2436981	2437054	Listeria monocytogenes EGD-e transfert RNA-Trp
+URS00003764A7_169963	76	1.0000	-	2437420	2437495	Listeria monocytogenes EGD-e transfert RNA-Val
+URS00003FF91F_169963	89	1.0000	-	2437657	2437745	Listeria monocytogenes EGD-e transfert RNA-Ser
+URS00001F44CB_169963	76	1.0000	-	2437752	2437827	Listeria monocytogenes EGD-e transfert RNA-Asn
+URS000080AC4B_169963	1561	1.0000	-	2441452	2443012	Listeria monocytogenes EGD-e bacterial SSU rRNA
+URS000028C263_169963	119	1.0000	-	2491058	2491176	Listeria monocytogenes EGD-e SAM riboswitch aptamer (S box leader)
+URS000002FBD6_169963	370	1.0000	-	2509851	2510220	Listeria monocytogenes EGD-e transfer-messenger RNA
+URS00001ADE56_169963	72	1.0000	-	2540230	2540301	Listeria monocytogenes EGD-e tRNA
+URS000062839B_169963	163	1.0000	+	2660202	2660364	Listeria monocytogenes EGD-e Listeria sRNA rli49
+URS00005F3CF3_169963	73	1.0000	-	2672664	2672736	Listeria monocytogenes EGD-e tRNA
+URS0000D22881_169963	76	1.0000	-	2691575	2691650	Listeria monocytogenes EGD-e L17 ribosomal protein downstream element
+URS0000AB509F_169963	167	1.0000	-	2765938	2766104	Listeria monocytogenes EGD-e M-box riboswitch aptamer (ykoK leader)
+URS00006D69F0_169963	189	1.0000	-	2783098	2783286	Listeria monocytogenes EGD-e Listeria sRNA rli28
+URS00001AD5F6_169963	267	1.0000	-	2784262	2784528	Listeria monocytogenes EGD-e Bacterial large signal recognition particle RNA
+URS00006D8330_169963	239	1.0000	-	2841962	2842200	Listeria monocytogenes EGD-e Listeria sRNA rliI
+URS0000517544_169963	73	1.0000	+	2930362	2930434	Listeria monocytogenes EGD-e tRNA

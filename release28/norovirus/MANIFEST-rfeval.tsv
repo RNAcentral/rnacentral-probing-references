@@ -1,0 +1,2 @@
+structure	stem	rfam	rfam_id	genome	genome_start	genome_end	ref_seq_id	start	end	length	base_pairs	pk_pairs	Evalue
+MNV_CW3_MNV_3UTR_ncbi	MNV_CW3	RF02532	MNV_3UTR	EF014462.1	7161	7382	EF014462.1	7161	7382	222	74	0	1.1e-63

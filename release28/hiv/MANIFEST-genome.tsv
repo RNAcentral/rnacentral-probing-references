@@ -1,0 +1,4 @@
+datasets	strain	accession	record	record_len	identity	genome_start	genome_end	description
+rnastruct00119	NL43	AF324493.2	AF324493.2	9709	1.0000	1	9709	genome
+rnastruct00119	NL43	AF324493.2	URS00006F9B91_11676	61	1.0000	454	514	Human immunodeficiency virus 1 microRNA hiv1-mir-TAR precursor
+rnastruct00119	NL43	AF324493.2	URS0000D56C30_11676	101	1.0000	577	677	HIV-1 viral RNA genome fragment from Human immunodeficiency virus 1 (PDB 6WB0, chain C)

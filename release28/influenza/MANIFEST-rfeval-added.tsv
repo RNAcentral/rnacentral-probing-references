@@ -1,0 +1,2 @@
+structure	stem	rfam	rfam_id	genome	genome_start	genome_end	ref_seq_id	start	end	length	base_pairs	pk_pairs	Evalue
+IAV_PR8_NS_PK	IAV_PR8	RF01099	PK-IAV	NC_002020.1	523	570	NC_002020.1	523	570	48	5	6	1.1e-20

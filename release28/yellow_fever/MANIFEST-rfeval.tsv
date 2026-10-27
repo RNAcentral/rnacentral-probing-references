@@ -1,0 +1,3 @@
+structure	stem	rfam	rfam_id	genome	genome_start	genome_end	ref_seq_id	start	end	length	base_pairs	pk_pairs	Evalue
+YFV_17D_Flavi_CRE_ncbi	YFV_17D	RF00185	Flavi_CRE	PX660172.1	10762	10860	PX660172.1	10762	10860	99	24	0	5.2e-13
+YFV_Asibi_Flavi_CRE_ncbi	YFV_Asibi	RF00185	Flavi_CRE	AY640589.1	10762	10860	AY640589.1	10762	10860	99	24	0	7.1e-13

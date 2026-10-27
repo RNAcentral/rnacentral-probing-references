@@ -1,0 +1,83 @@
+record	record_len	identity	strand	genome_start	genome_end	description	replicon
+NC_005773.3	5928787	1.0000	+	1	5928787	genome
+NC_007274.1	131950	1.0000	+	1	131950	genome
+NC_007275.1	51711	1.0000	+	1	51711	genome
+URS0000D66AD3_264730	60	1.0000	-	106036	106095	Pseudomonas savastanoi pv. phaseolicola 1448A gabT RNA	NC_005773.3
+URS0000033B1D_264730	77	1.0000	+	109533	109609	Pseudomonas savastanoi pv. phaseolicola 1448A tRNA-Arg (CCG) (tRNA-Arg-CCG-1-1)	NC_005773.3
+URS0000D6B221_264730	91	1.0000	-	288538	288628	Pseudomonas savastanoi pv. phaseolicola 1448A ivy-DE RNA	NC_005773.3
+URS0000672505_264730	116	1.0000	-	299553	299668	Pseudomonas syringae pv. phaseolicola 1448A Pseudomon-1/ErsA RNA	NC_005773.3
+URS0000D6C98E_264730	100	1.0000	+	330473	330572	Pseudomonas savastanoi pv. phaseolicola 1448A Pseudomon-Rho RNA	NC_005773.3
+URS000067336D_264730	96	1.0000	+	369048	369143	Pseudomonas syringae pv. phaseolicola 1448A C4 antisense RNA	NC_005773.3
+URS0000AB9E50_264730	105	1.0000	+	628566	628670	Pseudomonas syringae pv. phaseolicola 1448A TPP riboswitch aptamer (THI element)	NC_005773.3
+URS00004575BF_264730	87	1.0000	-	673159	673245	Pseudomonas savastanoi pv. phaseolicola 1448A tRNA-Leu (CAG) (tRNA-Leu-CAG-1-1, tRNA-Leu-CAG-1-2)	NC_005773.3
+URS0000887589_264730	1540	1.0000	+	804000	805539	Pseudomonas savastanoi pv. phaseolicola 1448A 16S ribosomal RNA	NC_005773.3
+URS000041FAB1_264730	77	1.0000	+	805663	805739	Pseudomonas savastanoi pv. phaseolicola 1448A tRNA-Ile (GAT) (tRNA-Ile-GAT-1 1 to 5)	NC_005773.3
+URS00002039CF_264730	76	1.0000	+	805770	805845	Pseudomonas savastanoi pv. phaseolicola 1448A tRNA-Ala (TGC) (tRNA-Ala-TGC-1 1 to 5)	NC_005773.3
+URS000013225D_264730	2902	1.0000	+	806085	808986	Pseudomonas savastanoi pv. phaseolicola 1448A bacterial LSU rRNA	NC_005773.3
+URS000048AB4C_264730	120	1.0000	+	809136	809255	Pseudomonas savastanoi pv. phaseolicola 1448A 5S ribosomal RNA	NC_005773.3
+URS00002CF7ED_264730	76	1.0000	+	870876	870951	Pseudomonas savastanoi pv. phaseolicola 1448A tRNA-Asn (GTT) (tRNA-Asn-GTT-1-1, tRNA-Asn-GTT-1-2)	NC_005773.3
+URS000044B62B_264730	77	1.0000	+	870981	871057	Pseudomonas savastanoi pv. phaseolicola 1448A tRNA-Pro (TGG) (tRNA-Pro-TGG-1 1 to 3)	NC_005773.3
+URS000015D09B_264730	76	1.0000	+	871063	871138	Pseudomonas savastanoi pv. phaseolicola 1448A tRNA-Lys (TTT) (tRNA-Lys-TTT-1-1, tRNA-Lys-TTT-1-2)	NC_005773.3
+URS000066BBED_264730	392	1.0000	-	1024589	1024980	Pseudomonas syringae pv. phaseolicola 1448A Pseudomonas sRNA CrcZ	NC_005773.3
+URS00006CED16_264730	147	1.0000	-	1035556	1035702	Pseudomonas syringae pv. phaseolicola 1448A PrrF RNA	NC_005773.3
+URS00006694E6_264730	87	1.0000	-	1124771	1124857	Pseudomonas syringae pv. phaseolicola 1448A C4 antisense RNA	NC_005773.3
+URS00004D724F_264730	77	1.0000	-	1125905	1125981	Pseudomonas savastanoi pv. phaseolicola 1448A tRNA-Met (CAT) (tRNA-Met-CAT-1-1)	NC_005773.3
+URS000019A45A_264730	75	1.0000	-	1186141	1186215	Pseudomonas savastanoi pv. phaseolicola 1448A tRNA-Gln (TTG) (tRNA-Gln-TTG-1-1)	NC_005773.3
+URS000057D4B6_264730	85	1.0000	-	1510567	1510651	Pseudomonas savastanoi pv. phaseolicola 1448A tRNA-Leu (CAA) (tRNA-Leu-CAA-1-1)	NC_005773.3
+URS00000B6B43_264730	90	1.0000	+	1794902	1794991	Pseudomonas savastanoi pv. phaseolicola 1448A tRNA-Ser (CGA) (tRNA-Ser-CGA-1-1)	NC_005773.3
+URS00002BE001_264730	76	1.0000	+	1827343	1827418	Pseudomonas savastanoi pv. phaseolicola 1448A tRNA-Val (TAC) (tRNA-Val-TAC-1-1, tRNA-Val-TAC-1-2)	NC_005773.3
+URS00001760C9_264730	77	1.0000	+	1827440	1827516	Pseudomonas savastanoi pv. phaseolicola 1448A tRNA-Asp (GTC) (tRNA-Asp-GTC-1 1 to 3)	NC_005773.3
+URS0000D68B73_264730	289	1.0000	-	1896999	1897287	Pseudomonas savastanoi pv. phaseolicola 1448A rne-II RNA	NC_005773.3
+URS000071883F_264730	197	1.0000	-	1911284	1911480	Pseudomonas syringae pv. phaseolicola 1448A RgsA sRNA	NC_005773.3
+URS000064C7CA_264730	73	1.0000	-	1930918	1930990	Pseudomonas syringae pv. phaseolicola 1448A Pseudomonas sRNA P9	NC_005773.3
+URS000055270D_264730	77	1.0000	+	1952561	1952637	Pseudomonas savastanoi pv. phaseolicola 1448A tRNA-Arg (TCT) (tRNA-Arg-TCT-1-1)	NC_005773.3
+URS00003116FC_264730	76	1.0000	+	1952689	1952764	Pseudomonas savastanoi pv. phaseolicola 1448A tRNA-His (GTG) (tRNA-His-GTG-1-1)	NC_005773.3
+URS000004534D_264730	85	1.0000	+	1952821	1952905	Pseudomonas savastanoi pv. phaseolicola 1448A tRNA-Leu (TAG) (tRNA-Leu-TAG-1-1)	NC_005773.3
+URS0002330A28_264730	118	1.0000	+	2002611	2002728	Pseudomonas syringae pv. phaseolicola 1448A rsmX	NC_005773.3
+URS000231EB79_264730	98	1.0000	+	2086711	2086808	Pseudomonas syringae pv. phaseolicola 1448A Bacterial small signal recognition particle RNA	NC_005773.3
+URS000001D58B_264730	90	1.0000	-	2143091	2143180	Pseudomonas savastanoi pv. phaseolicola 1448A tRNA-Ser (GGA) (tRNA-Ser-GGA-1-1)	NC_005773.3
+URS0000545FDA_264730	76	1.0000	+	2292475	2292550	Pseudomonas savastanoi pv. phaseolicola 1448A tRNA-Ala (GGC) (tRNA-Ala-GGC-1-1, tRNA-Ala-GGC-1-2)	NC_005773.3
+URS000059CE62_264730	76	1.0000	+	2292639	2292714	Pseudomonas savastanoi pv. phaseolicola 1448A tRNA-Glu (TTC) (tRNA-Glu-TTC-1 1 to 4)	NC_005773.3
+URS0000D6870C_264730	218	1.0000	+	2325229	2325446	Pseudomonas savastanoi pv. phaseolicola 1448A sucA-II RNA	NC_005773.3
+URS00008294AA_264730	69	1.0000	+	2331289	2331357	Pseudomonas savastanoi pv. phaseolicola 1448A sucC RNA	NC_005773.3
+URS00023333CC_264730	136	1.0000	-	2429141	2429276	Pseudomonas syringae pv. phaseolicola 1448A Pseudomonas sRNA P11	NC_005773.3
+URS0000D6C013_264730	72	1.0000	-	2432411	2432482	Pseudomonas savastanoi pv. phaseolicola 1448A narK RNA	NC_005773.3
+URS0000D6699C_264730	131	1.0000	-	2437900	2438030	Pseudomonas savastanoi pv. phaseolicola 1448A rmf RNA	NC_005773.3
+URS00004D27B3_264730	77	1.0000	+	2498536	2498612	Pseudomonas savastanoi pv. phaseolicola 1448A tRNA-Pro (GGG) (tRNA-Pro-GGG-1-1)	NC_005773.3
+URS0000726849_264730	147	1.0000	-	2575171	2575317	Pseudomonas syringae pv. phaseolicola 1448A PrrF RNA	NC_005773.3
+URS000232A74B_264730	214	1.0000	-	2581831	2582044	Pseudomonas syringae pv. phaseolicola 1448A Cobalamin riboswitch aptamer	NC_005773.3
+URS000065C7E7_264730	118	1.0000	-	2702218	2702335	Pseudomonas syringae pv. phaseolicola 1448A Pseudomonas sRNA P15	NC_005773.3
+URS00001ACE3E_264730	76	1.0000	+	2706626	2706701	Pseudomonas savastanoi pv. phaseolicola 1448A tRNA-Gly (GCC) (tRNA-Gly-GCC-1 1 to 3)	NC_005773.3
+URS000011A3DE_264730	74	1.0000	+	2764709	2764782	Pseudomonas savastanoi pv. phaseolicola 1448A tRNA-Cys (GCA) (tRNA-Cys-GCA-1-1)	NC_005773.3
+URS00005D897C_264730	86	1.0000	-	2778554	2778639	Pseudomonas savastanoi pv. phaseolicola 1448A tRNA-Leu (TAA) (tRNA-Leu-TAA-1-1)	NC_005773.3
+URS0000D6D393_264730	85	1.0000	-	2874467	2874551	Pseudomonas syringae pv. phaseolicola 1448A C4 antisense RNA	NC_005773.3
+URS000046A7B4_264730	77	1.0000	+	2978401	2978477	Pseudomonas savastanoi pv. phaseolicola 1448A tRNA-Val (GAC) (tRNA-Val-GAC-1-1)	NC_005773.3
+URS0000D6C278_264730	82	1.0000	-	3457057	3457138	Pseudomonas savastanoi pv. phaseolicola 1448A livK RNA	NC_005773.3
+URS0000D69F40_264730	84	1.0000	-	3459084	3459167	Pseudomonas savastanoi pv. phaseolicola 1448A livK RNA	NC_005773.3
+URS00023185FF_264730	200	1.0000	+	3489261	3489460	Pseudomonas syringae pv. phaseolicola 1448A Cobalamin riboswitch aptamer	NC_005773.3
+URS000043D8CB_264730	88	1.0000	+	3576639	3576726	Pseudomonas savastanoi pv. phaseolicola 1448A tRNA-Ser (TGA) (tRNA-Ser-TGA-1-1)	NC_005773.3
+URS00003C5328_264730	77	1.0000	-	4042008	4042084	Pseudomonas savastanoi pv. phaseolicola 1448A tRNA-Arg (CCT) (tRNA-Arg-CCT-1-1)	NC_005773.3
+URS00003E312D_264730	77	1.0000	-	4046117	4046193	Pseudomonas savastanoi pv. phaseolicola 1448A tRNA-Arg (ACG) (tRNA-Arg-ACG-1-1, tRNA-Arg-ACG-1-2)	NC_005773.3
+URS000056F783_264730	91	1.0000	-	4046467	4046557	Pseudomonas savastanoi pv. phaseolicola 1448A tRNA-Ser (GCT) (tRNA-Ser-GCT-1-1)	NC_005773.3
+URS0000D689D9_264730	85	1.0000	-	4214847	4214931	Pseudomonas savastanoi pv. phaseolicola 1448A gyrA RNA	NC_005773.3
+URS00005CD336_264730	77	1.0000	+	4336498	4336574	Pseudomonas savastanoi pv. phaseolicola 1448A tRNA-fMet (CAT) (tRNA-fMet-CAT-1-1, tRNA-fMet-CAT-1-2)	NC_005773.3
+URS00006FCB4F_264730	133	1.0000	-	4360761	4360893	Pseudomonas syringae pv. phaseolicola 1448A PrrB/RsmZ RNA family	NC_005773.3
+URS00002AD361_264730	74	1.0000	+	4547935	4548008	Pseudomonas savastanoi pv. phaseolicola 1448A tRNA-Gly (CCC) (tRNA-Gly-CCC-1-1)	NC_005773.3
+URS00006CF4DE_264730	85	1.0000	+	4631607	4631691	Pseudomonas syringae pv. phaseolicola 1448A C4 antisense RNA	NC_005773.3
+URS0000D6C085_264730	111	1.0000	-	4661280	4661390	Pseudomonas savastanoi pv. phaseolicola 1448A Pseudomon-groES RNA	NC_005773.3
+URS000054FA7D_264730	77	1.0000	-	4780755	4780831	Pseudomonas savastanoi pv. phaseolicola 1448A tRNA-fMet (CAT) (tRNA-fMet-CAT-2-1)	NC_005773.3
+URS00004BDB81_264730	86	1.0000	-	4780927	4781012	Pseudomonas savastanoi pv. phaseolicola 1448A tRNA-Leu (GAG) (tRNA-Leu-GAG-1-1)	NC_005773.3
+URS0000D68556_264730	88	1.0000	-	4794894	4794981	Pseudomonas savastanoi pv. phaseolicola 1448A gyrA RNA	NC_005773.3
+URS00004E77B0_264730	388	1.0000	+	4804338	4804725	Pseudomonas syringae pv. phaseolicola 1448A transfer-messenger RNA	NC_005773.3
+URS00006CC34D_264730	66	1.0000	-	5240614	5240679	Pseudomonas syringae pv. phaseolicola 1448A Pseudomonas sRNA P26	NC_005773.3
+URS000017A76C_264730	76	1.0000	-	5244035	5244110	Pseudomonas savastanoi pv. phaseolicola 1448A tRNA-Trp (CCA) (tRNA-Trp-CCA-1-1)	NC_005773.3
+URS000030D365_264730	76	1.0000	-	5244276	5244351	Pseudomonas savastanoi pv. phaseolicola 1448A tRNA-Thr (GGT) (tRNA-Thr-GGT-1-1)	NC_005773.3
+URS00000BE816_264730	74	1.0000	-	5244378	5244451	Pseudomonas savastanoi pv. phaseolicola 1448A tRNA-Gly (TCC) (tRNA-Gly-TCC-1-1)	NC_005773.3
+URS00002CD4CA_264730	85	1.0000	-	5244476	5244560	Pseudomonas savastanoi pv. phaseolicola 1448A tRNA-Tyr (GTA) (tRNA-Tyr-GTA-1-1)	NC_005773.3
+URS00001EC5E4_264730	77	1.0000	-	5323252	5323328	Pseudomonas savastanoi pv. phaseolicola 1448A tRNA-Ile2 (CAT) (tRNA-Ile2-CAT-1-1)	NC_005773.3
+URS0000C8B81B_264730	76	1.0000	-	5323369	5323444	Pseudomonas savastanoi pv. phaseolicola 1448A tRNA-Ile2 (CAT) (tRNA-Ile2-CAT-2-1)	NC_005773.3
+URS0000D691A6_264730	83	1.0000	+	5451361	5451443	Pseudomonas syringae pv. phaseolicola 1448A C4 antisense RNA	NC_005773.3
+URS00006EBF83_264730	180	1.0000	+	5571246	5571425	Pseudomonas syringae pv. phaseolicola 1448A Pseudomonas sRNA P1	NC_005773.3
+URS00002DEAD4_264730	76	1.0000	+	5605576	5605651	Pseudomonas savastanoi pv. phaseolicola 1448A tRNA-Phe (GAA) (tRNA-Phe-GAA-1-1)	NC_005773.3
+URS0000D65757_264730	84	1.0000	-	5617032	5617115	Pseudomonas syringae pv. phaseolicola 1448A C4 antisense RNA	NC_005773.3
+URS000023FF72_264730	76	1.0000	+	5619186	5619261	Pseudomonas savastanoi pv. phaseolicola 1448A tRNA-Thr (TGT) (tRNA-Thr-TGT-1-1)	NC_005773.3
