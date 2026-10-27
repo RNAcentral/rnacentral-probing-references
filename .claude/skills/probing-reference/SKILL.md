@@ -17,6 +17,29 @@ Read the repository `README.md` first (layout and method), then the
   the organism level.
 - Never edit an older release's folder.
 
+**Delegating to cheaper agents:** a full build is long, so hand the mechanical
+parts to background subagents on a cheaper model, and keep the judgement calls.
+
+- **Haiku:** read-only lookups, such as how the pipeline resolves an organism to an
+  Ensembl/NCBI genome, or which accession a strain's metadata points to.
+- **Sonnet:** one agent per family of builders, each copying the closest existing
+  builder: new viruses (section C), new bacteria (section C), and adding strains to
+  an existing builder.
+- **Keep yourself:** the filter and allowlist changes, deciding `--no-prefilter` and
+  chromosome names (section B), rf-eval (section E), the section D checks, the
+  READMEs, the params update and the commit.
+- **Each brief says:** read this skill and the template builder; write only to its own
+  `scripts/<org>/` and `release<N>/<org>/`; logs go to the scratchpad, not
+  `release<N>/`; never commit or touch an older release. It must also say to wait
+  for any build running in a folder it extends, and to `cmp` the existing strains'
+  outputs before and after.
+- **Sequences:** have agents read record sequences from the release's
+  `sequences/rnacentral_species_specific_ids.fasta.gz` (one streaming pass,
+  extracting every taxid needed) instead of rnacentral.org, which can take about 20 s
+  per call right after a release.
+- **Review what comes back** (accessions, records kept, `cmp` results) before
+  building on it; the agents' reports are not checked work.
+
 ## A. New RNAcentral release, existing organisms
 
 0. **Rfam allowlist (human, mouse):** regenerate their `RFAM_SEED_ALLOWLIST`
@@ -96,7 +119,7 @@ the only file kept.
 
 ## D. Checks before handing over
 
-- **Only ACGTN.** `tr -d 'ACGTNacgtn\n' < x.fa | wc -c` must be 0. One IUPAC base
+- **Only ACGTN.** `grep -v '^>' x.fa | tr -d 'ACGTNacgtn\n' | wc -c` must be 0. One IUPAC base
   (Y, R, …) makes rf-count loop forever at 100 % CPU, and GISAID genomes often
   carry them.
 - **No parentheses in transcript IDs.** RNA Framework's XML parser hangs on them.
