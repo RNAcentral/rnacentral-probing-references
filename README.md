@@ -145,6 +145,11 @@ folder, and put any dataset-specific options (adapters, trimming,
 normalisation) in the same file. Datasets whose metadata `comment` starts with
 `failed QC` or `skip` are not run and need no params file.
 
+The second line of each params file gives its status. `# status: final` means
+the dataset has been run with it and checked. `# status: draft` means it was
+generated from the metadata and has not been run yet. Change it to `final` once
+a run has been checked.
+
 Run the dataset on codon:
 
 ```

@@ -1,0 +1,9 @@
+# rnastruct00003: Mus musculus, genome route
+# status: draft (generated from the metadata; not yet run)
+rnacentral: true
+structextract: true
+
+gtf: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/mouse/reference/mus_musculus.GRCm39.filtered.gtf.gz
+
+rfeval_reference: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/mouse/rfeval/rrna_common.db
+rfeval_windows:   /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/mouse/rfeval/rrna_common.windows.tsv

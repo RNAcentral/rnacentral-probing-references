@@ -1,9 +1,10 @@
 # rnastruct00026: SARS-CoV-2 USA-WA1/2020, transcriptome route
+# status: final (run and checked on the release 27 references)
 transcriptome: true
 rnacentral: true
 structextract: true
 
-fasta: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release27/sarscov2/reference/SARS2_USAWA1.transcriptome.fa
+fasta: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/sarscov2/reference/SARS2_USAWA1.transcriptome.fa
 
-rfeval_reference: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release27/sarscov2/rfeval/sars2_elements.db
-rfeval_windows:   /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release27/sarscov2/rfeval/sars2_elements.windows.tsv
+rfeval_reference: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/sarscov2/rfeval/sars2_elements.db
+rfeval_windows:   /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/sarscov2/rfeval/sars2_elements.windows.tsv

@@ -1,0 +1,10 @@
+# rnastruct00113: Dengue virus DV1-WP75, transcriptome route
+# status: draft (generated from the metadata; not yet run)
+transcriptome: true
+rnacentral: true
+structextract: true
+
+fasta: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/dengue/reference/DENV1_WP75.transcriptome.fa
+
+rfeval_reference: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/dengue/rfeval/dengue_elements.db
+rfeval_windows:   /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/dengue/rfeval/dengue_elements.windows.tsv

@@ -1,0 +1,5 @@
+# rnastruct00128: Kluyveromyces lactis, genome route (Ensembl Fungi genome and GTF downloaded by the pipeline)
+# status: draft (generated from the metadata; not yet run)
+# note: K. lactis NRRL Y-1140 (ASM251v1), resolved from Ensembl Fungi; the probed strain is CLIB 209
+rnacentral: true
+structextract: true

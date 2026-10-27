@@ -1,0 +1,10 @@
+# rnastruct00071: Methanosarcina acetivorans, transcriptome route
+# status: draft (generated from the metadata; not yet run)
+transcriptome: true
+rnacentral: true
+structextract: true
+
+fasta: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/methanosarcina/reference/MACE_C2A.transcriptome.fa
+
+rfeval_reference: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/methanosarcina/rfeval/rrna_common.db
+rfeval_windows:   /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/methanosarcina/rfeval/rrna_common.windows.tsv

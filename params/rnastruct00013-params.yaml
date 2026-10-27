@@ -1,0 +1,10 @@
+# rnastruct00013: Influenza A virus A/WSN/1933(H1N1), transcriptome route
+# status: draft (generated from the metadata; not yet run)
+transcriptome: true
+rnacentral: true
+structextract: true
+
+fasta: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/influenza/reference/IAV_WSN1933.transcriptome.fa
+
+rfeval_reference: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/influenza/rfeval/iav_elements.db
+rfeval_windows:   /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/influenza/rfeval/iav_elements.windows.tsv

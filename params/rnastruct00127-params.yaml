@@ -1,0 +1,5 @@
+# rnastruct00127: Debaryomyces hansenii, genome route (Ensembl Fungi genome and GTF downloaded by the pipeline)
+# status: draft (generated from the metadata; not yet run)
+# note: D. hansenii CBS767 (ASM644v2), resolved from Ensembl Fungi; the probed strain is NCYC 2572
+rnacentral: true
+structextract: true

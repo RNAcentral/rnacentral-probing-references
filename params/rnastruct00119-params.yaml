@@ -1,0 +1,11 @@
+# rnastruct00119: HIV NL4-3, transcriptome route
+# status: draft (generated from the metadata; not yet run)
+# note: reference is the NL4-3 provirus (AF324493.2 1-9709); rf-eval windows lie in the RNA genome (R to R)
+transcriptome: true
+rnacentral: true
+structextract: true
+
+fasta: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/hiv/reference/HIV1_NL43.transcriptome.fa
+
+rfeval_reference: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/hiv/rfeval/hiv_elements.db
+rfeval_windows:   /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/hiv/rfeval/hiv_elements.windows.tsv

@@ -1,0 +1,10 @@
+# rnastruct00136: West Nile virus NY99, transcriptome route
+# status: draft (generated from the metadata; not yet run)
+transcriptome: true
+rnacentral: true
+structextract: true
+
+fasta: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/west_nile/reference/WNV_NY99.transcriptome.fa
+
+rfeval_reference: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/west_nile/rfeval/west_nile_elements.db
+rfeval_windows:   /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/west_nile/rfeval/west_nile_elements.windows.tsv

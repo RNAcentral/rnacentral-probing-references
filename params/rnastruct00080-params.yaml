@@ -1,0 +1,6 @@
+# rnastruct00080: Oryza sativa, genome route
+# status: draft (generated from the metadata; not yet run)
+rnacentral: true
+structextract: true
+
+gtf: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/rice/reference/oryza_sativa.IRGSP-1.0.filtered.gtf.gz
