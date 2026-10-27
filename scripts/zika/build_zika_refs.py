@@ -26,12 +26,14 @@ aligner = Align.PairwiseAligner(mode="local", match_score=1, mismatch_score=-1,
 def get(url, tries=6):
     for i in range(tries):
         try:
-            with urllib.request.urlopen(url) as r:
+            with urllib.request.urlopen(url, timeout=120) as r:
                 return r.read()
         except urllib.error.HTTPError as e:
-            if e.code == 429:
+            if e.code == 429 or e.code >= 500:
                 time.sleep(3 * (i + 1)); continue
             raise
+        except (urllib.error.URLError, TimeoutError):
+            time.sleep(3 * (i + 1))
     raise RuntimeError(f"gave up on {url}")
 
 
@@ -89,11 +91,11 @@ for datasets, label, acc in STRAINS:
         if ident >= MIN_IDENT:
             hits.append((ident, len(seq), urs, seq, desc, a.aligned[0][0][0] + 1, a.aligned[0][-1][1]))
     kept = []
-    for ident, n, urs, seq, desc, start, end in sorted(hits, key=lambda h: (-h[0], -h[1])):
+    for ident, n, urs, seq, desc, start, end in sorted(hits, key=lambda h: (-h[0], -h[1], h[2])):
         if any(start <= k[6] and k[5] <= end for k in kept):
             continue
         kept.append((ident, n, urs, seq, desc, start, end))
-    for ident, n, urs, seq, desc, start, end in sorted(kept, key=lambda k: k[5]):
+    for ident, n, urs, seq, desc, start, end in sorted(kept, key=lambda k: (k[5], k[2])):
         gtf.append((urs, acc, start, end))
         rows.append(f"{datasets}\t{label}\t{acc}\t{urs}\t{n}\t{ident:.4f}\t{start}\t{end}\t{desc}")
     cds_start, cds_end = fetch_cds(acc)

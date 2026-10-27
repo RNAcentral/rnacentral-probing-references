@@ -20,12 +20,14 @@ aligner = Align.PairwiseAligner(mode="local", match_score=1, mismatch_score=-1,
 def get(url, tries=6):
     for i in range(tries):
         try:
-            with urllib.request.urlopen(url) as r:
+            with urllib.request.urlopen(url, timeout=120) as r:
                 return r.read()
         except urllib.error.HTTPError as e:
             if e.code == 429 or e.code >= 500:
                 time.sleep(3 * (i + 1)); continue
             raise
+        except (urllib.error.URLError, TimeoutError):
+            time.sleep(3 * (i + 1))
     raise RuntimeError(f"gave up on {url}")
 
 
@@ -114,11 +116,11 @@ for rid, (seq, desc) in candidates.items():
     if ident >= MIN_IDENT:
         hits.append((ident, len(seq), rid, seq, desc, strand, start, end))
 kept = []
-for h in sorted(hits, key=lambda h: (-h[0], -h[1])):
+for h in sorted(hits, key=lambda h: (-h[0], -h[1], TAXIDS.index(int(h[2].split("_")[1])), h[2])):
     if any(h[5] == k[5] and h[6] <= k[7] and k[6] <= h[7] for k in kept):
         continue
     kept.append(h)
-kept.sort(key=lambda k: k[6])
+kept.sort(key=lambda k: (k[6], k[2]))
 
 with open("work/ECOLI_MG1655.fa", "w") as fh:
     fh.write(f">{header}\n" + "\n".join(genome[i:i + 60] for i in range(0, len(genome), 60)) + "\n")

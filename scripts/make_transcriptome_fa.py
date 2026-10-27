@@ -31,7 +31,8 @@ def build(gtf):
     if fa is None:
         print(f"SKIP {gtf}: no matching FASTA")
         return
-    genome = {r.id: str(r.seq) for r in SeqIO.parse(fa, "fasta")}
+    # IUPAC codes (Y, R, …) make rf-count loop forever, so they become N
+    genome = {r.id: re.sub("[^ACGTNacgtn]", "N", str(r.seq)) for r in SeqIO.parse(fa, "fasta")}
     out, whole = [], set()
     for tid, ex in transcripts(gtf).items():
         contig, strand = ex[0][0], ex[0][3]

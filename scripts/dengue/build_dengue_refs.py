@@ -23,13 +23,15 @@ aligner = Align.PairwiseAligner(mode="local", match_score=1, mismatch_score=-1,
 def get(url, tries=6):
     for i in range(tries):
         try:
-            with urllib.request.urlopen(url) as r:
+            with urllib.request.urlopen(url, timeout=120) as r:
                 return r.read()
         except urllib.error.HTTPError as e:
-            if e.code == 429:
+            if e.code == 429 or e.code >= 500:
                 time.sleep(3 * (i + 1))
                 continue
             raise
+        except (urllib.error.URLError, TimeoutError):
+            time.sleep(3 * (i + 1))
     raise RuntimeError(f"gave up on {url}")
 
 def fetch_genome(acc):
@@ -66,7 +68,7 @@ def best_match(genome, taxid):
         seq = json.loads(get(f"https://rnacentral.org/api/v1/rna/{urs}?format=json"))["sequence"].upper().replace("U", "T")
         a = aligner.align(tail, seq)[0]
         ident = sum(1 for x, y in zip(*a) if x == y) / len(seq)
-        if best is None or ident > best[0]:
+        if best is None or (ident, best[1]) > (best[0], urs_tax):
             best = (ident, urs_tax, seq)
     return best
 

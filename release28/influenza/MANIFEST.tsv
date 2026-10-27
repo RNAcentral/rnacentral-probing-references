@@ -1,0 +1,9 @@
+dataset	segment	protein	ncbi_accession	length
+rnastruct00013	1	PB2	CY034139.1	2290
+rnastruct00013	2	PB1	CY034138.1	2303
+rnastruct00013	3	PA	CY034137.1	2202
+rnastruct00013	4	HA	CY034132.1	1725
+rnastruct00013	5	NP	CY034135.1	1526
+rnastruct00013	6	NA	CY034134.1	1368
+rnastruct00013	7	M	CY034133.1	984
+rnastruct00013	8	NS	CY034136.1	845
