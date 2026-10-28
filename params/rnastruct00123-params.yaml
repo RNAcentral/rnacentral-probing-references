@@ -3,7 +3,7 @@
 rnacentral: true
 structextract: true
 
-gtf: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/durum_wheat/reference/triticum_turgidum.Svevo.v1.filtered.gtf.gz
+gtf: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/triticum_turgidum/reference/triticum_turgidum.Svevo.v1.filtered.gtf.gz
 
-rfeval_reference: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/durum_wheat/rfeval/rrna_common.db
-rfeval_windows:   /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/durum_wheat/rfeval/rrna_common.windows.tsv
+rfeval_reference: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/triticum_turgidum/rfeval/rrna_common.db
+rfeval_windows:   /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/triticum_turgidum/rfeval/rrna_common.windows.tsv

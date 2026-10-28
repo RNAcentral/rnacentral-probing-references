@@ -4,7 +4,7 @@ transcriptome: true
 rnacentral: true
 structextract: true
 
-fasta: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/bsubtilis/reference/BSUB_168.transcriptome.fa
+fasta: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/bacillus_subtilis/reference/BSUB_168.transcriptome.fa
 
-rfeval_reference: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/bsubtilis/rfeval/rrna_common.db
-rfeval_windows:   /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/bsubtilis/rfeval/rrna_common.windows.tsv
+rfeval_reference: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/bacillus_subtilis/rfeval/rrna_common.db
+rfeval_windows:   /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/bacillus_subtilis/rfeval/rrna_common.windows.tsv

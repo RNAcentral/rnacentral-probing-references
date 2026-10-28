@@ -20,13 +20,13 @@ from project_ss_cons import pair_columns, project, read_pfam_sto
 IMG = "rnacentral/r2dt:latest"
 MIN_BP_PER_NT, MIN_LOOP = 0.10, 3
 ORGANISMS = {
-    "yellow_fever": {}, "west_nile": {}, "norovirus": {}, "pedv": {}, "bocavirus": {}, "bluetongue": {},
+    "yellow_fever_virus": {}, "west_nile_virus": {}, "murine_norovirus": {}, "porcine_epidemic_diarrhea_virus": {}, "human_bocavirus": {}, "bluetongue_virus": {},
     # the provirus runs LTR to LTR; the RNA genome is R to R (AF324493.2 454-9626)
     "hiv": {"rna_span": {"AF324493.2": (454, 9626)}},
-    # family -> element labels in genome order, as scripts/dengue/build_rfeval_refs.py
-    "dengue": {"set": "dengue_elements", "stems": ["DENV1_WP75", "DENV2_16681", "DENV4_H241", "DENV4_TVP360"],
+    # family -> element labels in genome order, as scripts/dengue_virus/build_rfeval_refs.py
+    "dengue_virus": {"set": "dengue_elements", "stems": ["DENV1_WP75", "DENV2_16681", "DENV4_H241", "DENV4_TVP360"],
                "elements": {"RF02340": ["SLA"], "RF03546": ["5UTR"], "RF00617": ["cHP"], "RF00525": ["DB1", "DB2"], "RF00185": ["3SL"]}},
-    "influenza": {"set": "iav_elements", "stems": ["IAV_PR8"], "elements": {"RF01099": ["NS_PK"]}, "suffix": False,
+    "influenza_a_virus": {"set": "iav_elements", "stems": ["IAV_PR8"], "elements": {"RF01099": ["NS_PK"]}, "suffix": False,
                   "keep_pk": {"RF01099"}},
 }
 

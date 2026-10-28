@@ -4,7 +4,7 @@ transcriptome: true
 rnacentral: true
 structextract: true
 
-fasta: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/west_nile/reference/WNV_NY99.transcriptome.fa
+fasta: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/west_nile_virus/reference/WNV_NY99.transcriptome.fa
 
-rfeval_reference: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/west_nile/rfeval/west_nile_elements.db
-rfeval_windows:   /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/west_nile/rfeval/west_nile_elements.windows.tsv
+rfeval_reference: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/west_nile_virus/rfeval/west_nile_elements.db
+rfeval_windows:   /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/west_nile_virus/rfeval/west_nile_elements.windows.tsv

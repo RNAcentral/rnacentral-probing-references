@@ -4,7 +4,7 @@ transcriptome: true
 rnacentral: true
 structextract: true
 
-fasta: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/sarscov2/reference/SARS2_OmicronXBB.transcriptome.fa
+fasta: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/sars_cov_2/reference/SARS2_OmicronXBB.transcriptome.fa
 
-rfeval_reference: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/sarscov2/rfeval/sars2_elements.db
-rfeval_windows:   /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/sarscov2/rfeval/sars2_elements.windows.tsv
+rfeval_reference: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/sars_cov_2/rfeval/sars2_elements.db
+rfeval_windows:   /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/sars_cov_2/rfeval/sars2_elements.windows.tsv

@@ -4,4 +4,4 @@ transcriptome: true
 rnacentral: true
 structextract: true
 
-fasta: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/yellow_fever/reference/YFV_Dakar.transcriptome.fa
+fasta: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/yellow_fever_virus/reference/YFV_Dakar.transcriptome.fa

@@ -3,7 +3,7 @@
 rnacentral: true
 structextract: true
 
-gtf: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/plasmodium/reference/plasmodium_falciparum.GCA000002765v3.filtered.gtf.gz
+gtf: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/plasmodium_falciparum/reference/plasmodium_falciparum.GCA000002765v3.filtered.gtf.gz
 
-rfeval_reference: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/plasmodium/rfeval/rrna_common.db
-rfeval_windows:   /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/plasmodium/rfeval/rrna_common.windows.tsv
+rfeval_reference: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/plasmodium_falciparum/rfeval/rrna_common.db
+rfeval_windows:   /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/plasmodium_falciparum/rfeval/rrna_common.windows.tsv

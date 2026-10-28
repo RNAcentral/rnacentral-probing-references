@@ -4,7 +4,7 @@ transcriptome: true
 rnacentral: true
 structextract: true
 
-fasta: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/norovirus/reference/MNV_CW3.transcriptome.fa
+fasta: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/murine_norovirus/reference/MNV_CW3.transcriptome.fa
 
-rfeval_reference: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/norovirus/rfeval/norovirus_elements.db
-rfeval_windows:   /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/norovirus/rfeval/norovirus_elements.windows.tsv
+rfeval_reference: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/murine_norovirus/rfeval/norovirus_elements.db
+rfeval_windows:   /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/murine_norovirus/rfeval/norovirus_elements.windows.tsv

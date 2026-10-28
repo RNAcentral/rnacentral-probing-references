@@ -21,14 +21,15 @@ BAC = {"RF00177": "16S_rRNA", "RF02541": "23S_rRNA", "RF00001": "5S_rRNA"}
 ARC = {"RF01959": "16S_rRNA", "RF02540": "23S_rRNA", "RF00001": "5S_rRNA"}
 # 5S genes outside the 45S rDNA unit are searched genome-wide ("unlinked")
 ORGANISMS = {
-    "arabidopsis": {"species": "arabidopsis_thaliana", "families": {**EUK, "RF02543": "25S_rRNA"}, "unlinked": {"RF00001"}},
-    "zebrafish": {"species": "danio_rerio", "families": EUK, "unlinked": {"RF00001"}},
-    "plasmodium": {"species": "plasmodium_falciparum", "families": EUK, "unlinked": {"RF00001"}},
-    "durum_wheat": {"species": "triticum_turgidum", "families": {**EUK, "RF02543": "26S_rRNA"}, "unlinked": {"RF00001"}},
-    "bsubtilis": {"families": BAC},
-    "listeria": {"families": BAC},
-    "pseudomonas": {"families": BAC},
-    "methanosarcina": {"families": ARC},
+    "arabidopsis_thaliana": {"species": "arabidopsis_thaliana", "families": {**EUK, "RF02543": "25S_rRNA"}, "unlinked": {"RF00001"}},
+    "danio_rerio": {"species": "danio_rerio", "families": EUK, "unlinked": {"RF00001"}},
+    "plasmodium_falciparum": {"species": "plasmodium_falciparum", "families": EUK, "unlinked": {"RF00001"}},
+    "triticum_turgidum": {"species": "triticum_turgidum", "families": {**EUK, "RF02543": "26S_rRNA"}, "unlinked": {"RF00001"}},
+    "oryza_sativa": {"species": "oryza_sativa", "families": {**EUK, "RF02543": "25S_rRNA"}, "unlinked": {"RF00001"}},
+    "bacillus_subtilis": {"families": BAC},
+    "listeria_monocytogenes": {"families": BAC},
+    "pseudomonas_savastanoi": {"families": BAC},
+    "methanosarcina_acetivorans": {"families": ARC},
 }
 MIN_BP_PER_NT, UNIT = 0.10, 10000
 

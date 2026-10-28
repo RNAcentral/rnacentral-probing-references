@@ -26,6 +26,12 @@ release27/
 File names carry no release number; only the `release<N>/` folder does, so moving
 to a new release changes one path segment in the params files.
 
+From release 28, organism folders (`release<N>/<organism>/` and `scripts/<organism>/`)
+are named after the metadata `scientific_name`, lowercased with other characters
+replaced by `_` (`oryza_sativa`, `sars_cov_2`, `hiv`). That is also how the pipeline
+turns a samplesheet organism into a key. Release 27 keeps its common names (`rice`,
+`sarscov2`).
+
 ## Building a new release
 
 Run everything from the repository root; outputs go to `release<N>/<organism>/`.
@@ -62,7 +68,7 @@ It prints the IDs grouped by RNA type; replace that species' block in
 these. Each script downloads that release's GFF3 and filters it:
 
 ```
-scripts/human/build_reference.sh 28
+scripts/homo_sapiens/build_reference.sh 28
 ```
 
 The FASTA is the Ensembl genome, which the pipeline downloads itself.
@@ -72,9 +78,9 @@ Zika). RNAcentral has no coordinates for these, so the builder fetches the
 pinned NCBI genome and places the current RNAcentral records on it:
 
 ```
-mkdir -p release28/dengue && cd release28/dengue
-python3 ../../scripts/dengue/build_dengue_refs.py
-cd ../.. && python3 scripts/make_transcriptome_fa.py release28/dengue
+mkdir -p release28/dengue_virus && cd release28/dengue_virus
+python3 ../../scripts/dengue_virus/build_dengue_refs.py
+cd ../.. && python3 scripts/make_transcriptome_fa.py release28/dengue_virus
 ```
 
 The builder writes the genome FASTA/GTF to `work/`, and `make_transcriptome_fa.py`
@@ -94,8 +100,8 @@ write the files into the new release:
 ```
 python3 scripts/check_rfeval_ids.py release27/human/rfeval/rrna_common.windows.tsv \
     release27/human/reference/homo_sapiens.GRCh38.filtered.gtf.gz \
-    release28/human/reference/homo_sapiens.GRCh38.filtered.gtf.gz \
-    --outdir release28/human/rfeval
+    release28/homo_sapiens/reference/homo_sapiens.GRCh38.filtered.gtf.gz \
+    --outdir release28/homo_sapiens/rfeval
 ```
 
 For bacteria and viruses, pass the builder's `work/<stem>.gtf` files (from both

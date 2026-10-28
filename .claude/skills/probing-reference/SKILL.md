@@ -16,6 +16,9 @@ Read the repository `README.md` first (layout and method), then the
 - README, `MANIFEST*.tsv`, `filter.log` and the E. coli `records.fa` cache sit at
   the organism level.
 - Never edit an older release's folder.
+- Name a new organism's folders after its metadata `scientific_name`, lowercased
+  with other characters replaced by `_` (`oryza_sativa`, `sars_cov_2`). Release 27
+  still uses common names (`rice`, `sarscov2`).
 
 **Delegating to cheaper agents:** a full build is long, so hand the mechanical
 parts to background subagents on a cheaper model, and keep the judgement calls.
@@ -69,7 +72,7 @@ parts to background subagents on a cheaper model, and keep the judgement calls.
 
 Check `https://ftp.ebi.ac.uk/pub/databases/RNAcentral/releases/<N>.0/genome_coordinates/gff3/`.
 
-- **Script:** copy `scripts/yeast/build_reference.sh` to
+- **Script:** copy `scripts/saccharomyces_cerevisiae/build_reference.sh` to
   `scripts/<org>/build_reference.sh` and change `sp=` and the folder name.
 - **Flags:** keep `--pirna-max-loci 5`, the standing choice for every species.
 - **`--no-prefilter`:** run once without it. If the pre-filter removes most
@@ -90,8 +93,8 @@ Check `https://ftp.ebi.ac.uk/pub/databases/RNAcentral/releases/<N>.0/genome_coor
 
 ## C. New bacterium or virus (no GFF3)
 
-Copy the closest builder into `scripts/<org>/`: `sarscov2/build_sars_refs.py` for
-a virus (the most general), `ecoli/build_ecoli_refs.py` for a bacterium. Builders
+Copy the closest builder into `scripts/<org>/`: `sars_cov_2/build_sars_refs.py` for
+a virus (the most general), `escherichia_coli/build_ecoli_refs.py` for a bacterium. Builders
 write genome FASTA/GTF to `work/` under the current directory;
 `make_transcriptome_fa.py` turns them into `reference/<stem>.transcriptome.fa`,
 the only file kept.

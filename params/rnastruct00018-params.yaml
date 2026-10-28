@@ -3,4 +3,7 @@
 rnacentral: true
 structextract: true
 
-gtf: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/rice/reference/oryza_sativa.IRGSP-1.0.filtered.gtf.gz
+gtf: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/oryza_sativa/reference/oryza_sativa.IRGSP-1.0.filtered.gtf.gz
+
+rfeval_reference: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/oryza_sativa/rfeval/rrna_common.db
+rfeval_windows:   /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/oryza_sativa/rfeval/rrna_common.windows.tsv
