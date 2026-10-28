@@ -1,0 +1,11 @@
+# rnastruct00031: SARS-CoV-2 USA-WA1/2020, transcriptome route; failed QC (replicate correlation), kept to show the QC gate stopping it
+# status: draft (not for RNAcentral; the metadata comment still starts with failed QC)
+# QC gate on: the run is expected to stop at the replicate-correlation check
+transcriptome: true
+rnacentral: true
+structextract: true
+
+fasta: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/sars_cov_2/reference/SARS2_USAWA1.transcriptome.fa
+
+rfeval_reference: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/sars_cov_2/rfeval/sars2_elements.db
+rfeval_windows:   /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/sars_cov_2/rfeval/sars2_elements.windows.tsv
