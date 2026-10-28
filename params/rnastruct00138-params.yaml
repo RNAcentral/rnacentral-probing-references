@@ -1,5 +1,5 @@
 # rnastruct00138: Saccharomyces cerevisiae, genome route
-# status: final (run and checked on the release 27 references)
+# status: draft (labelled final by mistake: not run before release 28; failed replicate correlation on its first run)
 rnacentral: true
 structextract: true
 
