@@ -66,10 +66,12 @@ Notes for this release:
   rnacentral.org, which is slow after a release.
 - **rf-eval windows re-pointed.** Human, mouse and yeast renumbered their copies;
   `scripts/check_rfeval_ids.py` moved the windows to the new IDs, all at the same loci.
-- **New organisms.** Eukaryotes: arabidopsis, zebrafish, plasmodium, durum_wheat.
-  Bacteria and archaea: bsubtilis, listeria, methanosarcina, pseudomonas. Viruses:
-  yellow_fever, west_nile, norovirus, pedv, bocavirus, bluetongue, hiv. New dengue
-  and influenza strains were added to the existing folders.
+- **New organisms.** Eukaryotes: arabidopsis_thaliana, danio_rerio,
+  plasmodium_falciparum, triticum_turgidum. Bacteria and archaea: bacillus_subtilis,
+  listeria_monocytogenes, methanosarcina_acetivorans, pseudomonas_savastanoi. Viruses:
+  yellow_fever_virus, west_nile_virus, murine_norovirus, porcine_epidemic_diarrhea_virus,
+  human_bocavirus, bluetongue_virus, hiv. New dengue and influenza strains were added to
+  the existing folders.
 - **No folder: K. lactis (rnastruct00128) and D. hansenii (rnastruct00127).**
   RNAcentral has no GFF3 for them, so the pipeline downloads the Ensembl Fungi
   genome and GTF (ASM251v1 and CBS767 ASM644v2). Ensembl Fungi keeps them in
