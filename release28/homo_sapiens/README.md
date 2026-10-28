@@ -72,3 +72,42 @@ Both transcripts are in `release28/homo_sapiens/reference/homo_sapiens.GRCh38.fi
 --rfeval_reference release28/homo_sapiens/rfeval/rrna_common.db \
 --rfeval_windows   release28/homo_sapiens/rfeval/rrna_common.windows.tsv
 ```
+
+## Small-RNA test transcriptome (`homo_sapiens.trna_rrna.*`)
+
+A test of the transcriptome route for small-RNA libraries, made for rnastruct00040
+(HEK293T icSHAPE-MaP). On the genome route its tRNA profiles disagreed with the
+authors' and every in vivo rf-eval reference was at chance; the authors mapped to
+mature small-RNA sequences instead. If this run fixes that, the reference grows to
+the other small-RNA classes.
+
+```
+python3 scripts/homo_sapiens/build_trna_rrna_test.py 28   # from the repository root
+```
+
+- **tRNAs:** every tRNA in the filtered GTF, one record per URS (556 genomic
+  copies, 367 sequences, 19 of them mitochondrial; the filter keeps 19 of the 22). Sequences come from RNAcentral's
+  GtRNAdb export, the rest from rnacentral.org; `work/` caches both.
+- **No CCA tail.** Records stay identical to their URS sequence; Bowtie2 runs in
+  local mode, so the 3 tail bases of a read are soft-clipped.
+- **rRNA:** the two chr21 rDNA units the rf-eval windows sit on (URS0000ABD879,
+  URS0000ABD87F), 5S (URS00000F9D45), mt 16S (URS000080E357) and mt 12S
+  (URS000044DFF6, the Ensembl/HGNC MT-RNR1 record, 954 nt). The standalone
+  18S/5.8S/28S records are left out because they would duplicate the units. 12S is
+  not in the filtered GTF, so it is added by URS; without it, 12S reads would be
+  pushed onto other records by local alignment. 5.8S is identical in both units, so
+  its reads split between them and its window gets about half the depth.
+- **rf-eval** (`rfeval/trna_rrna.*`): the three `rrna_common` structures and four
+  tRNA structures taken from RNAcentral for the rnastruct00040 run, not from its
+  probing data (`scripts/homo_sapiens/rnastruct00040_trna.db`). They are re-keyed
+  onto these records, not rebuilt. In release 27 they sat on lncRNA records of
+  0.9–4.2 kb that span the tRNA genes, one of them a nuclear copy of mitochondrial
+  DNA on chr1; here they are on the tRNAs themselves. The fourth tRNA is
+  mitochondrial (URS00004206E2).
+
+Run with `transcriptome: true`, `fasta` and `bowtie_all: false`: with `-a`,
+Bowtie2 also reports worse alignments, and reads would land on near-identical tRNA
+genes, where the differences count as mutations. `rnacentral: false` turns the QC
+gate off for the test: reads from the small RNAs not in this reference (snRNAs,
+snoRNAs, 7SK, 7SL, Y RNAs) leave the mapped % below the gate's 60 %. The checks
+still show in MultiQC. See `params/rnastruct00040-params.yaml`.
