@@ -155,7 +155,30 @@ The aim is a small, certain yardstick.
   chromosome had to be moved onto URS records; genome-keyed windows gave "no
   windows written".
 
-## F. Finish
+## F. Choosing the route by library type
+
+Check the dataset's metadata `rna_type` before writing its params file.
+
+- **`total`:** the organism's usual route (filtered GTF, or the transcriptome FASTA).
+- **`mRNA`** (poly(A)-selected or targeted): the Ensembl route, with no `gtf` or `fasta`.
+  The RNAcentral GTF holds only ncRNAs, so it leaves almost nothing to count. Drop
+  `rrna_common` too: its windows are keyed on RNAcentral GTF transcripts.
+- **`sRNA`** (size-selected): the small-RNA transcriptome. On the genome route, tRNA
+  reads are counted on long records spanning the tRNA genes and rf-eval falls to chance
+  (rnastruct00040).
+  - Build it after the filtered GTF:
+    `scripts/build_small_rna_transcriptome.py <org> <N> [species FASTA]`, then
+    `scripts/rfeval_small_rna.py <org> <N>`.
+  - A new organism needs an `ORGANISMS` entry in both: the rRNA records to keep (the
+    rDNA units `rrna_common` uses, 5S, mitochondrial rRNA, by URS), and 3–5 Rfam
+    families for rf-eval.
+  - Keep the near-identical merge (2 substitutions). Without it, reads from one copy land
+    on another and the differences count as mutations; that put a tRNA's rf-eval below
+    chance.
+  - Params: `transcriptome: true`, `fasta`, `bowtie_all: false`. Turn the `rnacentral`
+    QC gate on only once the mapped % on the new reference has been checked.
+
+## G. Finish
 
 - **README per organism:** sources and accessions, filter settings and the
   per-step counts from `filter.log`, what was excluded and why, and the pipeline

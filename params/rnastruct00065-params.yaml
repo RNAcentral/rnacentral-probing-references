@@ -1,0 +1,14 @@
+# rnastruct00065: Homo sapiens, small-RNA transcriptome route (size-selected tRNA library); failed QC on the genome route, rerun here
+# status: draft (generated for the rerun; not yet run)
+# QC gate off until the mapped % on the small-RNA reference has been checked
+rnacentral: false
+structextract: true
+
+transcriptome: true
+fasta: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/homo_sapiens/reference/homo_sapiens.small_rna.transcriptome.fa
+# best alignment only: with -a, reads also land on near-identical copies and their differences count as mutations
+bowtie_all: false
+rfcount_map_max_coverage: 20000
+
+rfeval_reference: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/homo_sapiens/rfeval/small_rna.db
+rfeval_windows:   /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/homo_sapiens/rfeval/small_rna.windows.tsv

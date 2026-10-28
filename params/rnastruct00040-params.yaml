@@ -1,14 +1,14 @@
-# rnastruct00040: Homo sapiens, transcriptome route test (tRNAs + rRNA only); the genome-route params are in git history
-# status: draft (testing whether mature small-RNA mapping fixes the tRNA and in vivo rf-eval failures)
-# QC gate off for the test: reads from small RNAs not in this reference leave the mapped % below the gate's 60 %
+# rnastruct00040: Homo sapiens, small-RNA transcriptome route (size-selected library); the genome-route params are in git history
+# status: draft (the tRNA + rRNA test fixed the tRNA and in vivo rf-eval failures; now on the full small-RNA reference)
+# QC gate off until the mapped % on the full reference has been checked
 rnacentral: false
 structextract: true
 
 transcriptome: true
-fasta: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/homo_sapiens/reference/homo_sapiens.trna_rrna.transcriptome.fa
-# best alignment only: with -a, reads also land on near-identical tRNA genes and their differences count as mutations
+fasta: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/homo_sapiens/reference/homo_sapiens.small_rna.transcriptome.fa
+# best alignment only: with -a, reads also land on near-identical copies and their differences count as mutations
 bowtie_all: false
 rfcount_map_max_coverage: 20000
 
-rfeval_reference: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/homo_sapiens/rfeval/trna_rrna.db
-rfeval_windows:   /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/homo_sapiens/rfeval/trna_rrna.windows.tsv
+rfeval_reference: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/homo_sapiens/rfeval/small_rna.db
+rfeval_windows:   /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/homo_sapiens/rfeval/small_rna.windows.tsv

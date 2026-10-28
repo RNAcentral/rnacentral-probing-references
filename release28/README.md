@@ -6,7 +6,7 @@ details and the exact pipeline options.
 
 | organism | reference/ | rfeval/ |
 |---|---|---|
-| homo_sapiens | GRCh38 filtered GTF | `rrna_common` |
+| homo_sapiens | GRCh38 filtered GTF; small-RNA transcriptome FASTA (size-selected libraries) | `rrna_common`; `small_rna` |
 | mus_musculus | GRCm39 filtered GTF | `rrna_common` (18S + 5S) |
 | saccharomyces_cerevisiae | R64-1-1 filtered GTF | `rrna_common` |
 | oryza_sativa | IRGSP-1.0 filtered GTF | `rrna_common` (new) |
@@ -78,6 +78,13 @@ Notes for this release:
   `fungi_ascomycota1_collection/`, which the pipeline searches from
   nf-core/rnastructurome `feature/rnacentral-flag` commit `d3cae92`; earlier
   versions fall back to an NCBI search.
+- **Small-RNA transcriptome (human).** Size-selected libraries (rnastruct00040, and
+  rnastruct00065 for its rerun) map to `homo_sapiens.small_rna.transcriptome.fa`, built
+  from this release's filtered GTF by `scripts/build_small_rna_transcriptome.py`. On the
+  genome route, 00040's rf-eval was at chance; a tRNA and rRNA test of this route brought
+  most structures well above their baseline (`homo_sapiens/README.md`).
+- **mRNA libraries on the Ensembl route.** rnastruct00088 (targeted mRNAs) and
+  rnastruct00089 (poly(A)) run without `gtf`, because the RNAcentral GTF holds only ncRNAs.
 - **Left out.** Large rf-eval intermediates (Rfam CM databases, cmscan output,
   RDATs, alignments) and the unfiltered GTFs, which come from
   `https://ftp.ebi.ac.uk/pub/databases/RNAcentral/releases/28.0/genome_coordinates/gff3/`.

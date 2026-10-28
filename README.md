@@ -10,8 +10,11 @@ scripts/                     reused for every release
   filter_rnacentral_gff3.py  GFF3 filter (eukaryotes)
   gff3_to_gtf_exons.py       GFF3 → GTF
   make_transcriptome_fa.py   <stem>.transcriptome.fa for bacteria and viruses
+  build_small_rna_transcriptome.py  small-RNA transcriptome for size-selected libraries
   rfam_seed_allowlist.py     regenerates the filter's Rfam allowlist
   check_rfeval_ids.py        checks rf-eval windows against a new release's GTF
+  rfeval_*.py                rf-eval builders for new organisms (rRNA, viral elements, small RNAs)
+  rrna_cm/                   the Rfam models the rf-eval builders search with
   <organism>/                that organism's builder(s), plus the archived rf-eval builders
 params/                      nf-core/rnastructurome params, one <dataset_id>-params.yaml per dataset
 release27/
@@ -87,6 +90,31 @@ The builder writes the genome FASTA/GTF to `work/`, and `make_transcriptome_fa.p
 cuts `reference/<stem>.transcriptome.fa` from them. That one file is the reference:
 run it with `--transcriptome --fasta <stem>.transcriptome.fa` and no `--gtf`.
 
+**Small-RNA libraries** (size-selected, metadata `rna_type: sRNA`). On the genome
+route their tRNA reads are counted on whatever long records span the tRNA genes, and
+rf-eval falls to chance; mapped to the mature molecules instead, it does not (see
+`release28/homo_sapiens/README.md`). Build the small-RNA transcriptome after the
+organism's filtered GTF, from the repository root:
+
+```
+python3 scripts/build_small_rna_transcriptome.py homo_sapiens 28 [rnacentral_species_specific_ids.fasta.gz]
+python3 scripts/rfeval_small_rna.py homo_sapiens 28
+```
+
+The first takes the filtered GTF's tRNA, snRNA, scaRNA, snoRNA, pre-miRNA, Y RNA,
+vault, SRP, RNase P/MRP and telomerase records, plus the rRNA records listed for the
+organism (the rDNA units rf-eval uses, 5S, mitochondrial rRNA). At each locus it keeps
+the best record by the filter's own rule (overlapping, lengths within 2×, best
+database rank, then most databases, then length). It then keeps one record per URS,
+drops records over 500 nt, and merges records within 2 substitutions of a
+better-ranked one, whose reads would otherwise land on the wrong copy and count as
+mutations. Sequences come from the release's species FASTA (streamed from the FTP if
+no local copy is given; `work/small_rna.seqs.fa` caches them). It writes
+`reference/<species>.small_rna.transcriptome.fa` and `MANIFEST-small_rna.tsv`, which
+lists each record's class, genomic copies and merged records. The second picks one
+representative structure per family (best GA hit) for `rfeval/small_rna.*`. Run with
+`transcriptome: true`, `fasta` and `bowtie_all: false`.
+
 ### 3. Carry the rf-eval files over
 
 rf-eval structures are built from Rfam, not RNAcentral, so they are not rebuilt.
@@ -142,8 +170,10 @@ gets its own `params/<dataset_id>-params.yaml`, with `rnacentral: true`,
 
 | organism | options |
 |---|---|
-| human, mouse, yeast, rice | `gtf` (genome route; the pipeline downloads the Ensembl genome) |
-| E. coli, and virus strains with a FASTA here | `transcriptome: true`, `fasta` |
+| eukaryotes with a filtered GTF here | `gtf` (genome route; the pipeline downloads the Ensembl genome) |
+| bacteria, archaea, and virus strains with a FASTA here | `transcriptome: true`, `fasta` |
+| small-RNA libraries (`rna_type: sRNA`) | `transcriptome: true`, `fasta` (`<species>.small_rna.transcriptome.fa`), `bowtie_all: false` |
+| mRNA libraries (poly(A)-selected or targeted mRNAs) | none (Ensembl route): the RNAcentral GTF holds only ncRNAs, so it leaves almost nothing to count |
 | anything else | none; the pipeline downloads the Ensembl/NCBI reference for the samplesheet's `organism` |
 
 Add `rfeval_reference` and `rfeval_windows` if the organism has an `rfeval/`

@@ -7,6 +7,8 @@
   the pipeline reads `.gtf.gz` directly.
 - **FASTA:** not stored. The pipeline downloads the Ensembl GRCh38 genome itself
   (`organism: homo_sapiens`).
+- **Small-RNA transcriptome:** `reference/homo_sapiens.small_rna.transcriptome.fa`, for
+  size-selected libraries only (below). Its records are named `URS…_9606`, one per sequence.
 
 Transcript IDs are `URS…_9606.<n>`, one ID per genomic copy. To link back to
 RNAcentral, split on the last `.`.
@@ -47,7 +49,8 @@ take reads from host transcripts (STAR `AllBestScore`, no primary-only, MAPQ 0).
 
 ## rf-eval references
 
-- `rfeval/rrna_common.*`: 28S, 18S and 5.8S, scored in every human run (below).
+- `rfeval/rrna_common.*`: 28S, 18S and 5.8S, scored in every genome-route human run (below).
+- `rfeval/small_rna.*`: five representative structures for runs on the small-RNA transcriptome (below).
 
 ## Common rRNA set (`rfeval/rrna_common.*`)
 
@@ -73,41 +76,84 @@ Both transcripts are in `release28/homo_sapiens/reference/homo_sapiens.GRCh38.fi
 --rfeval_windows   release28/homo_sapiens/rfeval/rrna_common.windows.tsv
 ```
 
-## Small-RNA test transcriptome (`homo_sapiens.trna_rrna.*`)
+## Small-RNA transcriptome (`reference/homo_sapiens.small_rna.transcriptome.fa`)
 
-A test of the transcriptome route for small-RNA libraries, made for rnastruct00040
-(HEK293T icSHAPE-MaP). On the genome route its tRNA profiles disagreed with the
-authors' and every in vivo rf-eval reference was at chance; the authors mapped to
-mature small-RNA sequences instead. If this run fixes that, the reference grows to
-the other small-RNA classes.
+For size-selected small-RNA libraries (metadata `rna_type: sRNA`: rnastruct00040, and
+rnastruct00065 for its rerun). On the genome route, rnastruct00040's tRNA structures were
+keyed on lncRNA records of 0.9–4.2 kb that span the tRNA genes (one a nuclear copy of
+mitochondrial DNA on chr1), and every in vivo rf-eval structure was at chance. The
+authors mapped to mature small-RNA sequences under ~200 nt (miRBase, GENCODE snoRNAs and
+snRNAs, GtRNAdb tRNAs, RefSeq vault and Y RNAs, 5S rRNA), which this follows.
 
 ```
-python3 scripts/homo_sapiens/build_trna_rrna_test.py 28   # from the repository root
+python3 scripts/build_small_rna_transcriptome.py homo_sapiens 28 [rnacentral_species_specific_ids.fasta.gz]
+python3 scripts/rfeval_small_rna.py homo_sapiens 28
 ```
 
-- **tRNAs:** every tRNA in the filtered GTF, one record per URS (556 genomic
-  copies, 367 sequences, 19 of them mitochondrial; the filter keeps 19 of the 22). Sequences come from RNAcentral's
-  GtRNAdb export, the rest from rnacentral.org; `work/` caches both.
-- **No CCA tail.** Records stay identical to their URS sequence; Bowtie2 runs in
-  local mode, so the 3 tail bases of a read are soft-clipped.
-- **rRNA:** the two chr21 rDNA units the rf-eval windows sit on (URS0000ABD879,
-  URS0000ABD87F), 5S (URS00000F9D45), mt 16S (URS000080E357) and mt 12S
-  (URS000044DFF6, the Ensembl/HGNC MT-RNR1 record, 954 nt). The standalone
-  18S/5.8S/28S records are left out because they would duplicate the units. 12S is
-  not in the filtered GTF, so it is added by URS; without it, 12S reads would be
-  pushed onto other records by local alignment. 5.8S is identical in both units, so
-  its reads split between them and its window gets about half the depth.
-- **rf-eval** (`rfeval/trna_rrna.*`): the three `rrna_common` structures and four
-  tRNA structures taken from RNAcentral for the rnastruct00040 run, not from its
-  probing data (`scripts/homo_sapiens/rnastruct00040_trna.db`). They are re-keyed
-  onto these records, not rebuilt. In release 27 they sat on lncRNA records of
-  0.9–4.2 kb that span the tRNA genes, one of them a nuclear copy of mitochondrial
-  DNA on chr1; here they are on the tRNAs themselves. The fourth tRNA is
-  mitochondrial (URS00004206E2).
+Built from this release's filtered GTF, with the same locus rule as the filter:
 
-Run with `transcriptome: true`, `fasta` and `bowtie_all: false`: with `-a`,
-Bowtie2 also reports worse alignments, and reads would land on near-identical tRNA
-genes, where the differences count as mutations. `rnacentral: false` turns the QC
-gate off for the test: reads from the small RNAs not in this reference (snRNAs,
-snoRNAs, 7SK, 7SL, Y RNAs) leave the mapped % below the gate's 60 %. The checks
-still show in MultiQC. See `params/rnastruct00040-params.yaml`.
+| step | records |
+|---|---|
+| GTF records in the kept classes (tRNA, snRNA, scaRNA, snoRNA, pre-miRNA, Y RNA, vault, SRP, RNase P/MRP, telomerase, and the listed rRNAs) | 7,300 |
+| best record per locus (overlapping, lengths within 2×; database rank, then databases, then length) | 7,234 |
+| one record per URS | 6,860 |
+| longer than 500 nt, dropped (the listed rRNAs excepted) | −7 |
+| within 2 substitutions of a better-ranked record, merged into it | −188 |
+| **records** | **6,665** |
+
+By class: 2,022 snoRNA, 1,886 pre-miRNA, 1,770 snRNA (7SK, URS0000AAF09C, is one), 630 Y RNA,
+252 tRNA (19 mitochondrial), 58 SRP, 27 scaRNA, 12 vault, one each of RNase P, RNase MRP and
+telomerase RNA, and five rRNAs: the two chr21 rDNA units `rrna_common` sits on
+(URS0000ABD879, URS0000ABD87F), 5S (URS00000F9D45), mt 16S (URS000080E357) and mt 12S
+(URS000044DFF6, class `ncRNA` in the GTF). Mature miRNAs, piRNAs, lncRNAs and the standalone
+18S/5.8S/28S records (they would duplicate the units) are left out.
+`MANIFEST-small_rna.tsv` lists each record's class, genomic copies, first locus and the
+records merged into it.
+
+- **Near-identical copies are merged.** 112 tRNAs were merged into 55 representatives. In a
+  tRNA and rRNA test of this route, URS0000282AB2 scored below chance in vivo (AUROC 0.36):
+  two isodecoders differ from it at 2 bases each, 3 of them paired, so their reads landed
+  on it and the differences counted as mutations at paired bases. They are now merged into it.
+- **No CCA tail.** Records stay identical to their URS sequence; Bowtie2 runs in local mode,
+  so the 3 tail bases of a read are soft-clipped.
+- **5.8S** is identical in both rDNA units, so its reads split between them.
+
+## Small-RNA rf-eval set (`rfeval/small_rna.*`)
+
+One representative per family: the best `cmsearch --cut_ga` hit among the records, aligned
+with `cmalign`, `SS_cons` projected without pseudoknots (`MANIFEST-rfeval-small_rna.tsv`).
+
+| structure | Rfam | window | bp / nt | GA hits |
+|---|---|---|---|---|
+| `URS000065464E_9606__tRNA` | RF00005 | 1–74 | 21 / 74 | 236 |
+| `URS00000F9D45_9606__5S_rRNA` | RF00001 | 1–119 | 34 / 119 | 1 |
+| `URS0000ABD879_9606__18S_rRNA` | RF01960 | 3632–5500 | 447 / 1869 | 3 |
+| `URS000032B6B6_9606__U1_snRNA` | RF00003 | 1–164 | 46 / 164 | 90 |
+| `URS0000024D93_9606__7SL_RNA` | RF00017 | 1–300 | 120 / 300 | 54 |
+
+**Why this route.** The tRNA and rRNA test of rnastruct00040 (commit `dd2042a`) gave, as AUROC
+(standard deviations above the random baseline):
+
+| structure | in vivo | in vitro |
+|---|---|---|
+| tRNA URS000030BAD5 | 0.82 (+3.5) | 0.83 (+3.9) |
+| mt tRNA URS00004206E2 | 0.76 (+3.3) | 0.80 (+3.7) |
+| tRNA URS000042F13F | 0.66 (+1.8) | 0.79 (+3.8) |
+| tRNA URS0000282AB2 | 0.36 (−1.9) | 0.54 (+0.6) |
+| 18S | 0.72 (+2.8) | 0.65 (baseline not computed) |
+| 5.8S | 0.53 (+0.3) | 0.67 (+2.4) |
+| 28S | 0.66 (+4.4) | 0.63 (+4.0) |
+
+5.8S at chance in vivo is expected: in the ribosome it pairs with 28S and is bound by
+proteins, which its standalone structure does not include.
+
+Run with `transcriptome: true`, `fasta` and `bowtie_all: false` (with `-a`, reads also
+land on near-identical copies, where the differences count as mutations). The `rnacentral`
+QC gate stays off until the mapped % on this reference has been checked.
+
+```
+--transcriptome --fasta release28/homo_sapiens/reference/homo_sapiens.small_rna.transcriptome.fa \
+--bowtie_all false \
+--rfeval_reference release28/homo_sapiens/rfeval/small_rna.db \
+--rfeval_windows   release28/homo_sapiens/rfeval/small_rna.windows.tsv
+```
