@@ -50,7 +50,7 @@ take reads from host transcripts (STAR `AllBestScore`, no primary-only, MAPQ 0).
 ## rf-eval references
 
 - `rfeval/rrna_common.*`: 28S, 18S and 5.8S, scored in every genome-route human run (below).
-- `rfeval/small_rna.*`: five representative structures for runs on the small-RNA transcriptome (below).
+- `rfeval/small_rna.*`: every hit of 14 small-RNA families for runs on the small-RNA transcriptome (below).
 
 ## Common rRNA set (`rfeval/rrna_common.*`)
 
@@ -120,16 +120,29 @@ records merged into it.
 
 ## Small-RNA rf-eval set (`rfeval/small_rna.*`)
 
-One representative per family: the best `cmsearch --cut_ga` hit among the records, aligned
-with `cmalign`, `SS_cons` projected without pseudoknots (`MANIFEST-rfeval-small_rna.tsv`).
+Every family below is scored on every record it hits, not on one representative, so a run is
+judged on all the structures it covers: rf-eval skips records without a profile, and the class
+medians are what to compare. Each record's best `cmsearch --cut_ga` hit is aligned with
+`cmalign` and its `SS_cons` projected without pseudoknots; structures under 0.10 bp/nt are
+dropped. 18S is the exception: its hits are the identical rDNA units, so only the best is
+kept (`MANIFEST-rfeval-small_rna.tsv`).
 
-| structure | Rfam | window | bp / nt | GA hits |
-|---|---|---|---|---|
-| `URS000065464E_9606__tRNA` | RF00005 | 1–74 | 21 / 74 | 236 |
-| `URS00000F9D45_9606__5S_rRNA` | RF00001 | 1–119 | 34 / 119 | 1 |
-| `URS0000ABD879_9606__18S_rRNA` | RF01960 | 3632–5500 | 447 / 1869 | 3 |
-| `URS000032B6B6_9606__U1_snRNA` | RF00003 | 1–164 | 46 / 164 | 90 |
-| `URS0000024D93_9606__7SL_RNA` | RF00017 | 1–300 | 120 / 300 | 54 |
+| family | Rfam | records hit | structures |
+|---|---|---|---|
+| tRNA | RF00005 | 236 | 236 |
+| 5S rRNA | RF00001 | 1 | 1 |
+| 18S rRNA | RF01960 | 3 | 1 (URS0000ABD879, 3632–5500) |
+| U1 / U2 / U4 / U5 snRNA | RF00003 / RF00004 / RF00015 / RF00020 | 90 / 150 / 99 / 31 | 90 / 125 / 96 / 31 |
+| U6 snRNA | RF00026 | 1,224 | 0 (`SS_cons` under 0.10 bp/nt) |
+| 7SL / 7SK | RF00017 / RF00100 | 54 / 137 | 54 / 136 |
+| RNase P / RNase MRP | RF00009 / RF00030 | 1 / 1 | 1 / 1 |
+| vault / Y RNA | RF00006 / RF00019 | 9 / 596 | 9 / 596 |
+
+1,377 structures in all. Most snRNA, 7SK and Y RNA records are pseudogene copies with few or no
+reads; they cost nothing when unprofiled, but a profiled pseudogene can carry reads from its
+parent gene, so look at per-structure scores before reading much into a low class median. The
+earlier set (one structure per family) scored only 5S and 18S in rnastruct00040, because the
+chosen tRNA, U1 and 7SL records had no profile.
 
 **Why this route.** The tRNA and rRNA test of rnastruct00040 (commit `dd2042a`) gave, as AUROC
 (standard deviations above the random baseline):
