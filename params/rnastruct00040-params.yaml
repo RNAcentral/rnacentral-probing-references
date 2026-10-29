@@ -1,7 +1,6 @@
 # rnastruct00040: Homo sapiens, small-RNA transcriptome route (size-selected library); the genome-route params are in git history
 # status: draft (the tRNA + rRNA test fixed the tRNA and in vivo rf-eval failures; now on the full small-RNA reference)
-# QC gate off until the mapped % on the full reference has been checked
-rnacentral: false
+rnacentral: true
 structextract: true
 
 transcriptome: true

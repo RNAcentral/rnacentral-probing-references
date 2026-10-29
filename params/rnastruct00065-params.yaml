@@ -1,7 +1,6 @@
 # rnastruct00065: Homo sapiens, small-RNA transcriptome route (size-selected tRNA library); failed QC on the genome route, rerun here
 # status: draft (generated for the rerun; not yet run)
-# QC gate off until the mapped % on the small-RNA reference has been checked
-rnacentral: false
+rnacentral: true
 structextract: true
 
 transcriptome: true
