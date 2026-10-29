@@ -91,7 +91,7 @@ def main():
         if rec != acc:
             strains[label][1].append((rec, int(start), int(end)))
 
-    db, windows, manifest = [], [], []
+    db, windows, manifest, rnac_seen = [], [], [], set()
     for label, (acc, records) in strains.items():
         fasta = read_fasta(os.path.join(HERE, f"SARS2_{label}.fa"))
         genome = fasta[acc]
@@ -133,6 +133,10 @@ def main():
                                     [("ncbi", acc, rstart, rend), ("rnac", rec, 1, rend - rstart + 1)]))
             for oid, oseq, odot, ostart, oend, targets in outputs:
                 for source, ref, start, end in targets:
+                    # strains share the RNAcentral records, so keep each identical record window once
+                    if source == "rnac" and (ref, start, end, oseq, odot) in rnac_seen:
+                        continue
+                    rnac_seen.add((ref, start, end, oseq, odot))
                     db.append(f">{oid}_{source}\n{oseq}\n{odot}\n")
                     windows.append((ref, start, end, f"{oid}_{source}"))
                     manifest.append((f"{oid}_{source}", label, fam, acc, ostart, oend, ref, start, end,

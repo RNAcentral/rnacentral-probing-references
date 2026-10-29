@@ -98,5 +98,7 @@ nextflow run . -profile <…> -resume \
 
 Swap `Leiden0002` for `USAWA1` (00026, 00031, 00137), `WT` (00072), `Alpha` (00101),
 `Beta` (00102), `Delta` (00103) or `OmicronXBB` (00104); windows on other
-strains' genomes are skipped with a warning. The SL5/FSE record windows share
-one ID across strains, so each run scores them once per strain that has them.
+strains' genomes are skipped with a warning. The SL5/FSE record windows are
+shared by the strains: each identical record window is kept once, under the first
+strain that has it (Leiden0002 for the FSE and one SL5, USAWA1 for the other SL5), so
+each run scores them once.
