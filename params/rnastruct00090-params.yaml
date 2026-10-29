@@ -6,5 +6,5 @@ cutadapt_nextseq_trim: 20
 
 gtf: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/saccharomyces_cerevisiae/reference/saccharomyces_cerevisiae.R64-1-1.filtered.gtf.gz
 
-rfeval_reference: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/saccharomyces_cerevisiae/rfeval/rrna_common.db
-rfeval_windows:   /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/saccharomyces_cerevisiae/rfeval/rrna_common.windows.tsv
+rfeval_reference: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/saccharomyces_cerevisiae/rfeval/ncrna_families.db
+rfeval_windows:   /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/saccharomyces_cerevisiae/rfeval/ncrna_families.windows.tsv

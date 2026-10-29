@@ -38,6 +38,7 @@ The ncRNA group is labelled sRNA in the release 27 GTF.
 
 ## rf-eval references
 
+- `rfeval/ncrna_families.*`: what the params files use; `rrna_common` plus every hit of the tRNA and snRNA/RNase families (below).
 - `rfeval/rrna_common.*`: 18S, 5.8S, 25S and 5S from rDNA unit 1 on chrXII (below).
 
 ## Common rRNA set (`rfeval/rrna_common.*`)
@@ -62,6 +63,30 @@ Built by `scripts/build_rrna_common.py yeast`, archived as run for release 27; i
 
 ```
 --gtf              release28/saccharomyces_cerevisiae/reference/saccharomyces_cerevisiae.R64-1-1.filtered.gtf.gz \
---rfeval_reference release28/saccharomyces_cerevisiae/rfeval/rrna_common.db \
---rfeval_windows   release28/saccharomyces_cerevisiae/rfeval/rrna_common.windows.tsv
+--rfeval_reference release28/saccharomyces_cerevisiae/rfeval/ncrna_families.db \
+--rfeval_windows   release28/saccharomyces_cerevisiae/rfeval/ncrna_families.windows.tsv
+```
+
+## ncRNA family set (`rfeval/ncrna_families.*`)
+
+The four `rrna_common` structures, unchanged, plus every `cmsearch --cut_ga` hit of tRNA (RF00005),
+U1/U2/U4/U5/U6 snRNA, RNase P and RNase MRP RNA among the GTF's records, each aligned with
+`cmalign` and its `SS_cons` projected without pseudoknots; structures under 0.10 bp/nt are dropped
+(`MANIFEST-rfeval-ncrna_families.tsv`). Each URS is scored on its lowest-numbered copy only: on the
+genome route every copy of a URS gets the same multimapped reads, so the other copies would repeat
+the same profile. The records are cut from the Ensembl R64-1-1 genome with the GTF's exons
+(intron-containing tRNAs are pre-tRNA records; the intron is left unpaired).
+
+| family | records hit | structures |
+|---|---|---|
+| tRNA | 94 | 94 |
+| U2 / U4 / U5 snRNA | 2 / 1 / 1 | 2 / 1 / 1 |
+| U1 / U6 snRNA | 0 / 1 | 0 / 0 (U6 `SS_cons` under 0.10 bp/nt) |
+| RNase P / RNase MRP RNA | 1 / 1 | 1 / 1 |
+
+104 structures in all. rnastruct00036 (Mod-seq) scores 57 tRNAs on it (median AUROC 0.58 on the
+release 28 run); rnastruct00035 has no tRNA profiles (19 transcripts profiled, 17 of them rRNA).
+
+```
+python3 scripts/rfeval_genome_families.py saccharomyces_cerevisiae 28   # from the repository root (Docker, network)
 ```
