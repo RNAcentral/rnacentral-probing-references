@@ -7,6 +7,8 @@ transcriptome: true
 fasta: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/homo_sapiens/reference/homo_sapiens.small_rna.transcriptome.fa
 # best alignment only: with -a, reads also land on near-identical copies and their differences count as mutations
 bowtie_all: false
+# reads from mRNA and lncRNA have nowhere to map on a small-RNA reference: 34-35% mapped for the in vitro controls
+rnacentral_min_mapped_pct: 20
 # no rfcount_map_max_coverage: rf-count drops reads starting in the last median-read-length nt and caps reads per start, which starves the 3' half of short RNAs
 
 rfeval_reference: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/homo_sapiens/rfeval/small_rna.db

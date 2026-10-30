@@ -172,7 +172,7 @@ gets its own `params/<dataset_id>-params.yaml`, with `rnacentral: true`,
 |---|---|
 | eukaryotes with a filtered GTF here | `gtf` (genome route; the pipeline downloads the Ensembl genome) |
 | bacteria, archaea, and virus strains with a FASTA here | `transcriptome: true`, `fasta` |
-| small-RNA libraries (`rna_type: sRNA`) | `transcriptome: true`, `fasta` (`<species>.small_rna.transcriptome.fa`), `bowtie_all: false` |
+| small-RNA libraries (`rna_type: sRNA`) | `transcriptome: true`, `fasta` (`<species>.small_rna.transcriptome.fa`), `bowtie_all: false`, `rnacentral_min_mapped_pct: 20` (reads from longer RNAs have nowhere to map, so 23–35% map) |
 | mRNA libraries (poly(A)-selected or targeted mRNAs) | none (Ensembl route): the RNAcentral GTF holds only ncRNAs, so it leaves almost nothing to count |
 | anything else | none; the pipeline downloads the Ensembl/NCBI reference for the samplesheet's `organism` |
 
