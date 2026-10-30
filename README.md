@@ -220,6 +220,10 @@ cannot set), add `-c "${BASE}/rnacentral-probing-references/params/${DATASET_ID}
    lengths within 2× of each other, keep one record per RNAcentral predicted gene
    (or one for the group). Records backed by more than 5 databases always stay.
    The winner is chosen by database rank, then most databases, then length.
+5. **Overlapping exons** (`gff3_to_gtf_exons.py`). Drop any transcript whose own
+   exons overlap. STAR adds up the exon lengths and gffread merges them, so the
+   two disagree on the transcript's length and rf-count stops (77 human lncRNAs
+   in release 28; no other organism).
 
 ## How bacterial and viral references are built
 

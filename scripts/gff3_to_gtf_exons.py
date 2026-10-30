@@ -159,8 +159,21 @@ def convert_gff3_to_gtf(input_path: Path, output_path: Path) -> tuple[int, int]:
         f = line.split("\t")
         return _chrom_sort_key(f[0], int(f[3]), int(f[4]), 0 if f[2] == "transcript" else 1)
 
+    # Overlapping exons of one transcript: STAR sums them, gffread merges them, so the two transcript lengths disagree and rf-count stops.
+    overlapping = set()
+    for raw_tid, lines in exon_gtf.items():
+        reach = 0
+        for start, end in sorted((int(f[3]), int(f[4])) for f in (line.split("\t") for line in lines)):
+            if start <= reach:
+                overlapping.add(raw_tid)
+                break
+            reach = max(reach, end)
+    print(f"Dropped {len(overlapping)} transcript(s) with overlapping exons.")
+
     all_lines: list[str] = []
     for raw_tid in tx_seen:
+        if raw_tid in overlapping:
+            continue
         if raw_tid in tx_gtf:
             all_lines.append(tx_gtf[raw_tid])
         all_lines.extend(exon_gtf.get(raw_tid, []))

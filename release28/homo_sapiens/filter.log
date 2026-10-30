@@ -10,4 +10,5 @@ Stage 2: length-aware + predicted-gene-aware locus filtering …
 Pass 2: writing filtered GFF3 …
   1,185,642 feature lines written
 Done.
-Wrote 1066003 exon record(s); skipped 0 malformed/parentless line(s).
+Dropped 77 transcript(s) with overlapping exons.
+Wrote 1065764 exon record(s); skipped 0 malformed/parentless line(s).

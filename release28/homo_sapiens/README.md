@@ -31,9 +31,10 @@ It runs `scripts/filter_rnacentral_gff3.py --pirna-max-loci 5`, then
 | piRNA cap | drop every entry of a piRNA sequence with more than 5 entries (repeat-derived, reads multimap) | 743,975 dropped |
 | pre-filter | keep main chromosomes only; each record needs a trusted database for its RNA type (e.g. miRBase for miRNA), or a sequence in the Rfam seed alignments | 123,446 dropped (658 rescued by the Rfam list) |
 | 1 | same sequence listed several times at one locus (once per database): keep the best-ranked copy; copies at other loci stay | 720,107 kept |
-| 2 | overlapping records of one RNA type on one strand: keep one per RNAcentral predicted gene (or one per group); records with more than 5 databases always stay | **310,225 kept** |
+| 2 | overlapping records of one RNA type on one strand: keep one per RNAcentral predicted gene (or one per group); records with more than 5 databases always stay | 310,225 kept |
+| GTF | drop transcripts whose own exons overlap (`gff3_to_gtf_exons.py`): STAR sums the exons and gffread merges them, so the transcript lengths disagree and rf-count stops | 77 dropped (all lncRNA); **310,148 in the GTF** |
 
-Biotypes kept: lncRNA 240,085, piRNA 44,115, ncRNA 14,549, miRNA 3,111, snoRNA 2,107,
+Biotypes kept (before the GTF step): lncRNA 240,085, piRNA 44,115, ncRNA 14,549, miRNA 3,111, snoRNA 2,107,
 pre_miRNA 1,963, snRNA 1,891, and smaller groups.
 
 The Rfam list was regenerated from release 28 (599 IDs, 598 of them also in the
