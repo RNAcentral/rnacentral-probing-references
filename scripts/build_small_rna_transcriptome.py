@@ -19,6 +19,11 @@ ORGANISMS = {
         # the two chr21 rDNA units rrna_common sits on, the 5S array, mt 16S and mt 12S (biotype ncRNA in the GTF)
         "rrna": ["URS0000ABD879_9606", "URS0000ABD87F_9606", "URS00000F9D45_9606", "URS000080E357_9606", "URS000044DFF6_9606"],
     },
+    "saccharomyces_cerevisiae": {
+        "gtf": "saccharomyces_cerevisiae.R64-1-1.filtered.gtf.gz",
+        # the rrna_common molecules: 18S, 5.8S, 25S and 5S
+        "rrna": ["URS00005F2C2D_559292", "URS00001BF64E_559292", "URS000061F377_559292", "URS000055688D_559292"],
+    },
 }
 
 

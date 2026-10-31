@@ -12,6 +12,10 @@ ORGANISMS = {
                      "RF00003": "U1_snRNA", "RF00004": "U2_snRNA", "RF00015": "U4_snRNA", "RF00020": "U5_snRNA",
                      "RF00026": "U6_snRNA", "RF00017": "7SL_RNA", "RF00100": "7SK_RNA", "RF00009": "RNase_P_RNA",
                      "RF00030": "RNase_MRP_RNA", "RF00006": "vault_RNA", "RF00019": "Y_RNA"},
+    # no vault, Y, 7SK or metazoan SRP RNA in yeast; U1 and U2 are over 500 nt, so not in the transcriptome
+    "saccharomyces_cerevisiae": {"RF00005": "tRNA", "RF00001": "5S_rRNA", "RF01960": "18S_rRNA",
+                                 "RF00015": "U4_snRNA", "RF00020": "U5_snRNA", "RF00026": "U6_snRNA",
+                                 "RF00009": "RNase_P_RNA", "RF00030": "RNase_MRP_RNA"},
 }
 # the 18S hits are the rDNA units, which share one sequence, so only the best is scored
 BEST_ONLY = {"RF01960"}
