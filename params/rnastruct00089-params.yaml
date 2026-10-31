@@ -2,6 +2,8 @@
 # status: draft (generated from the metadata; not yet run)
 rnacentral: true
 structextract: true
+# as for rnastruct00088: count only transcripts deep enough for reactivities, so rf-count does not run one samtools call per covered Ensembl transcript
+rfcount_min_reads: 1000
 
 # no gtf or fasta: the pipeline downloads the Ensembl genome and GTF for the samplesheet organism
 # no rf-eval: rrna_common is keyed on RNAcentral GTF transcripts, and poly(A) libraries carry little rRNA
