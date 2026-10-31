@@ -6,6 +6,8 @@
   release 28 ncRNAs on R64-1-1 after filtering (below).
 - **FASTA:** not stored. The pipeline downloads the Ensembl R64-1-1 genome itself
   (`organism: saccharomyces_cerevisiae`).
+- **Small-RNA transcriptome:** `reference/saccharomyces_cerevisiae.small_rna.transcriptome.fa`, for
+  size-selected libraries only (below). Its records are named `URS…_559292`, one per sequence.
 
 Transcript IDs are `URS…_559292.<n>`, one ID per genomic copy.
 
@@ -40,6 +42,7 @@ The ncRNA group is labelled sRNA in the release 27 GTF.
 
 - `rfeval/ncrna_families.*`: what the params files use; `rrna_common` plus every hit of the tRNA and snRNA/RNase families (below).
 - `rfeval/rrna_common.*`: 18S, 5.8S, 25S and 5S from rDNA unit 1 on chrXII (below).
+- `rfeval/small_rna.*`: every hit of 8 small-RNA families for runs on the small-RNA transcriptome (below).
 
 ## Common rRNA set (`rfeval/rrna_common.*`)
 
@@ -90,3 +93,47 @@ release 28 run); rnastruct00035 has no tRNA profiles (19 transcripts profiled, 1
 ```
 python3 scripts/rfeval_genome_families.py saccharomyces_cerevisiae 28   # from the repository root (Docker, network)
 ```
+
+## Small-RNA transcriptome (`reference/saccharomyces_cerevisiae.small_rna.transcriptome.fa`)
+
+For size-selected small-RNA libraries (metadata `rna_type: sRNA`: rnastruct00108, a tRNA
+library). It follows the human small-RNA transcriptome (see `../homo_sapiens/README.md`):
+mature small RNAs under 500 nt plus the `rrna_common` molecules, so that tRNA reads land on
+tRNA records rather than on longer records spanning the tRNA genes.
+
+```
+python3 scripts/build_small_rna_transcriptome.py saccharomyces_cerevisiae 28 [rnacentral_species_specific_ids.fasta.gz]
+python3 scripts/rfeval_small_rna.py saccharomyces_cerevisiae 28
+```
+
+| step | records |
+|---|---|
+| GTF records in the kept classes (tRNA, snRNA, snoRNA, RNase P/MRP, and the listed rRNAs) | 404 |
+| best record per locus | 392 |
+| one record per URS | 181 |
+| longer than 500 nt, dropped (the listed rRNAs excepted) | −7 |
+| within 2 substitutions of a better-ranked record, merged into it | −14 |
+| **records** | **160** |
+
+By class: 78 tRNA (24 mitochondrial), 72 snoRNA, 4 snRNA (U4, U5, U6, and URS000231EC4F, which no snRNA family model hits), one
+each of RNase P and RNase MRP RNA, and the four `rrna_common` rRNAs: 18S (URS00005F2C2D),
+5.8S (URS00001BF64E), 25S (URS000061F377) and 5S (URS000055688D). The 14 merged records are
+all tRNAs, into 12 representatives. `MANIFEST-small_rna.tsv` lists each record's class,
+genomic copies, first locus and the records merged into it.
+
+## Small-RNA rf-eval set (`rfeval/small_rna.*`)
+
+Built as the human one: every record each family hits, its best `cmsearch --cut_ga` hit
+aligned with `cmalign` and `SS_cons` projected without pseudoknots; structures under 0.10
+bp/nt are dropped (`MANIFEST-rfeval-small_rna.tsv`). Yeast has no vault, Y, 7SK or
+metazoan SRP RNA, and U1 and U2 are over 500 nt, so they are not in the transcriptome.
+
+| family | Rfam | records hit | structures |
+|---|---|---|---|
+| tRNA | RF00005 | 78 | 78 |
+| 5S / 18S rRNA | RF00001 / RF01960 | 1 / 1 | 1 / 1 |
+| U4 / U5 snRNA | RF00015 / RF00020 | 1 / 1 | 1 / 1 |
+| U6 snRNA | RF00026 | 1 | 0 (`SS_cons` under 0.10 bp/nt) |
+| RNase P / RNase MRP | RF00009 / RF00030 | 1 / 1 | 1 / 1 |
+
+84 structures in all.

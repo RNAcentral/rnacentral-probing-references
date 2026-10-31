@@ -1,11 +1,16 @@
-# rnastruct00108: Saccharomyces cerevisiae, genome route
-# status: final (run and checked on the release 27 references)
+# rnastruct00108: Saccharomyces cerevisiae, small-RNA transcriptome route (size-selected tRNA library); the genome-route params are in git history
+# status: draft (not yet run on the small-RNA reference)
 rnacentral: true
 structextract: true
 cutadapt_discard_untrimmed: true
 cutadapt_nextseq_trim: 20
 
-gtf: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/saccharomyces_cerevisiae/reference/saccharomyces_cerevisiae.R64-1-1.filtered.gtf.gz
+transcriptome: true
+fasta: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/saccharomyces_cerevisiae/reference/saccharomyces_cerevisiae.small_rna.transcriptome.fa
+# best alignment only: with -a, reads also land on near-identical copies and their differences count as mutations
+bowtie_all: false
+# reads from longer RNAs have nowhere to map on a small-RNA reference
+rnacentral_min_mapped_pct: 20
 
-rfeval_reference: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/saccharomyces_cerevisiae/rfeval/ncrna_families.db
-rfeval_windows:   /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/saccharomyces_cerevisiae/rfeval/ncrna_families.windows.tsv
+rfeval_reference: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/saccharomyces_cerevisiae/rfeval/small_rna.db
+rfeval_windows:   /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/saccharomyces_cerevisiae/rfeval/small_rna.windows.tsv
