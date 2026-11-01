@@ -2,8 +2,7 @@
 # status: draft (generated from the metadata; not yet run)
 rnacentral: true
 structextract: true
-# 390k Ensembl transcripts have reads, but only 16.6k have >= 1000; rf-count's one samtools call per transcript made the full set take over a week
-rfcount_min_reads: 1000
+# rfcount_min_reads is left to the pipeline default (1000 for MaP, as rf-norm's NaN coverage): 16.6k of the 390k Ensembl transcripts with reads
 
 # no gtf or fasta: the pipeline downloads the Ensembl genome and GTF for the samplesheet organism
 # no rf-eval: rrna_common is keyed on RNAcentral GTF transcripts, and the targeted genes include no rRNA

@@ -2,7 +2,7 @@
 # status: draft (generated from the metadata; not yet run)
 rnacentral: true
 structextract: true
-# as for rnastruct00088: count only transcripts deep enough for reactivities, so rf-count does not run one samtools call per covered Ensembl transcript
+# above the pipeline default for RT-stop (50, rf-norm's NaN coverage), to keep rf-count's one samtools call per transcript manageable on Ensembl: transcripts with 50-999 reads are not counted
 rfcount_min_reads: 1000
 
 # no gtf or fasta: the pipeline downloads the Ensembl genome and GTF for the samplesheet organism
