@@ -5,6 +5,8 @@ rnacentral: true
 structextract: true
 
 fasta: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/methanosarcina_acetivorans/reference/MACE_C2A.transcriptome.fa
+# the reference holds only RNAcentral ncRNAs, so mapped % measures the library; gate on read depth as for viral genomes
+rnacentral_gate_on_depth: true
 
 rfeval_reference: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/methanosarcina_acetivorans/rfeval/rrna_common.db
 rfeval_windows:   /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/methanosarcina_acetivorans/rfeval/rrna_common.windows.tsv

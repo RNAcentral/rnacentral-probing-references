@@ -171,9 +171,9 @@ gets its own `params/<dataset_id>-params.yaml`, with `rnacentral: true`,
 | organism | options |
 |---|---|
 | eukaryotes with a filtered GTF here | `gtf` (genome route; the pipeline downloads the Ensembl genome) |
-| bacteria, archaea, and virus strains with a FASTA here | `transcriptome: true`, `fasta` |
-| *S. cerevisiae* non-mRNA libraries (`rna_type: total` or `sRNA`) | `transcriptome: true`, `fasta` (`saccharomyces_cerevisiae.small_rna.transcriptome.fa`, which holds the four rRNAs), `bowtie_all: false`, `rnacentral_min_mapped_pct: 20` (reads from mRNAs have nowhere to map; 52% mapped in 00035), rf-eval `small_rna`. The genome route gave less accurate rRNA profiles than the same reads mapped to transcripts (see `release28/saccharomyces_cerevisiae/README.md`) |
-| small-RNA libraries (`rna_type: sRNA`) | `transcriptome: true`, `fasta` (`<species>.small_rna.transcriptome.fa`), `bowtie_all: false`, `rnacentral_min_mapped_pct: 20` (reads from longer RNAs have nowhere to map, so 23–35% map) |
+| bacteria, archaea, and virus strains with a FASTA here | `transcriptome: true`, `fasta`; for bacteria and archaea also `rnacentral_gate_on_depth: true` (the reference holds only RNAcentral ncRNAs, so the gate checks read depth instead of mapped %, as it already does for viral genomes) |
+| *S. cerevisiae* non-mRNA libraries (`rna_type: total` or `sRNA`) | `transcriptome: true`, `fasta` (`saccharomyces_cerevisiae.small_rna.transcriptome.fa`, which holds the four rRNAs), `bowtie_all: false`, `rnacentral_gate_on_depth: true` (reads from mRNAs have nowhere to map, so mapped % measures the library: 00035 samples mapped 19.5–52% here but 92–99% to the genome), rf-eval `small_rna`. The genome route gave less accurate rRNA profiles than the same reads mapped to transcripts (see `release28/saccharomyces_cerevisiae/README.md`) |
+| small-RNA libraries (`rna_type: sRNA`) | `transcriptome: true`, `fasta` (`<species>.small_rna.transcriptome.fa`), `bowtie_all: false`, `rnacentral_gate_on_depth: true` (reads from longer RNAs have nowhere to map, so 23–35% map; the gate checks mean read depth over the reference instead, as for viral genomes) |
 | mRNA libraries (poly(A)-selected, rRNA-depleted, or targeted mRNAs; metadata `rna_type: mRNA`) | not run for release 28: they wait for release 29, which adds mRNAs and UTRs to RNAcentral. The exceptions, run on the Ensembl route (no `gtf` or `fasta`) for the paper, are rnastruct00038, 00088 and 00089 |
 | anything else | none; the pipeline downloads the Ensembl/NCBI reference for the samplesheet's `organism` |
 

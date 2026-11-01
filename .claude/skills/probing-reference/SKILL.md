@@ -175,8 +175,11 @@ Check the dataset's metadata `rna_type` before writing its params file.
   - Keep the near-identical merge (2 substitutions). Without it, reads from one copy land
     on another and the differences count as mutations; that put a tRNA's rf-eval below
     chance.
-  - Params: `transcriptome: true`, `fasta`, `bowtie_all: false`. Turn the `rnacentral`
-    QC gate on only once the mapped % on the new reference has been checked.
+  - Params: `transcriptome: true`, `fasta`, `bowtie_all: false`,
+    `rnacentral_gate_on_depth: true`. Reads from longer RNAs have nowhere to map on an
+    ncRNA-only reference, so the gate checks read depth instead of mapped %; never tune
+    `rnacentral_min_mapped_pct` per dataset. The same goes for bacterial and archaeal
+    RNAcentral transcriptomes.
 
 ## G. Finish
 
