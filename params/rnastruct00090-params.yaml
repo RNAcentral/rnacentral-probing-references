@@ -8,6 +8,8 @@ transcriptome: true
 fasta: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/saccharomyces_cerevisiae/reference/saccharomyces_cerevisiae.small_rna.transcriptome.fa
 # best alignment only: with -a, reads also land on near-identical copies and their differences count as mutations
 bowtie_all: false
+# reads from mRNAs and introns have nowhere to map on an ncRNA reference (00035: 52%)
+rnacentral_min_mapped_pct: 20
 
 rfeval_reference: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/saccharomyces_cerevisiae/rfeval/small_rna.db
 rfeval_windows:   /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/saccharomyces_cerevisiae/rfeval/small_rna.windows.tsv
