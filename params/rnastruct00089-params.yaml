@@ -2,8 +2,7 @@
 # status: draft (generated from the metadata; not yet run)
 rnacentral: true
 structextract: true
-# above the pipeline default for RT-stop (50, rf-norm's NaN coverage), to keep rf-count's one samtools call per transcript manageable on Ensembl: transcripts with 50-999 reads are not counted
-rfcount_min_reads: 1000
+# rfcount_min_reads is left to the pipeline default (50 for RT-stop, as rf-norm's NaN coverage); single-end, so rf-count never splits the BAM per transcript
 
 # no gtf or fasta: the pipeline downloads the Ensembl genome and GTF for the samplesheet organism
 # no rf-eval: rrna_common is keyed on RNAcentral GTF transcripts, and poly(A) libraries carry little rRNA
