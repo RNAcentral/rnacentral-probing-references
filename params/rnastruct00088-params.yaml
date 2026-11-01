@@ -2,7 +2,7 @@
 # status: draft (generated from the metadata; not yet run)
 rnacentral: true
 structextract: true
-# rfcount_min_reads is left to the pipeline default (1000 for MaP, as rf-norm's NaN coverage): 16.6k of the 390k Ensembl transcripts with reads
+# rf-count counts transcripts with at least 1000 reads, the pipeline's MaP coverage threshold for rf-norm and rf-normfactor: 16.6k of the 390k Ensembl transcripts with reads
 
 # no gtf or fasta: the pipeline downloads the Ensembl genome and GTF for the samplesheet organism
 # no rf-eval: rrna_common is keyed on RNAcentral GTF transcripts, and the targeted genes include no rRNA
