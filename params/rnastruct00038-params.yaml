@@ -1,9 +1,9 @@
-# rnastruct00038: Homo sapiens, genome route
-# status: final (run and checked on the release 27 references)
+# rnastruct00038: Homo sapiens, Ensembl route (rRNA-depleted, poly(A) RNA; the RNAcentral-GTF route failed replicate correlation over thinly covered transcripts, and its params are in git history)
+# status: draft (not yet run on the Ensembl route)
 rnacentral: true
 structextract: true
+# count only transcripts deep enough for reactivities, as for the other Ensembl-route datasets
+rfcount_min_reads: 1000
 
-gtf: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/homo_sapiens/reference/homo_sapiens.GRCh38.filtered.gtf.gz
-
-rfeval_reference: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/homo_sapiens/rfeval/rrna_common.db
-rfeval_windows:   /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/homo_sapiens/rfeval/rrna_common.windows.tsv
+# no gtf or fasta: the pipeline downloads the Ensembl genome and GTF for the samplesheet organism
+# no rf-eval: rrna_common is keyed on RNAcentral GTF transcripts, and the library is rRNA-depleted
