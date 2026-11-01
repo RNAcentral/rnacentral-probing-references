@@ -7,7 +7,7 @@
 - **FASTA:** not stored. The pipeline downloads the Ensembl R64-1-1 genome itself
   (`organism: saccharomyces_cerevisiae`).
 - **Small-RNA transcriptome:** `reference/saccharomyces_cerevisiae.small_rna.transcriptome.fa`, for
-  size-selected libraries only (below). Its records are named `URS…_559292`, one per sequence.
+  every non-mRNA library, total RNA as well as size-selected (below). Its records are named `URS…_559292`, one per sequence.
 
 Transcript IDs are `URS…_559292.<n>`, one ID per genomic copy.
 
@@ -97,7 +97,12 @@ python3 scripts/rfeval_genome_families.py saccharomyces_cerevisiae 28   # from t
 ## Small-RNA transcriptome (`reference/saccharomyces_cerevisiae.small_rna.transcriptome.fa`)
 
 For size-selected small-RNA libraries (metadata `rna_type: sRNA`: rnastruct00108, a tRNA
-library). It follows the human small-RNA transcriptome (see `../homo_sapiens/README.md`):
+library) and, since it holds the four cytoplasmic rRNAs too, for total-RNA libraries (rnastruct00035, 00036, 00090, 00100).
+On the genome route 00035's rRNA profiles agreed with standalone RNA Framework run on the
+transcripts at only Spearman 0.60–0.64 and scored 0.06–0.07 lower AUROC on 18S and 25S rRNA, while
+transcriptome-route datasets agree at 0.88–0.97 (paper-rnastruct benchmark, 2026-11-01). The full
+filtered GTF is not cut into a transcriptome instead: the rDNA carries four near-identical 25S
+records and ncRNA records overlapping the rRNAs, between which reads would be split. It follows the human small-RNA transcriptome (see `../homo_sapiens/README.md`):
 mature small RNAs under 500 nt plus the `rrna_common` molecules, so that tRNA reads land on
 tRNA records rather than on longer records spanning the tRNA genes.
 
@@ -132,8 +137,9 @@ metazoan SRP RNA, and U1 and U2 are over 500 nt, so they are not in the transcri
 |---|---|---|---|
 | tRNA | RF00005 | 78 | 78 |
 | 5S / 18S rRNA | RF00001 / RF01960 | 1 / 1 | 1 / 1 |
+| 5.8S / 25S rRNA | RF00002 / RF02543 | 1 / 1 | 1 / 1 |
 | U4 / U5 snRNA | RF00015 / RF00020 | 1 / 1 | 1 / 1 |
 | U6 snRNA | RF00026 | 1 | 0 (`SS_cons` under 0.10 bp/nt) |
 | RNase P / RNase MRP | RF00009 / RF00030 | 1 / 1 | 1 / 1 |
 
-84 structures in all.
+86 structures in all. The four rRNA structures and windows are identical to those of `rrna_common`, so total-RNA runs are scored on the same rRNA structures as on the genome route.

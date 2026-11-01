@@ -172,6 +172,7 @@ gets its own `params/<dataset_id>-params.yaml`, with `rnacentral: true`,
 |---|---|
 | eukaryotes with a filtered GTF here | `gtf` (genome route; the pipeline downloads the Ensembl genome) |
 | bacteria, archaea, and virus strains with a FASTA here | `transcriptome: true`, `fasta` |
+| *S. cerevisiae* non-mRNA libraries (`rna_type: total` or `sRNA`) | `transcriptome: true`, `fasta` (`saccharomyces_cerevisiae.small_rna.transcriptome.fa`, which holds the four rRNAs), `bowtie_all: false`, rf-eval `small_rna`; for `sRNA` also `rnacentral_min_mapped_pct: 20`. The genome route gave less accurate rRNA profiles than the same reads mapped to transcripts (see `release28/saccharomyces_cerevisiae/README.md`) |
 | small-RNA libraries (`rna_type: sRNA`) | `transcriptome: true`, `fasta` (`<species>.small_rna.transcriptome.fa`), `bowtie_all: false`, `rnacentral_min_mapped_pct: 20` (reads from longer RNAs have nowhere to map, so 23–35% map) |
 | mRNA libraries (poly(A)-selected, rRNA-depleted, or targeted mRNAs; metadata `rna_type: mRNA`) | not run for release 28: they wait for release 29, which adds mRNAs and UTRs to RNAcentral. The exceptions, run on the Ensembl route (no `gtf` or `fasta`) for the paper, are rnastruct00038, 00088 and 00089 |
 | anything else | none; the pipeline downloads the Ensembl/NCBI reference for the samplesheet's `organism` |
