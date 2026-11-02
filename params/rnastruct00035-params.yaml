@@ -1,5 +1,5 @@
-# rnastruct00035: Saccharomyces cerevisiae, yeast transcriptome route (total RNA; the small-RNA transcriptome holds the four rRNAs too); the genome-route params are in git history
-# status: draft (not yet run on the transcriptome)
+# rnastruct00035: Saccharomyces cerevisiae, yeast small-RNA transcriptome route; rRNA-depleted (curated mRNA) but kept in release 28 for the paper, scored on its residual rRNA; the genome-route params are in git history
+# status: run on the transcriptome 2026-11-02; rerun pending with the resequencing run concatenated into replicate 2
 rnacentral: true
 structextract: true
 

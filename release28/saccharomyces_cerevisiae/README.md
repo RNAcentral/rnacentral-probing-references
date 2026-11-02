@@ -97,7 +97,7 @@ python3 scripts/rfeval_genome_families.py saccharomyces_cerevisiae 28   # from t
 ## Small-RNA transcriptome (`reference/saccharomyces_cerevisiae.small_rna.transcriptome.fa`)
 
 For size-selected small-RNA libraries (metadata `rna_type: sRNA`: rnastruct00108, a tRNA
-library) and, since it holds the four cytoplasmic rRNAs too, for total-RNA libraries (rnastruct00035, 00036, 00090, 00100).
+library) and, since it holds the four cytoplasmic rRNAs too, for total-RNA libraries (rnastruct00036, 00090, 00100) and for rnastruct00035, an rRNA-depleted library kept for the paper and scored on its residual rRNA.
 On the genome route 00035's rRNA profiles agreed with standalone RNA Framework run on the
 transcripts at only Spearman 0.60–0.64 and scored 0.06–0.07 lower AUROC on 18S and 25S rRNA, while
 transcriptome-route datasets agree at 0.88–0.97 (paper-rnastruct benchmark, 2026-11-01). The full
