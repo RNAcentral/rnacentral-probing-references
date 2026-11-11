@@ -144,7 +144,11 @@ The aim is a small, certain yardstick.
   the family `SS_cons` (`project_ss_cons.py`). Drop pseudoknots unless the family
   *is* the pseudoknot (influenza RF01099; the run then needs
   `rfeval_keep_pseudoknots = true`). Keep only structures with at least
-  0.10 base pairs per nucleotide.
+  0.15 base pairs per nucleotide (30% of nucleotides paired): Rfam projections
+  below that are mostly loops from pairs lost in the consensus, not real structure.
+  Then keep one of any identical copies (sequence and structure) a run would score
+  together, preferring the genome `_ncbi` window over an `_rnac` record:
+  `prune_set` in `rfeval_rrna_common.py`, which the builders call after writing a set.
 - **Common rRNA:** one locus per molecule, inside the SSU's rDNA unit (10 kb).
   Without that rule the search picks pseudogenes and mitochondrial rRNA. If the
   assembly lacks the rDNA arrays (mouse GRCm39), say so in the README rather than

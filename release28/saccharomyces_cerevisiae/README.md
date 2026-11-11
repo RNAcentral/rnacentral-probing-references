@@ -74,7 +74,7 @@ Built by `scripts/build_rrna_common.py yeast`, archived as run for release 27; i
 
 The four `rrna_common` structures, unchanged, plus every `cmsearch --cut_ga` hit of tRNA (RF00005),
 U1/U2/U4/U5/U6 snRNA, RNase P and RNase MRP RNA among the GTF's records, each aligned with
-`cmalign` and its `SS_cons` projected without pseudoknots; structures under 0.10 bp/nt are dropped
+`cmalign` and its `SS_cons` projected without pseudoknots; structures under 0.15 bp/nt (30% of nucleotides paired) are dropped
 (`MANIFEST-rfeval-ncrna_families.tsv`). Each URS is scored on its lowest-numbered copy only: on the
 genome route every copy of a URS gets the same multimapped reads, so the other copies would repeat
 the same profile. The records are cut from the Ensembl R64-1-1 genome with the GTF's exons
@@ -82,12 +82,12 @@ the same profile. The records are cut from the Ensembl R64-1-1 genome with the G
 
 | family | records hit | structures |
 |---|---|---|
-| tRNA | 94 | 94 |
-| U2 / U4 / U5 snRNA | 2 / 1 / 1 | 2 / 1 / 1 |
-| U1 / U6 snRNA | 0 / 1 | 0 / 0 (U6 `SS_cons` under 0.10 bp/nt) |
-| RNase P / RNase MRP RNA | 1 / 1 | 1 / 1 |
+| tRNA | 94 | 93 |
+| U2 / U4 / U5 snRNA | 2 / 1 / 1 | 1 / 1 / 1 |
+| U1 / U6 snRNA | 0 / 1 | 0 / 0 (U6 `SS_cons` under 0.15 bp/nt (30% of nucleotides paired)) |
+| RNase P / RNase MRP RNA | 1 / 1 | 0 / 1 (RNase P under 0.15 bp/nt) |
 
-104 structures in all. rnastruct00036 (Mod-seq) scores 57 tRNAs on it (median AUROC 0.58 on the
+101 structures in all (104 before November 2026: RNase P fell under the new 0.15 bp/nt threshold, and one tRNA and one U2 were identical to another record's structure). rnastruct00036 (Mod-seq) scores 57 tRNAs on it (median AUROC 0.58 on the
 release 28 run); rnastruct00035 has no tRNA profiles (19 transcripts profiled, 17 of them rRNA).
 
 ```
@@ -129,8 +129,8 @@ genomic copies, first locus and the records merged into it.
 ## Small-RNA rf-eval set (`rfeval/small_rna.*`)
 
 Built as the human one: every record each family hits, its best `cmsearch --cut_ga` hit
-aligned with `cmalign` and `SS_cons` projected without pseudoknots; structures under 0.10
-bp/nt are dropped (`MANIFEST-rfeval-small_rna.tsv`). Yeast has no vault, Y, 7SK or
+aligned with `cmalign` and `SS_cons` projected without pseudoknots; structures under 0.15
+bp/nt (30% of nucleotides paired) are dropped (`MANIFEST-rfeval-small_rna.tsv`). Yeast has no vault, Y, 7SK or
 metazoan SRP RNA, and U1 and U2 are over 500 nt, so they are not in the transcriptome.
 
 | family | Rfam | records hit | structures |
@@ -139,7 +139,7 @@ metazoan SRP RNA, and U1 and U2 are over 500 nt, so they are not in the transcri
 | 5S / 18S rRNA | RF00001 / RF01960 | 1 / 1 | 1 / 1 |
 | 5.8S / 25S rRNA | RF00002 / RF02543 | 1 / 1 | 1 / 1 |
 | U4 / U5 snRNA | RF00015 / RF00020 | 1 / 1 | 1 / 1 |
-| U6 snRNA | RF00026 | 1 | 0 (`SS_cons` under 0.10 bp/nt) |
-| RNase P / RNase MRP | RF00009 / RF00030 | 1 / 1 | 1 / 1 |
+| U6 snRNA | RF00026 | 1 | 0 (`SS_cons` under 0.15 bp/nt (30% of nucleotides paired)) |
+| RNase P / RNase MRP | RF00009 / RF00030 | 1 / 1 | 0 / 1 (RNase P under 0.15 bp/nt) |
 
-86 structures in all. The four rRNA structures and windows are identical to those of `rrna_common`, so total-RNA runs are scored on the same rRNA structures as on the genome route.
+85 structures in all. The four rRNA structures and windows are identical to those of `rrna_common`, so total-RNA runs are scored on the same rRNA structures as on the genome route.

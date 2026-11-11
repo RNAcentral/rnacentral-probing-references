@@ -35,7 +35,7 @@ requests by serving its HTML home page, so a fetch from there runs at 1/s.
 
 ## Common rRNA set (`rfeval/rrna_common.*`)
 
-The three rRNAs of one complete 16S/23S/5S operon, built by `scripts/rfeval_rrna_common.py pseudomonas_savastanoi 28`: `cmsearch --cut_ga` with the bacterial SSU/LSU CMs (RF00177, RF02541) and RF00001 for 5S on the records in the transcriptome FASTA, one locus per molecule within 10 kb of the SSU. Structures are the Rfam `SS_cons` projected with `cmalign`, without pseudoknots, and only structures of at least 0.10 bp/nt are kept. They are windowed on the URS records (RNAcentral keeps one record per distinct rRNA sequence, so not every operon has its own records). `MANIFEST-rfeval.tsv` has the bit scores and loci.
+The three rRNAs of one complete 16S/23S/5S operon, built by `scripts/rfeval_rrna_common.py pseudomonas_savastanoi 28`: `cmsearch --cut_ga` with the bacterial SSU/LSU CMs (RF00177, RF02541) and RF00001 for 5S on the records in the transcriptome FASTA, one locus per molecule within 10 kb of the SSU. Structures are the Rfam `SS_cons` projected with `cmalign`, without pseudoknots, and only structures of at least 0.15 bp/nt (30% of nucleotides paired) are kept. They are windowed on the URS records (RNAcentral keeps one record per distinct rRNA sequence, so not every operon has its own records). `MANIFEST-rfeval.tsv` has the bit scores and loci.
 
 | structure | transcript | window | locus | bp |
 |---|---|---|---|---|

@@ -46,7 +46,7 @@ Built by `scripts/rfeval_rrna_common.py triticum_turgidum 28`: `cmsearch --cut_g
 GTF's rRNA records (Ensembl REST sequences), one locus per molecule within 10 kb of
 the SSU, anchored on the SSU whose unit holds the most linked molecules; 5S is
 searched genome-wide. Structures are the Rfam `SS_cons` projected with `cmalign`,
-without pseudoknots, and only structures of at least 0.10 bp/nt are kept.
+without pseudoknots, and only structures of at least 0.15 bp/nt (30% of nucleotides paired) are kept.
 `MANIFEST-rfeval.tsv` has the bit scores and loci.
 
 | structure | transcript (filtered GTF) | window | locus | bp |

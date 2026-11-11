@@ -124,7 +124,7 @@ records merged into it.
 Every family below is scored on every record it hits, not on one representative, so a run is
 judged on all the structures it covers: rf-eval skips records without a profile, and the class
 medians are what to compare. Each record's best `cmsearch --cut_ga` hit is aligned with
-`cmalign` and its `SS_cons` projected without pseudoknots; structures under 0.10 bp/nt are
+`cmalign` and its `SS_cons` projected without pseudoknots; structures under 0.15 bp/nt (30% of nucleotides paired) are
 dropped. 18S is the exception: its hits are the identical rDNA units, so only the best is
 kept (`MANIFEST-rfeval-small_rna.tsv`).
 
@@ -133,13 +133,13 @@ kept (`MANIFEST-rfeval-small_rna.tsv`).
 | tRNA | RF00005 | 236 | 236 |
 | 5S rRNA | RF00001 | 1 | 1 |
 | 18S rRNA | RF01960 | 3 | 1 (URS0000ABD879, 3632–5500) |
-| U1 / U2 / U4 / U5 snRNA | RF00003 / RF00004 / RF00015 / RF00020 | 90 / 150 / 99 / 31 | 90 / 125 / 96 / 31 |
-| U6 snRNA | RF00026 | 1,224 | 0 (`SS_cons` under 0.10 bp/nt) |
-| 7SL / 7SK | RF00017 / RF00100 | 54 / 137 | 54 / 136 |
+| U1 / U2 / U4 / U5 snRNA | RF00003 / RF00004 / RF00015 / RF00020 | 90 / 150 / 99 / 31 | 90 / 83 / 74 / 31 |
+| U6 snRNA | RF00026 | 1,224 | 0 (`SS_cons` under 0.15 bp/nt (30% of nucleotides paired)) |
+| 7SL / 7SK | RF00017 / RF00100 | 54 / 137 | 53 / 133 |
 | RNase P / RNase MRP | RF00009 / RF00030 | 1 / 1 | 1 / 1 |
-| vault / Y RNA | RF00006 / RF00019 | 9 / 596 | 9 / 596 |
+| vault / Y RNA | RF00006 / RF00019 | 9 / 596 | 9 / 594 |
 
-1,377 structures in all. Most snRNA, 7SK and Y RNA records are pseudogene copies with few or no
+1,307 structures in all. In November 2026 the threshold rose from 0.10 to 0.15 bp/nt, dropping 42 U2, 22 U4, 3 7SK and 2 Y RNA copies, and one 7SL structure identical to another (URS0000AAEBD0, same as URS0000A9757C) was dropped; there were 1,377. Most snRNA, 7SK and Y RNA records are pseudogene copies with few or no
 reads; they cost nothing when unprofiled, but a profiled pseudogene can carry reads from its
 parent gene, so look at per-structure scores before reading much into a low class median. The
 earlier set (one structure per family) scored only 5S and 18S in rnastruct00040, because the

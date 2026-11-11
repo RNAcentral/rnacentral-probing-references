@@ -93,8 +93,8 @@ def main():
     ap.add_argument("--output", required=True, help="output .db")
     ap.add_argument("--windows", required=True, help="output windows manifest")
     ap.add_argument("--manifest", required=True, help="output TSV of id/family/span/bp")
-    ap.add_argument("--min-bp-density", type=float, default=0.10,
-                    help="drop structures below this bp-per-nt (default: %(default)s)")
+    ap.add_argument("--min-bp-density", type=float, default=0.15,
+                    help="drop structures below this bp-per-nt; 0.15 = 30%% of nucleotides paired (default: %(default)s)")
     args = ap.parse_args()
 
     entries, windows, rows, dropped = {}, [], [], []

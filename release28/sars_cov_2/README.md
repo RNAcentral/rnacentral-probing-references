@@ -56,9 +56,9 @@ and scored with `-kp`. Structure IDs carry the record: `_ncbi` the genome,
 
 | element | Rfam | span (both strains) | nt | bp | pk | on |
 |---|---|---|---|---|---|---|
-| 5UTR | RF03117 bCoV-5UTR | 11–287 | 277 | 37 | – | genome |
-| 5UTR_SL5 | RF03117, clipped to the SL5 record | 137–281 | 145 | 16 | – | genome + SL5 record |
-| FSE | RF00507 Corona_FSE | 13456–13533 | 78 | 20 | 5 | genome + FSE record |
+| 5UTR | RF03117 bCoV-5UTR | 11–287 | 277 | 37 | – | dropped (0.13 bp/nt) |
+| 5UTR_SL5 | RF03117, clipped to the SL5 record | 137–281 | 145 | 16 | – | dropped (0.11 bp/nt) |
+| FSE | RF00507 Corona_FSE | 13456–13533 | 78 | 20 | 5 | genome |
 | 3UTR | RF03122 bCoV-3UTR | 29506–29857 / 29850 | 352 / 345 | 78 / 73 | – | genome |
 | pk3 | RF00165 Corona_pk3 | 29590–29649 | 60 | 9 | 6 | genome |
 | s2m | RF00164 s2m | 29714–29756 | 43 | 12 | – | genome |
@@ -67,9 +67,11 @@ and scored with `-kp`. Structure IDs carry the record: `_ncbi` the genome,
 crossing the boundary unpaired — Rfam's conserved-only model is sparse there
 (16 bp; the cryo-EM structure behind the record has many more). pk3 and s2m
 lie inside the 3UTR window, as SLA does inside the dengue 5UTR: pick one level
-when reporting. WT, Alpha, Beta and XBB hit the whole 5′ end (1–300, 47 bp)
-where Leiden0002/USAWA1 start at 11. 49 entries in total: 8 each for
-Leiden0002, USAWA1, WT and Alpha, 5 for Beta and Delta (no SL5 record), 7 for XBB.
+when reporting. WT, Alpha, Beta and XBB hit the whole 5′ end (1–300, 47 bp, 0.16 bp/nt, kept)
+where Leiden0002, USAWA1 and Delta start at 11 (0.13 bp/nt, dropped). Structures under 0.15 bp/nt
+(30% of nucleotides paired) are dropped, which removes every 5UTR_SL5 and the 11–287 5UTRs.
+29 entries in total: 5 each for WT and Alpha, 4 for Leiden0002, USAWA1, Beta and XBB, 3 for Delta (none is
+identical to another the same run scores).
 
 Rebuild the reference: `cd release<N>/sars_cov_2 && python3 ../../scripts/sars_cov_2/build_sars_refs.py` (Biopython, network) writes the genome FASTA/GTF to `work/`; then, from the root,
 `python3 scripts/make_transcriptome_fa.py release<N>/sars_cov_2` cuts `reference/<stem>.transcriptome.fa` from them.
@@ -98,7 +100,6 @@ nextflow run . -profile <…> -resume \
 
 Swap `Leiden0002` for `USAWA1` (00026, 00031, 00137), `WT` (00072), `Alpha` (00101),
 `Beta` (00102), `Delta` (00103) or `OmicronXBB` (00104); windows on other
-strains' genomes are skipped with a warning. The SL5/FSE record windows are
-shared by the strains: each identical record window is kept once, under the first
-strain that has it (Leiden0002 for the FSE and one SL5, USAWA1 for the other SL5), so
-each run scores them once.
+strains' genomes are skipped with a warning. No record windows remain:
+the SL5 ones went with the 5UTR_SL5 structures, and the FSE record window was identical to
+every strain's genome FSE window, so it was dropped (`prune_set` in `scripts/rfeval_rrna_common.py`).

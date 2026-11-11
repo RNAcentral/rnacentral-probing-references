@@ -6,8 +6,9 @@ competition on, sense strand only) against the full Rfam, or against the organis
 where an earlier set fixed one (dengue, influenza: their new strains are appended to that set). Each
 hit is cmaligned back to its model with the seed structure mapped in, the SS_cons projected onto it
 and trimmed to the model-covered span; pseudoknots are dropped unless the family is the pseudoknot,
-hairpins with loops under 3 nt are opened, and structures under 0.10 bp/nt are dropped. Every
-element is windowed on its genome (_ncbi) and on any RNAcentral record that contains it (_rnac).
+hairpins with loops under 3 nt are opened, and structures under 0.15 bp/nt (30% of nucleotides paired) are dropped. Every
+element is windowed on its genome (_ncbi) and on any RNAcentral record that contains it (_rnac);
+an _rnac copy identical to a genome window a run also scores is dropped (prune_set).
 
     python3 scripts/rfeval_viral_elements.py <org> <release> <Rfam dir>    # from the repository root
 """
@@ -16,9 +17,10 @@ import glob, os, re, subprocess, sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 from project_ss_cons import pair_columns, project, read_pfam_sto
+from rfeval_rrna_common import prune_set
 
 IMG = "rnacentral/r2dt:latest"
-MIN_BP_PER_NT, MIN_LOOP = 0.10, 3
+MIN_BP_PER_NT, MIN_LOOP = 0.15, 3  # 0.15 bp/nt = 30% of nucleotides paired
 ORGANISMS = {
     "yellow_fever_virus": {}, "west_nile_virus": {}, "murine_norovirus": {}, "porcine_epidemic_diarrhea_virus": {}, "human_bocavirus": {}, "bluetongue_virus": {},
     # the provirus runs LTR to LTR; the RNA genome is R to R (AF324493.2 454-9626)
@@ -192,6 +194,7 @@ def main():
     windows = [l for l in old_win if not mine(l.split("\t")[3].strip())] + windows
     open(dbp, "w").writelines(db)
     open(winp, "w").writelines(["# ref_seq_id\tstart\tend\tstructure_id\n"] + windows)
+    print(f"{prune_set(dbp)} structures kept after pruning")
     man = os.path.join(orgdir, "MANIFEST-rfeval-added.tsv" if org.get("set") else "MANIFEST-rfeval.tsv")
     open(man, "w").writelines(["structure\tstem\trfam\trfam_id\tgenome\tgenome_start\tgenome_end\tref_seq_id\tstart\tend\t"
                                "length\tbase_pairs\tpk_pairs\tEvalue\n"] + manifest)

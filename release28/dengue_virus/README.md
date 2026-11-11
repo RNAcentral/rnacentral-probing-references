@@ -41,7 +41,7 @@ with a loop under 3 nt have their innermost pairs unpaired.
 
 The four release 27 strains' structures are carried over; the four new strains
 were added with the same families and labels by `scripts/rfeval_viral_elements.py`
-(`dengue` set, `cmscan --cut_ga`, 0.10 bp/nt minimum) and are listed in
+(`dengue` set, `cmscan --cut_ga`, 0.15 bp/nt (30% of nucleotides paired) minimum) and are listed in
 `MANIFEST-rfeval-added.tsv`.
 
 Rebuild the reference: `cd release<N>/dengue_virus && python3 ../../scripts/dengue_virus/build_dengue_refs.py` (Biopython, network) writes the genome FASTA/GTF to `work/`; then, from the root,
@@ -55,23 +55,23 @@ rf-eval rebuild: `scripts/dengue_virus/build_rfeval_refs.py`, archived as run fo
 | SLA  | RF02340 DENV_SLA        | genome record | nested inside the 5UTR window — pick one when reporting |
 | 5UTR | RF03546 Flavivirus-5UTR | genome record | SLA + SLB; EDEN3295, EDEN2270, WP75 and 16681 only — the other four score under the GA of 80 bits |
 | cHP  | RF00617                 | genome record | capsid-coding hairpin |
-| DB1, DB2 | RF00525 Flavivirus_DB | genome + sfRNA records | dumbbells |
-| 3SL  | RF00185 Flavi_CRE       | genome + sfRNA records | 3′ stem-loop / CRE |
+| DB1, DB2 | RF00525 Flavivirus_DB | genome | dumbbells |
+| 3SL  | RF00185 Flavi_CRE       | genome | 3′ stem-loop / CRE |
 
 Structure IDs carry the record they are scored on: `_ncbi` is the genome
 accession, `_rnac` the RNAcentral sfRNA transcript (`URS…_<taxid>`), matching
-the two records in each `DENV*.gtf`. The 3′UTR elements appear twice, once
-per record, so the same structure can be compared across the two alignments in
-the rf-eval metrics table. The 5′ elements lie outside the sfRNA record and
-exist as `_ncbi` only. The release 27 strains' IDs are `DENV<n>_<element>`; the new
+the two records in each `DENV*.gtf`. The 3′UTR elements were built on both
+records, but each `_rnac` copy is identical to its `_ncbi` one, so a run would
+score the same structure twice; since November 2026 only the `_ncbi` copy is kept
+(`prune_set` in `scripts/rfeval_rrna_common.py`), so every element is `_ncbi` only. The release 27 strains' IDs are `DENV<n>_<element>`; the new
 strains' are `DENV<n>_<strain>_<element>`.
 
 ## Files
 
 - `reference/DENV<n>_<strain>.transcriptome.fa` — the genome plus the sfRNA record and 5′/3′ UTR;
   `--fasta` with `--transcriptome`. `MANIFEST-genome.tsv` lists them.
-- `rfeval/dengue_elements.db` — 68 structures (34 from release 27, 34 for the new
-  strains), one entry per window. `--rfeval_reference`.
+- `rfeval/dengue_elements.db` — 44 structures (22 from release 27, 22 for the new
+  strains; 68 before the identical `_rnac` copies were dropped), one entry per window. `--rfeval_reference`.
 - `rfeval/dengue_elements.windows.tsv` — `ref_seq_id start end structure_id`, 1-based
   inclusive in the record's own coordinates. `--rfeval_windows`.
 - `MANIFEST.tsv` — release 27 strains: element, family, genome and record coordinates, bp count,

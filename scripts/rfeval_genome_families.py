@@ -5,7 +5,7 @@ import gzip, os, re, subprocess, sys, urllib.request
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 from project_ss_cons import pair_columns, project, read_pfam_sto
-from rfeval_rrna_common import CMS, IMG, MIN_BP_PER_NT, unpair_orphans
+from rfeval_rrna_common import CMS, IMG, MIN_BP_PER_NT, prune_set, unpair_orphans
 
 ORGANISMS = {
     "saccharomyces_cerevisiae": {
@@ -98,6 +98,7 @@ def main():
 
     open(os.path.join(out, "ncrna_families.db"), "w").writelines(db)
     open(os.path.join(out, "ncrna_families.windows.tsv"), "w").writelines(["# ref_seq_id\tstart\tend\tstructure_id\n"] + windows)
+    print(f"{prune_set(os.path.join(out, 'ncrna_families.db'))} structures kept after pruning")
     open(os.path.join(orgdir, "MANIFEST-rfeval-ncrna_families.tsv"), "w").writelines(
         ["structure\trfam\tref_seq_id\tstart\tend\tlength\tbase_pairs\tbits\n"] + manifest)
     print(f"{len(db)} structures in all ({len(db) - len(manifest)} from rrna_common)")

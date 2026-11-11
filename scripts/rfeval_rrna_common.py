@@ -4,7 +4,7 @@
 The cytoplasmic rRNAs are found by cmsearch --cut_ga among the transcripts a run is keyed on
 (the filtered GTF's rRNA records for eukaryotes, the transcriptome FASTA's records for bacteria
 and archaea), one locus per molecule within 10 kb of the SSU, SS_cons projected without
-pseudoknots, and only structures of >= 0.10 bp/nt kept.
+pseudoknots, and only structures of >= 0.15 bp/nt (30% of nucleotides paired) kept.
 
     python3 scripts/rfeval_rrna_common.py <org> <release>    # from the repository root
 """
@@ -31,7 +31,7 @@ ORGANISMS = {
     "pseudomonas_savastanoi": {"families": BAC},
     "methanosarcina_acetivorans": {"families": ARC},
 }
-MIN_BP_PER_NT, UNIT = 0.10, 10000
+MIN_BP_PER_NT, UNIT = 0.15, 10000  # 0.15 bp/nt = 30% of nucleotides paired
 
 
 def post_json(url, body, tries=4):
@@ -116,6 +116,46 @@ def unpair_orphans(dot):
     for i in stack:
         fixed[i] = "."
     return "".join(fixed)
+
+
+def prune_set(db_path):
+    """Drop entries under MIN_BP_PER_NT, then identical copies (sequence and dot-bracket) one run would score together, from a written <set>.db + windows.tsv."""
+    lines = [l.rstrip("\n") for l in open(db_path) if l.strip()]
+    recs = [(lines[i][1:].split()[0], lines[i], lines[i + 1], lines[i + 2]) for i in range(0, len(lines), 3)]
+    win_path = db_path[:-3] + ".windows.tsv"
+    rows = open(win_path).readlines()
+    win = [r.split("\t") for r in rows if r.strip() and not r.startswith(("#", "ref_seq_id"))]
+    order, refs_of = {}, {}
+    for i, w in enumerate(win):
+        order.setdefault(w[3].strip(), i)
+        refs_of.setdefault(w[3].strip(), set()).add(w[0])
+    drop = {}
+    for sid, _, seq, dot in recs:
+        bp = sum(dot.count(c) for c in "([{<ABCDEFGHIJKLMNOPQRSTUVWXYZ")
+        if bp / len(seq) < MIN_BP_PER_NT:
+            drop[sid] = f"{bp / len(seq):.3f} bp/nt, under {MIN_BP_PER_NT}"
+    # a run uses one reference/*.transcriptome.fa, so each is a scope; a set keyed on GTF IDs (in no FASTA) is one scope
+    all_refs = {r for refs in refs_of.values() for r in refs}
+    orgdir = os.path.dirname(os.path.dirname(os.path.abspath(db_path)))
+    scopes = []
+    for fa in sorted(glob.glob(os.path.join(orgdir, "reference", "*.transcriptome.fa"))):
+        ids = {l[1:].split()[0] for l in open(fa) if l.startswith(">")} & all_refs
+        if ids: scopes.append(ids)
+    for scope in scopes or [all_refs]:
+        groups = {}
+        for sid, _, seq, dot in recs:
+            if sid not in drop and refs_of.get(sid, set()) & scope:
+                groups.setdefault((seq, dot), []).append(sid)
+        for copies in groups.values():
+            # keep the genome window (_ncbi) over an RNAcentral record (_rnac), then the earliest window
+            copies.sort(key=lambda s: (s.endswith("_rnac"), order.get(s, len(order))))
+            for sid in copies[1:]:
+                drop.setdefault(sid, f"identical to {copies[0]}")
+    for sid, why in drop.items():
+        print(f"  {os.path.basename(db_path)}: {sid} dropped, {why}")
+    open(db_path, "w").writelines(f"{h}\n{s}\n{d}\n" for sid, h, s, d in recs if sid not in drop)
+    open(win_path, "w").writelines(r for r in rows if r.startswith(("#", "ref_seq_id")) or not r.strip() or r.split("\t")[3].strip() not in drop)
+    return len(recs) - len(drop)
 
 
 def main():

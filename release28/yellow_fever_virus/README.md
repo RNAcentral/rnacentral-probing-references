@@ -22,7 +22,7 @@ then ID is kept.
 `scripts/rfeval_viral_elements.py yellow_fever_virus 28 <Rfam dir>`: `cmscan --cut_ga` over
 the full Rfam 15.1 with clan competition, each hit `cmalign`ed back to its model with the
 seed structure mapped in, the `SS_cons` projected and trimmed to the model-covered
-span, pseudoknots dropped, and only structures of at least 0.10 bp/nt kept.
+span, pseudoknots dropped, and only structures of at least 0.15 bp/nt (30% of nucleotides paired) kept.
 Windows are on the genome record (`_ncbi`).
 
 | element | Rfam | 17D | Asibi | nt | bp |

@@ -5,7 +5,7 @@ import os, subprocess, sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 from project_ss_cons import pair_columns, project, read_pfam_sto
-from rfeval_rrna_common import CMS, IMG, MIN_BP_PER_NT, read_fasta, unpair_orphans
+from rfeval_rrna_common import CMS, IMG, MIN_BP_PER_NT, prune_set, read_fasta, unpair_orphans
 
 ORGANISMS = {
     "homo_sapiens": {"RF00005": "tRNA", "RF00001": "5S_rRNA", "RF01960": "18S_rRNA",
@@ -69,6 +69,7 @@ def main():
 
     open(os.path.join(out, "small_rna.db"), "w").writelines(db)
     open(os.path.join(out, "small_rna.windows.tsv"), "w").writelines(["# ref_seq_id\tstart\tend\tstructure_id\n"] + windows)
+    print(f"{prune_set(os.path.join(out, 'small_rna.db'))} structures kept after pruning")
     open(os.path.join(orgdir, "MANIFEST-rfeval-small_rna.tsv"), "w").writelines(
         ["structure\trfam\tref_seq_id\tstart\tend\tlength\tbase_pairs\tbits\tga_hits\n"] + manifest)
 
