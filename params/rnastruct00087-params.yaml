@@ -2,6 +2,8 @@
 # status: final (run and checked on the release 27 references)
 rnacentral: true
 structextract: true
+# read 2 sense on chrM 12S/16S; RSeQC on this ncRNA-only GTF assigns too few reads to call it
+rfcount_strandedness: first
 rfcount_map_max_coverage: 20000
 
 gtf: /hps/nobackup/agb/rnacentral/chemicalprob/rnacentral-probing-references/release28/homo_sapiens/reference/homo_sapiens.GRCh38.filtered.gtf.gz
